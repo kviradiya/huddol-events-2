@@ -1,0 +1,435 @@
+FooBox V2 Changelog
+===================
+
+> Last updated 23 June 2015
+
+2015.06.23 - version 2.3.2.25
+----------------------------
+* Fixed a bug with FB sharing
+
+2015.06.14 - version 2.3.2.24
+----------------------------
+* Fixed a few bugs with deeplinking messing with the URL
+* Fixed some issues with Chrome on IOS
+* Added new setting to allow to drop IE7 support
+* Minor tweaks and bug fixes
+
+2015.05.26 - version 2.3.2.20
+----------------------------
+* data-caption attributes override all other captions
+* Fix for cleared deeplink url querystrings
+* Minor CSS fixes in edge cases
+
+2015.02.19 - version 2.3.2.19
+----------------------------
+* Fix for NextGen 2.0.7.1 update
+
+2015.02.05 - version 2.3.2.18
+----------------------------
+* Metro + Sticky buttons fix
+* Updated to latest FooBox JS version
+
+2015.01.14 - version 2.3.2.17
+----------------------------
+* Added seamless support for FooGallery when upgrading
+* Updated to latest FooBox JS version
+
+2014.12.03 - version 2.3.2.16
+----------------------------
+* Fixed the need to re-validate on settings page after renewing license
+
+2014.11.24 - version 2.3.2.15
+----------------------------
+* Fixed pixel density check on mobile
+* Fixed social showOnClick
+
+2014.11.18 - version 2.3.2.14
+----------------------------
+* Added support for Envira Pro Gallery
+
+2014.11.14 - version 2.3.2.13
+----------------------------
+* Mobile button fixes for sticky+full buttons
+
+2014.11.04 - version 2.3.2.12
+----------------------------
+* Fixed nextgen Foobox lightbox option not showing in some instances
+* Social share button fixes for no-buttons
+* Removed button check on resize when showing IFrames
+
+2014.10.22 - version 2.3.2.11
+----------------------------
+* Fix hideScrollbar bug when using FX
+
+2014.10.15 - version 2.3.2.10
+----------------------------
+* Fixed duplicate image settings when image protection enabled and captions disabled
+
+2014.10.14 - version 2.3.2.9
+----------------------------
+* Fixed slideshow timeout when decimal is used
+* Metro theme update to support sticky, full and hover buttons
+* Makes relative URL's absolute
+
+2014.10.08 - version 2.3.2.8
+----------------------------
+* License Nag message to only show on plugins page and FooBox settings page
+* Fixed FaceBook feed dialog URL change
+* Fixed Hide scrollbars issue on some setups
+* Added a FooBox.close method to make closing the current FooBox easier
+* Added support for fullscreen via data-attributes
+
+2014.08.07 - version 2.3.2.7
+----------------------------
+* Fixed PHP warning when no settings have been saved
+
+2014.08.07 - version 2.3.2.6
+----------------------------
+* Added support for HTTPS video
+* Added support for pixel density
+* Fix for landscape CSS issues
+* Fix for social CSS issues
+
+2014.07.31 - version 2.3.2.2
+----------------------------
+* Replaced FB feed dialog with share
+
+2014.07.15 - version 2.3.2.1
+----------------------------
+* Only load js & css on settings page in admin
+
+2014.06.23 - version 2.3.2
+----------------------------
+* Added support for FooGallery
+* Added .nolightbox to exclusions
+
+2014.06.01 - version 2.3.1.2
+----------------------------
+* Meta tag fix for non responsive sites
+
+2014.05.28 - version 2.3.1.1
+----------------------------
+* Added better REL attribute support
+* Pull effect from container data-affect attribute
+* Fix social icon blinking
+
+2014.05.27 - version 2.3.1.0
+----------------------------
+* Fix fullscreen positioning issues
+* Keyboard addon updates and key event propogation fix
+
+2014.05.27 - version 2.3.0.5.3
+------------------------------
+* Fixed count message settings bug
+
+2014.05.23 - version 2.3.0.5.2
+------------------------------
+* Improved Tumblr image sharing
+
+2014.05.21 - version 2.3.0.5.1
+------------------------------
+* Fix for social multiple binding on mobile
+
+2014.05.21 - version 2.3.0.5
+----------------------------
+* Fix for iFrame auto size fix
+* Added integration with Envira Gallery Lite
+* Added setting to choose opening/closing animation
+* Moved caption settings into their own tab
+
+2014.05.13 - version 2.3.0.4.5
+------------------------------
+* FooBox DOM only created when needed
+* WP gallery captions bug fix
+
+2014.05.09 - version 2.3.0.4.3
+------------------------------
+* Fix for keyboard event bubbling in some cases
+
+2014.05.08 - version 2.3.0.4.2
+------------------------------
+* Fix for arrow key bug with multiple instances
+
+2014.05.02 - version 2.3.0.4.1
+------------------------------
+* Fix for share links on phone
+
+2014.05.02 - version 2.3.0.4
+----------------------------
+* Fix for when there are no buttons on mobile
+
+2014.05.02 - version 2.3.0.3
+----------------------------
+* Mobile meta tag check
+
+2014.05.01 - version 2.3.0.2
+----------------------------
+* Fixed issue with selector loading order
+
+2014.05.01 - version 2.3.0.1
+----------------------------
+* Added new filter "foobox_js_selectors" to alter existing selectors
+* Big speed improvements to loading the FooBox for first image
+
+2014.04.30 - version 2.3.0.0
+----------------------------
+* Fix for sticky captions hiding description on small images
+* Added partner tab "FooBot Says..."
+* Changed social tab text to promote Feed Dialog over sharer
+* Added check and warning if no app ID given when using Feed Dialog
+* Added advanced setting for checking for custom rel attribute
+* Added setting for Navigation Buttons
+* Added setting for slideshow autostop
+
+2014.04.21 - version 2.2.1.3
+----------------------------
+* Added new setting 'Caption Animation'
+
+2014.03.31 - version 2.2.1.2
+----------------------------
+* Fixes for social share on phone landscape
+* You can close social share modal on phone by clicking overlay
+
+2014.03.24 - version 2.2.1.1
+----------------------------
+* Added new setting: 'When To Show iFrame Content'
+* Added new setting: 'iFrame Allow Fullscreen'
+* CSS Fix for fullscreen affiliate link
+
+2014.03.23 - version 2.2.1
+--------------------------
+* Fixed few bugs in fullscreen mode
+* Increased media load speeds
+* Included 'Below' social vertical position
+
+2014.03.08 - version 2.2.0
+--------------------------
+* Increases modal z-index
+* Fixed IOS7 nav bar bug!
+* Changed social share icon layout on phones
+* Added a few filters and actions for better extensibility
+
+2014.02.27 - version 2.1.0.20
+-----------------------------
+* Fixed another Opengraph bug when viewing tags
+
+2014.02.25 - version 2.1.0.19
+-----------------------------
+* Fixed Opengraph bug
+
+2014.02.24 - version 2.1.0.18
+-----------------------------
+* Updated foolic_validation class (potential XSS vulnerability)
+* Added new setting for Custom Init Callback Javascript
+
+2014.02.22 - version 2.1.0.16
+-----------------------------
+* Added check for # in custom CSS classes
+* Rather bind to body over document for all images setting
+
+2014.02.20 - version 2.1.0.15
+-----------------------------
+* Added fix for overriding captions on WP galleries
+
+2014.02.17 - version 2.1.0.14
+----------------------------
+* Added option to hide social icons initially
+* Added option to hide caption initially
+* Added radio option to choose how to share items via social icons
+
+2014.02.13 - version 2.1.0.13
+----------------------------
+* FB share tried to use attachment page so correct image is shown in timelines
+* Share image directly now done in javascript
+
+2014.02.08 - version 2.1.0.10
+----------------------------
+* Added FooBox Exclude metabox to pages and posts
+
+2014.01.30 - version 2.1.0.9
+----------------------------
+* Changed update checks to only run in admin to improve frontend performance
+* Fixed bug with transients in ManageWP API
+
+2014.01.20 - version 2.1.0.8
+----------------------------
+* Added new setting for custom excludes, under custom JS tab
+* Added new default exclude for Pinterest buttons
+
+2014.01.11 - version 2.1.0.7
+----------------------------
+ * Added new filter "foobox_extra_scripts_pre" for better integration
+ * Added new filter "foobox_extra_scripts_post" for better integration
+ * Support for FotoMoto extension
+ * Improved caption JS settings
+ * Include new links to insert sample code into some custom JS settings
+
+2014.01.11 - version 2.1.0.6
+----------------------------
+ * Added support for very wide and very long images (overflow)
+ * Added new event for altering captions (foobox.alterCaption)
+ * Added new setting to make it easier to alter captions
+
+2013.11.27 - version 2.1.0.5
+----------------------------
+ * Added support for Vimeo channel videos
+
+2013.11.22 - version 2.1.0.4
+----------------------------
+ * Fixed bug with colour, icon and loader settings not saving
+
+2013.11.19 - version 2.1.0.3
+----------------------------
+ * Added setting to enable/disable iFrame captions
+ * Added setting to enable/disable HTML captions
+
+2013.11.17 - version 2.1.0.2
+----------------------------
+ * Fixed missing captions bug
+
+2013.11.15 - version 2.1.0.1
+----------------------------
+ * Added 4 more arrow icons styles
+ * Added shortcode to autoload foobox : [foobox-auto-open]
+ * Fixed older jQuery compatibility issues
+ * Multiple bug fixes
+ * Changed FB share link to use description
+
+2013.11.12 - version 2.0.9.5
+----------------------------
+ * Disable browser fullscreen API on safari mac
+ * Caption size fix
+ * ManageWP integration
+
+2013.11.10 - version 2.0.9.4.1
+------------------------------
+ * Fixed tiled-gallery captions
+ * Fixed duplicate captions in JIG
+ * Fixed captions in certain scenarios
+
+2013.11.08 - version 2.0.9.3
+----------------------------
+ * Fixed so that index is retained when using alwaysInit option
+
+2013.11.06 - version 2.0.9.2
+----------------------------
+ * Compatibility for JIG videos and iFrames
+
+2013.11.06 - version 2.0.9.1.1
+------------------------------
+ * Fixed issue with facebook share with html inline
+
+2013.11.05 - version 2.0.9.0
+----------------------------
+ * Fixed no-social issue when clicking images
+ * Exclude videos from iFrame handler
+ * Preload foobox font to get around blank loader on first load
+
+2013.11.05 - version 2.0.8.9
+----------------------------
+ * Added support for NextGen2 Pro Masonry galleries
+
+2013.11.04 - version 2.0.8.8
+----------------------------
+ * Added options for showing social icons for iFrames and inline html
+ * Fixed social sharing inconsistencies
+ * Added support for NextGen2 Pro galleries
+
+2013.11.04 - version 2.0.8.7
+----------------------------
+ * Close overlay now works in fullscreen mode
+ * no-social now works when hover is enabled
+
+2013.10.23 - version 2.0.8.6
+----------------------------
+ * Better compatibility with FooBox Multisite Extension
+
+2013.10.19 - version 2.0.8.5
+----------------------------
+ * Better iframe support
+ * Better support for wufoo forms
+ * Added support for full height buttons
+
+2013.10.18 - version 2.0.8.4
+----------------------------
+ * Updated foolic_validator
+ * Included new social icons
+ * Fixed jquery options encoding
+ * Added destroy function
+ * Fixed 'load more' and 'filter' bugs with JIG
+ * Fixed excludes bug
+
+2013.10.16 - version 2.0.8.2
+----------------------------
+ * Updated pluginbase
+ * Updated to latest FooBox JS & CSS
+
+2013.10.13 - version 2.0.8.0
+----------------------------
+ * MultiSite compatibility
+ * Better YouTube URL parsing
+ * Add no-caption functionality
+
+2013.10.10 - version 2.0.7.9
+----------------------------
+ * Fixed iFrame issue on iOS
+ * Fixed no-social check
+ * HTML size tweak
+ * Deeplinking works now on HTML and iFrames
+
+2013.10.06 - version 2.0.7.8
+----------------------------
+ * Fixed deeplink binding issue
+ * Fixed social stacking
+
+2013.10.06 - version 2.0.7.7
+----------------------------
+ * Using a proper debug JS file
+
+2013.10.06 - version 2.0.7.6
+----------------------------
+ * Reordered script generation priority
+
+2013.10.06 - version 2.0.7.5
+----------------------------
+ * Fixed swipe direction
+ * Fixed reinit bug
+ * Fixed event bubbling when binding to document
+ * Added CSS3 transitions (if browser supports transitions)
+ * Fixed video autoplay
+
+2013.10.03 - version 2.0.7.4
+----------------------------
+ * Fixed caption link bug
+ * Removed title attributes from buttons
+ * Swipe now works of modal not just image
+ * Fixes for captions and socials
+ * Dark theme tweaks
+
+2013.10.03 - version 2.0.7.3
+----------------------------
+ * Reverted fullscreen play / pause to not be centered (but can be centered via an option)
+ * Fixed preloading
+ * Fixed swipe on mobile
+ * Fixed ESC issue in fullscreen
+ * Fixed stretch in fullscreen.
+ * other minor tweaks and fixes
+
+2013.10.02 - version 2.0.6.0
+----------------------------
+ * Fixed bug with jQuery 1.8 and below
+ * other minor tweaks and fixes
+
+2013.09.10 - version 2.0.3
+----------------------------
+ * Included more robust CSS
+ * Fixed const references from settings
+
+2013.09.09 - version 2.0.2
+--------------------------
+ * Fixed caption titles
+ * Added new caption title option
+
+2013.09.03 - version 2.0.1
+--------------------------
+ * Beta of V2 released

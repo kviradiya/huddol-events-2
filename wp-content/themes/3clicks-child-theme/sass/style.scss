@@ -1,0 +1,81 @@
+/*
+Theme Name: 3clicks Child Theme
+Theme URI: http://3clicks.bringthepixel.com
+Description: Got questions? Visit our <a href="http://bringthepixel.com/support/">support forum</a>.
+Author: bring the pixel
+Author URI: http://www.bringthepixel.com/
+Template: 3clicks
+Version: 1.0
+Tags: flexible-width, custom-colors, custom-menu, featured-images, post-formats, theme-options, threaded-comments, translation-ready
+*/
+
+
+
+/* MIXINS */
+
+@mixin link-color($color) {
+    color: $color;
+    &:hover {
+        color: lighten($color, 12%);
+    }
+}
+
+@mixin link-background($color) {
+    background-color: $color;
+    &:hover {
+        background-color: lighten($color, 7%);
+    }
+}
+
+@mixin vertical-center {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin cancel-vertical-center {
+  top: 0px;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+@mixin background-cover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ddd;
+}
+
+@mixin transition($duration: 1s) {
+    -webkit-transition: all $duration;
+    -moz-transition: all $duration;
+    -o-transition: all $duration;
+    transition: all $duration;
+}
+
+
+/* CONSTANTS */
+
+$media-query-small: "only screen and (max-width: 1024px)";
+$media-query-smaller: "only screen and (max-width: 767px)";
+$media-query-smallest: "only screen and (max-width: 600px)";
+$media-query-mini: "only screen and (max-width: 370px)";
+
+$color-red: #ef3e29;
+$color-gray: #636466;
+
+$font-size-smallest: 14px;
+
+
+@import "main";
+@import "home";
+@import "read";
+@import "event";
+@import "author";
+@import "dashboard";
+@import "contact";
+@import "about";
+@import "partner";
+

@@ -1,0 +1,11 @@
+.g1gmap { overflow: hidden; position: relative; max-width: 100%; margin-bottom: 21px; margin-bottom: 1.5rem; }
+.g1gmap:after { display: table; clear: both; content: ""; }
+.g1gmap img { max-width: none; }
+
+.g1gmap-main { position: relative; overflow: hidden; }
+
+.g1gmap-observer { display: none; position: absolute; margin-top: 0; height: 100%; }
+
+.g1gmap-marker-bubble { display: block; min-width: 320px; margin: 20px 0 0; }
+
+.g1gmap-marker-bubble-inner { margin: 0 50% 0 -50%; padding: 20px; }

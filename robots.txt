@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /rating_over*

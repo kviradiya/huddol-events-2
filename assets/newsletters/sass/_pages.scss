@@ -1,0 +1,292 @@
+/* GENERAL EMAIL */
+
+table.events-grid {
+  margin-bottom: -10px;
+  td {
+    &.sep {
+      width: 30px;
+    }
+    a.picture {
+      display: block;
+      margin-bottom: 6px;
+      img {
+        display: block;
+      }
+    }
+    a.share {
+      width: 21px;
+      height: 21px;
+      margin-top: 1px;
+      position: absolute;
+      right: 0px;
+      z-index: 1;
+    }
+    .category {
+      $color: $color-red;
+      font-size: 18px;
+      font-weight: bold;
+      color: $color;
+      a {
+        @include link-color($color);
+      }
+    }
+    .title {
+      $color: $color-text;
+      margin-bottom: 30px;
+      font-size: 16px;
+      color: $color;
+      a {
+        @include link-color($color);
+      }
+    }
+  }
+}
+
+table.events-grid-small {
+  margin-bottom: 35px;
+  td {
+    &.sep {
+      width: 7px;
+    }
+    a.picture {
+      display: block;
+      margin-bottom: 16px;
+      img {
+        display: block;
+      }
+    }
+    .title {
+      $color: $color-text;
+      font-size: 16px;
+      color: $color;
+      a {
+        @include link-color($color);
+      }
+    }
+  }
+}
+
+table.stories-grid {
+  td {
+    &.sep {
+      width: 40px;
+    }
+    .category {
+      $color: $color-text;
+      margin-bottom: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      color: $color;
+      a {
+        @include link-color($color);
+      }
+    }
+    .title {
+      $color: $color-text;
+      margin-bottom: 16px;
+      font-size: 16px;
+      font-weight: 300;
+      color: $color;
+      a {
+        @include link-color($color);
+      }
+    }
+    .text {
+      font-size: 13px;
+      color: $color-gray;
+      line-height: 1.5;
+    }
+  }
+}
+
+
+/* EVENT EMAIL */
+
+.event-large {
+  a.picture {
+    display: block;
+    margin-bottom: 22px;
+    img {
+      display: block;
+    }
+  }
+  a.share {
+    width: 32px;
+    height: 32px;
+    margin-top: -8px;
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+  }
+  .category {
+    $color: $color-red;
+    margin-bottom: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    color: $color;
+    a {
+      @include link-color($color);
+    }
+  }
+  .title {
+    $color: $color-red;
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: $color;
+    a {
+      @include link-color($color);
+    }
+  }
+  .date, .access {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .text {
+    margin-top: 18px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    color: $color-gray;
+    line-height: 1.5;
+  }
+  .contact {
+    margin-top: 24px;
+    .entry {
+      $height: 48px;
+      height: $height;
+      padding-left: 48px;
+      font-size: 15px;
+      color: $color-gray;
+      line-height: $height;
+      &.two-lines {
+        line-height: 1.55;
+      }
+      .sprite {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+      }
+      .red {
+        color: $color-red;
+      }
+      a {
+        font-weight: bold;
+        @include link-color($color-red);
+      }
+    }
+  }
+}
+
+.event-author {
+  margin-bottom: 32px;
+  padding-left: 76px;
+  .picture {
+    position: absolute;
+    left: -6px;
+    top: 5px;
+  }
+  .title {
+    margin-bottom: 6px;
+    font-size: 16px;
+    color: $color-gray;
+  }
+  .name {
+    $color: $color-red;
+    margin-bottom: 18px;
+    font-size: 22px;
+    font-weight: 300;
+    color: $color;
+    a {
+      @include link-color($color);
+    }
+  }
+  .text {
+    font-size: 14px;
+    color: $color-gray;
+    line-height: 1.5;
+  }
+}
+
+.event-hosted-by {
+  $height: 122px;
+  $padding-top: 18px;
+  height: $height - $padding-top;
+  padding-left: 236px;
+  padding-top: $padding-top;
+  a.picture {
+    display: block;
+    width: 210px;
+    height: 122px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    img {
+      display: block;
+    }
+  }
+  .hd {
+    margin-bottom: 2px;
+    font-size: 16px;
+  }
+  .name {
+    $color: $color-red;
+    font-size: 20px;
+    color: $color;
+    a {
+      @include link-color($color);
+    }
+  }
+}
+
+
+/* SURVEY EMAIL */
+
+table.events-list {
+  td {
+    padding-bottom: 25px;
+    &.sep {
+      width: 22px;
+    }
+    a.picture {
+      display: block;
+      width: 172px;
+      height: 104px;
+      img {
+        display: block;
+      }
+    }
+    .category {
+      $color: $color-red;
+      margin-bottom: 2px;
+      font-size: 18px;
+      font-weight: bold;
+      color: $color;
+      a {
+        @include link-color($color);
+      }
+    }
+    .title {
+      $color: $color-red;
+      margin-bottom: 5px;
+      font-size: 22px;
+      color: $color;
+      a {
+        @include link-color($color);
+      }
+    }
+    .date, .hosted-by {
+      margin-bottom: 5px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}
+
+.survey-bottom {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 1.75;
+}

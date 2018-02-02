@@ -1,0 +1,22 @@
+ul.g1-grid > li.g1-column
+{
+    float: left;
+}
+
+.contact-form {
+  .form-row {
+    &:first-child {
+      float: left;
+      margin-right: 50px;
+    }
+    &:nth-child(2) {
+      float: left;
+    }
+    &:nth-child(3) {
+      clear: both;
+    }
+    label {
+      font-size: 14px;
+    }
+  }
+}

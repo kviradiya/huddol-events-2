@@ -1,0 +1,788 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: FooBox Image Lightbox\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-01-19 13:03+0200\n"
+"PO-Revision-Date: 2013-01-19 13:04+0200\n"
+"Last-Translator: Brad Vincent <themergency@gmail.com>\n"
+"Language-Team: Themergency <themergency@gmail.com>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: C:\\inetpub\\wwwroot\\wp-3.4\\wp-content\\plugins"
+"\\foobox_business\\languages\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../foobox.php:74
+#, php-format
+msgid ""
+"For support, FAQ and demos please visit the <a href=\"%s\" target=\"_blank\">"
+"%s homepage</a>."
+msgstr ""
+
+#: ../foobox.php:79
+#, php-format
+msgid "%s Settings (v%s)"
+msgstr ""
+
+#: ../foobox.php:87
+msgid "General"
+msgstr ""
+
+#: ../foobox.php:91
+msgid "License"
+msgstr ""
+
+#: ../foobox.php:95
+msgid "FooBox License Key"
+msgstr ""
+
+#: ../foobox.php:96
+#, php-format
+msgid "The license key is used to access automatic updates and support for %s."
+msgstr ""
+
+#: ../foobox.php:106
+msgid "Use With"
+msgstr ""
+
+#: ../foobox.php:110
+msgid "WordPress Galleries"
+msgstr ""
+
+#: ../foobox.php:111
+#, php-format
+msgid "Enables %s for all WordPress image galleries"
+msgstr ""
+
+#: ../foobox.php:120
+msgid "WordPress Images With Captions"
+msgstr ""
+
+#: ../foobox.php:121
+#, php-format
+msgid "Enable %s for all WordPress images with captions"
+msgstr ""
+
+#: ../foobox.php:130
+msgid "Attachment Images"
+msgstr ""
+
+#: ../foobox.php:131
+#, php-format
+msgid "Enable %s for all media images included in posts or pages"
+msgstr ""
+
+#: ../foobox.php:139
+msgid "NextGen Options"
+msgstr ""
+
+#: ../foobox.php:143
+msgid "NextGen Galleries"
+msgstr ""
+
+#: ../foobox.php:144
+#, php-format
+msgid "Enable %s for all NextGen image galleries."
+msgstr ""
+
+#: ../foobox.php:145
+#, php-format
+msgid ""
+"Please set \"Javascript Thumbnail Effect\" to \"none\" under the Effects tab "
+"on the %s page."
+msgstr ""
+
+#: ../foobox.php:156
+msgid "WooCommerce Products"
+msgstr ""
+
+#: ../foobox.php:157
+#, php-format
+msgid "Override the default WooCommerce product image lightbox with %s."
+msgstr ""
+
+#: ../foobox.php:167
+msgid "Specific CSS classes"
+msgstr ""
+
+#: ../foobox.php:168
+#, php-format
+msgid ""
+"Enable %s on specific container elements that have a specific CSS class name."
+"<br />Use this to target only very specific elements in your site.<br /"
+">Example : <code>.container, .gallery</code>"
+msgstr ""
+
+#: ../foobox.php:176
+msgid "All images"
+msgstr ""
+
+#: ../foobox.php:177
+#, php-format
+msgid ""
+"Enable %s for all images on your WordPress site. This will exclude any "
+"images that are already included above"
+msgstr ""
+
+#: ../foobox.php:184 ../foobox.php:188
+msgid "Justified Image Grid"
+msgstr ""
+
+#: ../foobox.php:189
+#, php-format
+msgid "Add full support for %s galleries. No other custom settings needed!"
+msgstr ""
+
+#: ../foobox.php:195
+msgid "Settings"
+msgstr ""
+
+#: ../foobox.php:199
+msgid "Disable Deeplinking"
+msgstr ""
+
+#: ../foobox.php:200
+#, php-format
+msgid ""
+"By default, each image will have it's own unique URL when opened. When this "
+"unique URL is visited, %s will automatically open on that image."
+msgstr ""
+
+#: ../foobox.php:208
+msgid "Deeplinking Prefix"
+msgstr ""
+
+#: ../foobox.php:209
+msgid "When building the deep link, this prefix is used in the URL."
+msgstr ""
+
+#: ../foobox.php:219
+msgid "Fit To Screen"
+msgstr ""
+
+#: ../foobox.php:220
+msgid "Force smaller images to fit the screen dimensions"
+msgstr ""
+
+#: ../foobox.php:229
+msgid "Hide Scrollbars"
+msgstr ""
+
+#: ../foobox.php:230
+#, php-format
+msgid "Hide the page's scrollbars when %s is visible"
+msgstr ""
+
+#: ../foobox.php:239
+msgid "Hide Navigation Buttons"
+msgstr ""
+
+#: ../foobox.php:240
+msgid ""
+"Hide the prev / next buttons when there is more than one image in the gallery"
+msgstr ""
+
+#: ../foobox.php:248
+msgid "Close On Overlay Click"
+msgstr ""
+
+#: ../foobox.php:249
+#, php-format
+msgid "Should the %s close when the modal overlay is clicked."
+msgstr ""
+
+#: ../foobox.php:258
+msgid "Preload Images"
+msgstr ""
+
+#: ../foobox.php:259
+msgid ""
+"Preloads the next and previous images when an image is displayed. Images "
+"will appear to load much faster."
+msgstr ""
+
+#: ../foobox.php:266
+msgid "Look &amp; Feel"
+msgstr ""
+
+#: ../foobox.php:267
+msgid "Styling"
+msgstr ""
+
+#: ../foobox.php:271
+msgid "Select an Icon Set"
+msgstr ""
+
+#: ../foobox.php:279
+msgid "Select a Colour Scheme"
+msgstr ""
+
+#: ../foobox.php:285
+#, php-format
+msgid "%s Captions"
+msgstr ""
+
+#: ../foobox.php:289
+#, php-format
+msgid "Show %s Captions"
+msgstr ""
+
+#: ../foobox.php:290
+#, php-format
+msgid "Whether or not to show captions inside %s"
+msgstr ""
+
+#: ../foobox.php:298 ../foobox.php:316
+msgid "Default"
+msgstr ""
+
+#: ../foobox.php:299 ../foobox.php:317
+msgid "Image Title"
+msgstr ""
+
+#: ../foobox.php:300 ../foobox.php:318
+msgid "Image Alt"
+msgstr ""
+
+#: ../foobox.php:301 ../foobox.php:319
+msgid "Anchor Title (NextGen description field)"
+msgstr ""
+
+#: ../foobox.php:302 ../foobox.php:320
+msgid "None"
+msgstr ""
+
+#: ../foobox.php:306
+msgid "Override Caption Title"
+msgstr ""
+
+#: ../foobox.php:307
+#, php-format
+msgid "Overrides where the default %s caption titles are pulled from"
+msgstr ""
+
+#: ../foobox.php:324
+msgid "Override Caption Description"
+msgstr ""
+
+#: ../foobox.php:325
+#, php-format
+msgid "Overrides where the default %s caption descriptions are pulled from"
+msgstr ""
+
+#: ../foobox.php:335
+msgid "Prettify Ugly Captions"
+msgstr ""
+
+#: ../foobox.php:336
+msgid ""
+"Attempts to make captions look less \"generated\" and more readable.<br/ "
+">Example : <code>image-showing-something-021</code> would result in "
+"<code>Image Showing Something</code>"
+msgstr ""
+
+#: ../foobox.php:342
+msgid "Image Counter"
+msgstr ""
+
+#: ../foobox.php:346
+msgid "Show Image Counter"
+msgstr ""
+
+#: ../foobox.php:347
+#, php-format
+msgid "Shows an image counter under the %s when viewing a gallery of images"
+msgstr ""
+
+#: ../foobox.php:356
+msgid "Count Message"
+msgstr ""
+
+#: ../foobox.php:357
+msgid ""
+"the message to use as the image counter. The fields <code>%index</code> and "
+"<code>%total</code> can be used to substitute the correct values. <br/ "
+">Example : <code>image %index / %total</code> would result in <code>image "
+"1 / 7</code>"
+msgstr ""
+
+#: ../foobox.php:364
+msgid "SlideShow"
+msgstr ""
+
+#: ../foobox.php:368
+msgid "Enable Slideshow"
+msgstr ""
+
+#: ../foobox.php:369
+msgid ""
+"Enable slideshow functionality when there is more than one image in the "
+"gallery"
+msgstr ""
+
+#: ../foobox.php:378
+msgid "Auto-start Slideshow"
+msgstr ""
+
+#: ../foobox.php:379
+msgid "Start the image slideshow automatically when it is enabled"
+msgstr ""
+
+#: ../foobox.php:387
+msgid "Image Timeout"
+msgstr ""
+
+#: ../foobox.php:388
+msgid "The time in seconds that each image is shown in the slideshow"
+msgstr ""
+
+#: ../foobox.php:396
+msgid "Social Icons"
+msgstr ""
+
+#: ../foobox.php:398
+msgid "Social Icon Settings"
+msgstr ""
+
+#: ../foobox.php:402
+msgid "Social Icons Enabled"
+msgstr ""
+
+#: ../foobox.php:411
+msgid "Share Image Directly"
+msgstr ""
+
+#: ../foobox.php:412
+msgid "Share the actual image file directly, rather than the deeplink URL."
+msgstr ""
+
+#: ../foobox.php:420
+msgid "Show Icons On Hover"
+msgstr ""
+
+#: ../foobox.php:421
+msgid "Only show the social icons when hovering over the image."
+msgstr ""
+
+#: ../foobox.php:435
+msgid "Title When Sharing"
+msgstr ""
+
+#: ../foobox.php:436
+msgid ""
+"Determines how the title is generated when sharing on the social networks"
+msgstr ""
+
+#: ../foobox.php:446
+msgid "Custom Title"
+msgstr ""
+
+#: ../foobox.php:447
+msgid "The custom title text used when \"Custom title\" is selected above"
+msgstr ""
+
+#: ../foobox.php:454
+msgid "Social Icon Position"
+msgstr ""
+
+#: ../foobox.php:457
+msgid "Above"
+msgstr ""
+
+#: ../foobox.php:458
+msgid "Top"
+msgstr ""
+
+#: ../foobox.php:459
+msgid "Bottom"
+msgstr ""
+
+#: ../foobox.php:463
+msgid "Vertical Position"
+msgstr ""
+
+#: ../foobox.php:478
+msgid "Horizontal Position"
+msgstr ""
+
+#: ../foobox.php:488
+msgid "Stack Icons"
+msgstr ""
+
+#: ../foobox.php:489
+msgid ""
+"Stack the social icons on top of each other. This only works with Top-Left "
+"and Top-Right positions"
+msgstr ""
+
+#: ../foobox.php:495
+msgid "Networks"
+msgstr ""
+
+#: ../foobox.php:499
+msgid "Facebook Enabled"
+msgstr ""
+
+#: ../foobox.php:500
+#, php-format
+msgid ""
+"We recommend adding OpenGraph meta data to your site's %s section. See the "
+"OpenGraph settings below."
+msgstr ""
+
+#: ../foobox.php:509
+msgid "Google+ Enabled"
+msgstr ""
+
+#: ../foobox.php:510
+msgid ""
+"PLEASE NOTE : Google+ sharing has some limitations. The page will be shared, "
+"rather than individual images."
+msgstr ""
+
+#: ../foobox.php:519
+msgid "Pinterest Enabled"
+msgstr ""
+
+#: ../foobox.php:528
+msgid "LinkedIn Enabled"
+msgstr ""
+
+#: ../foobox.php:537
+msgid "Twitter Enabled"
+msgstr ""
+
+#: ../foobox.php:546
+msgid "Buffer Enabled"
+msgstr ""
+
+#: ../foobox.php:555
+msgid "Email Enabled"
+msgstr ""
+
+#: ../foobox.php:556
+msgid "Adds an email link so that images can easily be shared by email"
+msgstr ""
+
+#: ../foobox.php:564
+msgid "Download Original Image"
+msgstr ""
+
+#: ../foobox.php:565
+msgid ""
+"Adds a link to download the original image. The image is simply opened in a "
+"new browser window or tab"
+msgstr ""
+
+#: ../foobox.php:571
+msgid "OpenGraph Settings"
+msgstr ""
+
+#: ../foobox.php:579 ../foobox.php:589
+msgid "Add OpenGraph"
+msgstr ""
+
+#: ../foobox.php:580
+#, php-format
+msgid ""
+"The plugin %s has been detected, which includes support for OpenGraph meta "
+"tags already.<br />The OpenGraph functionality from that plugin will be used "
+"instead."
+msgstr ""
+
+#: ../foobox.php:590
+msgid "Automatically add OpenGraph meta data to your site."
+msgstr ""
+
+#: ../foobox.php:597
+msgid "Facebook Settings"
+msgstr ""
+
+#: ../foobox.php:601
+msgid "Enable New Feed Dialog"
+msgstr ""
+
+#: ../foobox.php:602
+msgid ""
+"Enable Facebook's new feed dialog way of sharing, rather than their old (and "
+"deprecated!) sharer.<br />Please note that this method requires a Facebook "
+"App Id in order to function!"
+msgstr ""
+
+#: ../foobox.php:608
+msgid "Create a Facebook App ID now"
+msgstr ""
+
+#: ../foobox.php:609
+msgid "Read our step-by-step tutorial on how to create your App ID"
+msgstr ""
+
+#: ../foobox.php:615
+msgid "Facebook App ID"
+msgstr ""
+
+#: ../foobox.php:616
+#, php-format
+msgid ""
+"A Facebook App ID is required in order for the feed dialog to work. %s.<br />"
+"%s."
+msgstr ""
+
+#: ../foobox.php:624
+msgid "Twitter Settings"
+msgstr ""
+
+#: ../foobox.php:628
+msgid "Twitter Username"
+msgstr ""
+
+#: ../foobox.php:629
+msgid "The Twitter username that will be appended onto the end of all tweets"
+msgstr ""
+
+#: ../foobox.php:640
+msgid "Twitter Hashtags"
+msgstr ""
+
+#: ../foobox.php:641
+msgid "Comma seperated list of hashtags to be included in all tweets"
+msgstr ""
+
+#: ../foobox.php:651
+msgid "Advanced"
+msgstr ""
+
+#: ../foobox.php:653
+msgid "Errors"
+msgstr ""
+
+#: ../foobox.php:657
+msgid "Error Message"
+msgstr ""
+
+#: ../foobox.php:658
+msgid "The error message to display when an image cannot be loaded"
+msgstr ""
+
+#: ../foobox.php:665
+msgid "Test error image"
+msgstr ""
+
+#: ../foobox.php:669
+msgid "Error Image"
+msgstr ""
+
+#: ../foobox.php:670
+msgid "The default error image to display when an image cannot be loaded."
+msgstr ""
+
+#: ../foobox.php:677
+msgid "Affiliate Link"
+msgstr ""
+
+#: ../foobox.php:681
+msgid "Show Affiliate Link"
+msgstr ""
+
+#: ../foobox.php:682
+#, php-format
+msgid "Show a %s affiliate link in the modal window"
+msgstr ""
+
+#: ../foobox.php:689
+msgid "Become an affiliate"
+msgstr ""
+
+#: ../foobox.php:693
+msgid "Affiliate URL"
+msgstr ""
+
+#: ../foobox.php:694
+#, php-format
+msgid "Use your own affiliate URL. %s and make extra cash from %s!"
+msgstr ""
+
+#: ../foobox.php:703
+msgid "Affiliate Prefix"
+msgstr ""
+
+#: ../foobox.php:704
+msgid "The text shown before the affiliate link"
+msgstr ""
+
+#: ../foobox.php:712
+msgid "Javascript"
+msgstr ""
+
+#: ../foobox.php:716
+msgid "Disable Other Lightboxes"
+msgstr ""
+
+#: ../foobox.php:717
+msgid ""
+"Try to disable other lightbox scripts built into themes and other plugins "
+"(PrettyPhoto and ThickBox)"
+msgstr ""
+
+#: ../foobox.php:725
+msgid "Scripts In Footer"
+msgstr ""
+
+#: ../foobox.php:726
+msgid ""
+"Load the javascript files in the site footer (for better performance). This "
+"requires the theme to have the wp_footer() hook in the appropriate place"
+msgstr ""
+
+#: ../foobox.php:734
+msgid "Don't Include jQuery"
+msgstr ""
+
+#: ../foobox.php:735
+msgid ""
+"Automatically exclude the jQuery script from the page. Only use this setting "
+"to overcome issues when your theme or other plugins automattically include "
+"their own version of jQuery, resulting in duplicate copies of jQuery being "
+"included in your page"
+msgstr ""
+
+#: ../foobox.php:741
+msgid "Debug"
+msgstr ""
+
+#: ../foobox.php:745
+msgid "Enable Debug Mode"
+msgstr ""
+
+#: ../foobox.php:746
+#, php-format
+msgid ""
+"If this is enabled, %s will write to the console log so you can debug any "
+"problems. We also show an extra debug information tab on this settings page"
+msgstr ""
+
+#: ../foobox.php:754
+msgid "Force Delay"
+msgstr ""
+
+#: ../foobox.php:755
+msgid ""
+"Force a delay between loading images. You can use this to test what the "
+"loading indicator looks like."
+msgstr ""
+
+#: ../foobox.php:763
+msgid "Custom Javascript &amp; CSS"
+msgstr ""
+
+#: ../foobox.php:767
+msgid "Custom CSS"
+msgstr ""
+
+#: ../foobox.php:768
+#, php-format
+msgid ""
+"Alter the icon set, colour scheme, or the look and feel of %s using custom "
+"CSS styles. (Only to be used by developers!)"
+msgstr ""
+
+#: ../foobox.php:778
+msgid "Custom Javascript (Pre)"
+msgstr ""
+
+#: ../foobox.php:779
+#, php-format
+msgid ""
+"Call any custom JS before %s is initialized. (Only to be used by developers!)"
+msgstr ""
+
+#: ../foobox.php:789
+msgid "Custom Javascript (Post)"
+msgstr ""
+
+#: ../foobox.php:790
+#, php-format
+msgid ""
+"Alter the way %s works by hooking into the built-in events, using custom "
+"javascript code. (Only to be used by developers!)"
+msgstr ""
+
+#: ../foobox.php:798
+msgid "Demo"
+msgstr ""
+
+#: ../foobox.php:803
+#, php-format
+msgid ""
+"Click the images above to demo %s with your chosen settings. PLEASE NOTE : "
+"If you have made changes to the settings, please save settings first in "
+"order to see your changes"
+msgstr ""
+
+#: ../foobox.php:809
+msgid "Admin"
+msgstr ""
+
+#: ../foobox.php:821
+msgid "Hide Settings Summary Text"
+msgstr ""
+
+#: ../foobox.php:822
+#, php-format
+msgid "Hide the %s settings summary text which links to the %s homepage"
+msgstr ""
+
+#: ../foobox.php:830
+msgid "Debug Info"
+msgstr ""
+
+#: ../foobox.php:834
+msgid "Debug Information"
+msgstr ""
+
+#: ../foobox.php:868
+msgid "Online Documentation"
+msgstr ""
+
+#: ../includes/update_checker.php:149
+#, php-format
+msgid ""
+"An unknown error occurred while getting info for the plugin %s. Response: %s"
+msgstr ""
+
+#: ../includes/update_checker.php:157
+msgid "An unknown error occurred while getting info for the plugin %"
+msgstr ""
+
+#: ../includes/wp_pluginbase_v2_1.php:561
+msgid "Validate"
+msgstr ""
+
+#: ../includes/wp_pluginbase_v2_1.php:592
+msgid "Select Image"
+msgstr ""
+
+#: ../includes/wp_pluginbase_v2_1.php:624
+msgid "Settings restored to default values"
+msgstr ""
+
+#: ../includes/wp_pluginbase_v2_1.php:707
+#: ../includes/wp_pluginbase_v2_1.php:737
+msgid " Settings"
+msgstr ""
+
+#: ../includes/wp_pluginbase_v2_1_default_settings.php:63
+msgid "Save Changes"
+msgstr ""
+
+#: ../includes/wp_pluginbase_v2_1_default_settings.php:64
+msgid ""
+"Are you sure you want to restore all settings back to their default values?"
+msgstr ""
+
+#: ../includes/wp_pluginbase_v2_1_default_settings.php:64
+msgid "Restore Defaults"
+msgstr ""

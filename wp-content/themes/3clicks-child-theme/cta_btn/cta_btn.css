@@ -1,0 +1,43 @@
+/* CSS Document */
+
+#btn_cta{
+	margin: 0 0 35px 0;
+	padding: 20px 20px;
+	font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica;
+	color: #ffffff;
+	background-color: #0872ba;
+	border-radius: 15px;
+	text-align:center;
+}
+#btn_cta img{
+	clear: both;
+	display: block;
+	margin: 0 auto 15px;
+	max-height: 34px;
+	width: auto;
+}
+.cta_title{
+	display: inline-block;
+	margin: 0 0 5px 0;
+	font-family: "proxima_nova_ltsemibold";
+	font-size: 24px;
+	line-height: 1em;
+	text-align: center;
+}
+.cta_parag{
+	font-size: 15px;
+}
+.cta_link{
+	display: block;
+	margin: 0 auto;
+	padding: 15px 24px;
+	width: 140px;
+	font-family: "proxima_nova_ltsemibold";
+	text-align: center;
+	font-weight: bold;
+	color: #ffffff !important;
+	background-color: #02b875;
+	border-radius: 10px;
+}
+
+body.page-template-tcn_read-php #btn_cta, body.page-template-tcn_news-php #btn_cta {display: none;}

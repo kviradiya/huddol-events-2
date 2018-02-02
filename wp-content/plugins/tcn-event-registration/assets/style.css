@@ -1,0 +1,15 @@
+table.event-registration
+{
+    border: 1px;
+}
+
+table.event-registration td, th
+{
+    width: 200px;
+    text-align: left;
+}
+
+table.event-registration td.check, th.check
+{
+    width: 16px;
+}

@@ -1,0 +1,48 @@
+.g1gmap-inner { width: 100%; height: 300px; }
+
+.g1gmap-admin-form-row:after { display: table; clear: both; content: ""; }
+.g1gmap-admin-form-row label { display: block; margin-bottom: 6px; }
+.g1gmap-admin-form-row select { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%; }
+
+.g1gmap-admin-form-row-hue .slider { background: url(./../images/hsl-bar.png) no-repeat center center; -webkit-background-size: 100% 8px; -moz-background-size: 100% 8px; -o-background-size: 100% 8px; background-size: 100% 8px; }
+.g1gmap-admin-form-row-hue .progress { display: none; }
+
+#g1-gmaps-map-preview-metabox > .inside { margin: 0; padding: 0; }
+
+#g1gmap-preview .g1gmap { margin-bottom: 0; }
+
+.g1gmap-preview-actions { padding-left: 12px; padding-right: 12px; text-align: right; }
+
+/* Markers */
+#g1-gmaps-map-markers-metabox > .inside { margin: 0; padding: 0; }
+
+.g1gmap-markers { margin: 0; padding: 0; }
+.g1gmap-markers > li { margin: 0; padding: 0; border-style: solid; border-color: #e6e6e6; border-width: 0 0 1px; }
+
+.g1gmap-marker-toggle { padding: 6px 12px; cursor: pointer; }
+.g1gmap-marker-toggle:hover { background-color: #f2f2f2; }
+.g1gmap-marker-toggle:before { display: inline-block; width: 20px; font-family: FontAwesome; content: "\f107"; }
+
+.g1gmap-marker-content { display: none; padding: 0 0 1.5em 32px; }
+
+.g1gmap-marker-on .g1gmap-marker-toggle { background-color: #e6e6e6; }
+.g1gmap-marker-on .g1gmap-marker-toggle:before { content: "\f106"; }
+.g1gmap-marker-on .g1gmap-marker-content { display: block; }
+
+.g1gmap-marker-new .g1gmap-marker-toggle { text-transform: uppercase; letter-spacing: 0.15em; }
+
+.g1gmap-markers-actions { margin: 0; padding: 12px; }
+
+.g1gmap-needs-update { font-weight: bold; color: red; }
+
+.g1gmap-marker-saving:after { content: " saving..."; }
+
+.g1gmap-ui-controls:after { display: table; clear: both; content: ""; }
+
+.g1gmap-ui-control { display: inline-block; margin: 0 2em 1em 0; vertical-align: top; }
+.g1gmap-ui-control label { display: block; margin-bottom: 3px; }
+
+.g1gmap-color-controls:after { display: table; clear: both; content: ""; }
+
+.g1gmap-color-control { display: inline-block; margin: 0 2em 1em 0; vertical-align: top; }
+.g1gmap-color-control label { display: block; margin-bottom: 3px; }

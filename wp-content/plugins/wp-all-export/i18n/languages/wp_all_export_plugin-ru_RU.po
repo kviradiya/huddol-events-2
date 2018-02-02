@@ -1,0 +1,1003 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP All Export Pro v1.1.0 RC7\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-08-31 14:11+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: .\n"
+"X-Textdomain-Support: yes\n"
+"Language: ru\n"
+"X-Poedit-SearchPath-0: .\n"
+
+msgid "#%s Cron job triggered."
+msgstr "#%s Cron задача запущена."
+
+msgid ""
+"%%ID%% will be replaced with the ID of the post being exported, example: "
+"SELECT meta_value FROM wp_postmeta WHERE post_id=%%ID%% AND "
+"meta_key='your_meta_key';"
+msgstr ""
+"%%ID%% будет замещен экспортируемым постом, например: SELECT meta_value FROM "
+"wp_postmeta WHERE post_id=%%ID%% AND meta_key='your_meta_key';"
+
+msgid "%d %s deleted"
+msgstr "%d %s удален"
+
+msgid "%d Records Exported"
+msgstr "%d записей экспортировано"
+
+msgid "&laquo;"
+msgstr "&laquo;"
+
+msgid "&raquo;"
+msgstr "&raquo;"
+
+msgid "<strong>%s</strong> %s more"
+msgstr "<strong>%s</strong> %s еще"
+
+msgid "ACF"
+msgstr "ACF"
+
+msgid "Activation Key"
+msgstr "Код активации"
+
+msgid "Add Field To Export"
+msgstr "Добавить поле к экспорту"
+
+msgid "Add Filtering Options"
+msgstr "Добавить параметры фильтрации"
+
+msgid "Add Rule"
+msgstr "Добавить правило"
+
+msgid "Advanced"
+msgstr "Дополнительно"
+
+msgid "Advanced Custom Fields"
+msgstr "Дополнительные пользовательские поля (ACF)"
+
+msgid "Advanced Export"
+msgstr "Расширенный экспорт"
+
+msgid "All"
+msgstr "Все"
+
+msgid "All Export"
+msgstr "All Export"
+
+msgid "Amount (per tax)"
+msgstr "Сумма (per tax)"
+
+msgid "Apply"
+msgstr "Приянть"
+
+msgid "Apply Filters To Export Data"
+msgstr "Применить фильтры к экспортируемым данным"
+
+msgid "Are you sure you want to delete <strong>%s</strong> export?"
+msgstr "Вы уверены, что хотите удалить <strong>%s</strong> экспорт?"
+
+msgid "Are you sure you want to delete <strong>%s</strong> selected %s?"
+msgstr "Вы уверены, что хотите удалить <strong>%s</strong> выбранные %s?"
+
+msgid "Are you sure you want to re-run <strong>%s</strong> export?"
+msgstr "Вы уверены, что хотите перезапустить <strong>%s</strong> экспорт?"
+
+msgid "Attachment"
+msgstr "Вложение"
+
+msgid "Author"
+msgstr "Автор"
+
+msgid "Auto Generate"
+msgstr "Авто создание"
+
+msgid "Auto Generate Export Template"
+msgstr "Автосоздание шаблона экспорта"
+
+msgid "Available Data"
+msgstr "Доступные данные"
+
+msgid "Back to Manage Exports"
+msgstr "Вернуться к управлению экспортами"
+
+msgid "Back to Step 2"
+msgstr "Вернуться к шагу 2"
+
+msgid "Bulk Actions"
+msgstr "Массовое действие"
+
+msgid "Bundle"
+msgstr "Связка"
+
+msgid "CSV"
+msgstr "CSV"
+
+msgid "CSV delimiter must be specified"
+msgstr "CSV разделитель должен быть указан"
+
+msgid "Cancel"
+msgstr "Отменить"
+
+msgid "Cancel Cron"
+msgstr "Отменить Cron"
+
+msgid "Categories / Taxonomies"
+msgstr "Категории / Таксономии"
+
+msgid "Changing this will require you to re-create your existing cron jobs."
+msgstr "Изменение этого потребует пересоздать существующие задания cron."
+
+msgid "Choose a post type..."
+msgstr "Выберите тип поста..."
+
+msgid "Choose data to include in the export file."
+msgstr "Выбрать данные для включения в файл экспорта."
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Completed Date"
+msgstr "Дата завершения"
+
+msgid "Confirm & Run Export"
+msgstr "Подтвердить и запустить экспорт"
+
+msgid "Content"
+msgstr "Содержание"
+
+msgid "Continue to Step 2"
+msgstr "Перейти к шагу 2"
+
+msgid "Continue to Step 2 to choose data to include in the export file."
+msgstr "Перейти к шагу 2, чтобы выбрать данные для включения в файл экспорта."
+
+msgid "Coupons Used"
+msgstr "Используемые купоны"
+
+msgid "Created by"
+msgstr "Создано"
+
+msgid "Cron Exports"
+msgstr "Cron экспорт"
+
+msgid "Cron Scheduling"
+msgstr "Планирование Cron"
+
+msgid "Custom Field / Post Meta"
+msgstr "Пользовательские поля / Мета записи"
+
+msgid "Custom Field / User Meta"
+msgstr "Пользовательское поле / Пользовательские Meta"
+
+msgid "Custom Fields"
+msgstr "Пользовательские поля"
+
+msgid "Custom Types: "
+msgstr "Пользовательские типы: "
+
+msgid "Customer"
+msgstr "Покупатель"
+
+msgid "Customer Note"
+msgstr "Примечание к покупателю"
+
+msgid "Customer User ID"
+msgstr "ID покупателя"
+
+msgid "Data"
+msgstr "Данные"
+
+msgid "Data not found."
+msgstr "Данные не найдены."
+
+msgid "Date"
+msgstr "Дата"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Delete Export"
+msgstr "Удалить экспорт"
+
+msgid "Delete Permanently"
+msgstr "Удалить навсегда"
+
+msgid "Delete field"
+msgstr "Удалить поле"
+
+msgid "Delimiter:"
+msgstr "Разделитель:"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Discount Amount (per coupon)"
+msgstr "Сумма скидки (по купону)"
+
+msgid "Display Name"
+msgstr "Отображаемое имя"
+
+msgid "Display each product in its own row"
+msgstr "Отображать каждый товар на отдельной строке"
+
+msgid "Displaying %s&#8211;%s of %s"
+msgstr "Отображение %s&#8211;%s из %s"
+
+msgid "Documentation"
+msgstr "Документация"
+
+msgid "Done"
+msgstr "Готово"
+
+msgid "Download Data"
+msgstr "Загрузить данные"
+
+msgid "Download Import Templates"
+msgstr "Загрузить шаблоны импорта"
+
+msgid ""
+"Download your import templates and use them to import your exported file to "
+"a separate WordPress/WP All Import installation."
+msgstr ""
+"Загрузите свои шаблоны импорта и используйте их, чтобы импортировать Ваш "
+"экспортируемый файл на другой сайт WordPress."
+
+msgid ""
+"Drop & drop data from \"Available Data\" on the right to include it in the "
+"export or click \"Add Field To Export\" below."
+msgstr ""
+"Перетащите данные из \"Доступные данные\" справа для включения в экспорт или "
+"нажмите \"Добавить поле к экспорту\" ниже."
+
+msgid "Edit"
+msgstr "Редактировать"
+
+msgid "Edit Export Field"
+msgstr "Правка поля экспорта"
+
+msgid "Edit Options"
+msgstr "Редактировать опции"
+
+msgid "Edit Template"
+msgstr "Редактировать шаблон"
+
+msgid "Element"
+msgstr "Элемент"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Error"
+msgstr "Ошибка"
+
+msgid "Every time you want to schedule the import, run the trigger script."
+msgstr ""
+"Каждый раз, когда Вы хотите запланировать импорт - запускайте скрипт "
+"триггера."
+
+msgid "Example:"
+msgstr "Пример:"
+
+msgid "Excerpt"
+msgstr "Отрывок"
+
+msgid "Execution Script"
+msgstr "Скрипт исполнения"
+
+msgid "Export #%s already processing. Request skipped."
+msgstr "Экспорт #%s уже в процесее. Запрос пропущен."
+
+msgid "Export #%s already triggered. Request skipped."
+msgstr "Экспорт #%s уже вызван. Запрос пропущен."
+
+msgid "Export #%s complete"
+msgstr "Экспорт #%s завершен"
+
+msgid "Export #%s currently in process. Request skipped."
+msgstr "Экспорт #%s в настоящее время запущен. Запрос пропущен."
+
+msgid "Export #%s is currently in manually process. Request skipped."
+msgstr "Экспорт #%s в настоящее время в ручном режиме. Запрос пропущен."
+
+msgid "Export #%s is not triggered. Request skipped."
+msgstr "Экспорт #%s не вызван. Запрос пропущен."
+
+msgid "Export <span id=\"status\">in Progress...</span>"
+msgstr "Экспорт <span id=\"status\">в процессе...</span>"
+
+msgid "Export Attempt at %s"
+msgstr "Попытка экспорта в %s"
+
+msgid "Export Complete!"
+msgstr "Экспорт завершен!"
+
+msgid "Export File Format:"
+msgstr "Формат файла экспорта:"
+
+msgid "Export File URL"
+msgstr "Экспортировать URL файла"
+
+msgid "Export Image File Paths"
+msgstr "Экспортировать пути файлов изображений"
+
+msgid "Export Image Filenames"
+msgstr "Экспортировать названия файлов изображений"
+
+msgid "Export Image URLs"
+msgstr "Экспортировать URL изображений"
+
+msgid "Export canceled"
+msgstr "Экспорт отменен"
+
+msgid "Export currently in progress"
+msgstr "Экспорт в процессе в настоящее время"
+
+msgid "Export deleted"
+msgstr "Экспорт удален"
+
+msgid "Export the value returned by a PHP function"
+msgstr "Экспорт значения, возвращаемого PHP функцией"
+
+msgid "Export to XML"
+msgstr "Экспорт в XML"
+
+msgid "Export to XML / CSV"
+msgstr "Экспорт в XML / CSV"
+
+msgid "Exported"
+msgstr "Экспортируемый"
+
+msgid ""
+"Exported files and temporary files will be placed in a folder with a "
+"randomized name inside of %s."
+msgstr ""
+"Экспортированные файлы и временные файлы будут помещены в папку со случайным "
+"именем внутри %s."
+
+msgid ""
+"Exporting may take some time. Please do not close your browser or refresh "
+"the page until the process is complete."
+msgstr ""
+"Экспорт может занять некоторое время. Пожалуйста, не закрывайте браузер и не "
+"обновляйте страницу пока процесс не завершится."
+
+msgid "Fee Amount (per surcharge)"
+msgstr "Сумма сбора (дополнительный сбор)"
+
+msgid "Feedback"
+msgstr "Обратная связь"
+
+msgid "Fees & Discounts"
+msgstr "Тарифы и скидки"
+
+msgid "Field Name"
+msgstr "Имя поля"
+
+msgid "File format not supported"
+msgstr "Формат файла не поддерживается"
+
+msgid "Files"
+msgstr "Файлы"
+
+msgid "Filters"
+msgstr "Фильтры"
+
+msgid "First Name"
+msgstr "Имя"
+
+msgid "First, choose what to export."
+msgstr "Во-первых, выберите, что экспортировать."
+
+msgid "For WP All Import"
+msgstr "для WP All Import"
+
+msgid "Format: %s"
+msgstr "Формат: %s"
+
+msgid "Friendly Name:"
+msgstr "Понятное имя:"
+
+msgid "General"
+msgstr "Общее"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "If an order contains multiple products, each product have its own row."
+msgstr ""
+"Если заказ содержит несколько товаров, каждый товар расположен на отдельной "
+"строке."
+
+msgid "Images / Media"
+msgstr "Картинки / Медиа"
+
+msgid "Import with WP All Import"
+msgstr "Импорт с WP All Import"
+
+msgid "In each iteration, process"
+msgstr "В каждом повторении обрабатывать"
+
+msgid "Info & Options"
+msgstr "Инфо и Опции"
+
+msgid ""
+"Install these import templates in your separate WP All Import installation "
+"from the All Import -> Settings page by clicking the \"Import Templates\" "
+"button."
+msgstr ""
+"Установите эти шаблоны импорта на отдельном сайте с помощью WP All Import из "
+"All Import -> Страница настроек, нажав на \"Импорт шаблонов\"."
+
+msgid "Invalid query"
+msgstr "Недопустимый запрос"
+
+msgid ""
+"It also operates this way in case of unexpected crashes by your web host. If "
+"it crashes before the import is finished, the next run of the cron job two "
+"minutes later will continue it where it left off, ensuring reliability."
+msgstr ""
+"Это также помогает в случае непредвиденных сбоев на Вашем хостинге. Если "
+"выдается ошибку раньше окончания импорта, то при следующем запуске через "
+"cron (через две минуты) операция продолжается там, где была завершена."
+
+msgid ""
+"It processes in iteration (only importing a few records each time it runs) "
+"to optimize server load. It is recommended you run the execution script "
+"every 2 minutes."
+msgstr ""
+"Это осуществляется итерациями (импорт только нескольких записей при каждом "
+"запуске), чтобы оптимизировать нагрузку на сервер. Рекомендуется запускать "
+"выполнение скрипта каждые 2 минуты."
+
+msgid "Item Cost"
+msgstr "Стоимость за единицу"
+
+msgid "Item Total"
+msgstr "Штук всего"
+
+msgid "Items"
+msgstr "Штуки"
+
+msgid "Last Name"
+msgstr "Фамилия"
+
+msgid "Last run: %s"
+msgstr "Последний запуск: %s"
+
+msgid "Login"
+msgstr "Логин"
+
+msgid "Manage Exports"
+msgstr "Управление экспортами"
+
+msgid "Menu Order"
+msgstr "Порядок меню"
+
+msgid "Name"
+msgstr "Название"
+
+msgid "Natural Language PHP date()"
+msgstr "Естесственный язык PHP date()"
+
+msgid "Network"
+msgstr "Сеть"
+
+msgid "New Export"
+msgstr "Новый экспорт"
+
+msgid "Nicename"
+msgstr "Ник"
+
+msgid "Nickname"
+msgstr "Ник"
+
+msgid ""
+"No filtering options. Add filtering options to only export records matching "
+"some specified criteria."
+msgstr ""
+"Нет параметров фильтрации. Добавить параметры фильтрации, чтобы "
+"экспортировать только записи, удовлетворяющие заданным условиям."
+
+msgid "No matching %s found for selected filter rules"
+msgstr "Не найдено подходящих %s для выбранных правил фильтрации"
+
+msgid "No matching posts found for WP_Query expression specified"
+msgstr "Не найдены подходящие записи для указанного выражения WP_Query"
+
+msgid "No matching posts found for selected post types"
+msgstr "Не найдены подходящие записи для выбранных типов записей"
+
+msgid "No matching users found"
+msgstr "Подходящие пользователи не найдены"
+
+msgid "No previous exports found."
+msgstr "Предыдущие экспорты не найдены."
+
+msgid "Notes"
+msgstr "Примечания"
+
+msgid "Options updated"
+msgstr "Параметры обновлены"
+
+msgid "Order"
+msgstr "Заказ"
+
+msgid "Order Currency"
+msgstr "Валюта заказа"
+
+msgid "Order Date"
+msgstr "Дата заказа"
+
+msgid "Order ID"
+msgstr "ID заказа"
+
+msgid "Order Key"
+msgstr "Ключ заказа"
+
+msgid "Order Status"
+msgstr "Статус заказа"
+
+msgid "Order Total"
+msgstr "Сумма заказа"
+
+msgid "Other"
+msgstr "Другие"
+
+msgid "Parent"
+msgstr "Родитель"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Payment Method"
+msgstr "Метод оплаты"
+
+msgid "Permalink"
+msgstr "Постоянная ссылка"
+
+msgid "Permissive"
+msgstr "Разрешающее"
+
+msgid ""
+"Please de-activate and remove the free version of the WP All Export before "
+"activating the paid version."
+msgstr ""
+"Пожалуйста, деактивируйте и удалите бесплатную версию WP All Export перед "
+"активацией платной версии."
+
+msgid "Post Format"
+msgstr "Формат поста"
+
+msgid "Post Slug"
+msgstr "Короткое имя поста (slug)"
+
+msgid "Post Status"
+msgstr "Статус записи"
+
+msgid "Post Type"
+msgstr "Тип записи"
+
+msgid "Post Type Query"
+msgstr "Запрос типа поста"
+
+msgid "Preview A Row"
+msgstr "Предпросмотр строки"
+
+msgid "Product Data"
+msgstr "Данные о продукте"
+
+msgid "Product ID"
+msgstr "ID товара"
+
+msgid "Product Name"
+msgstr "Наименование товара"
+
+msgid "Product Variation Details"
+msgstr "Вариационные детали товара"
+
+msgid "Product Variations"
+msgstr "Вариации товара"
+
+msgid "Quantity"
+msgstr "Количество"
+
+msgid "Query"
+msgstr "Запрос"
+
+msgid "Randomize folder names"
+msgstr "Случайные имена папок"
+
+msgid "Rate Code (per tax)"
+msgstr "Код тарифа (per tax)"
+
+msgid "Rate Percentage (per tax)"
+msgstr "Процентная ставка (per tax)"
+
+msgid "Re-run Export"
+msgstr "Перезапустить экспорт"
+
+msgid "Record"
+msgstr "Запись"
+
+msgid "Records"
+msgstr "Записи"
+
+msgid "Records Processed %s"
+msgstr "Записей обработано %s"
+
+msgid "Registered Date"
+msgstr "Дата регистрации"
+
+msgid "Restore"
+msgstr "Восстановить"
+
+msgid "Roles"
+msgstr "Роли"
+
+msgid "Rule"
+msgstr "Правило"
+
+msgid "Run Export"
+msgstr "Запустить экспорт"
+
+msgid "SKU"
+msgstr "SKU (артикул)"
+
+msgid "SQL Query"
+msgstr "SQL запрос"
+
+msgid "Save Export Configuration"
+msgstr "Сохранить конфигурацию экспорта"
+
+msgid "Save friendly name..."
+msgstr "Сохранить понятое имя..."
+
+msgid "Search Exports"
+msgstr "Поиск экспортов"
+
+msgid "Secret Key"
+msgstr "Секретный ключ"
+
+msgid "Secure Mode"
+msgstr "Безопасный режим"
+
+msgid "Security check"
+msgstr "Проверка безопасности"
+
+msgid "Select Element"
+msgstr "Выберите элемент"
+
+msgid "Select Rule"
+msgstr "Выберите правило"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Settings saved"
+msgstr "Настройки сохранены"
+
+msgid "Shipping Cost"
+msgstr "Стоимость доставки"
+
+msgid "Shipping Method"
+msgstr "Способ доставки"
+
+msgid "Skip to Step 3"
+msgstr "Перейти к шагу 3"
+
+msgid "Specific Post Type"
+msgstr "Определить тип поста"
+
+msgid "Standard"
+msgstr "Стандартные"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Strict"
+msgstr "Строгое"
+
+msgid ""
+"Strict matching requires all variations to pass in order for the product to "
+"be exported. Permissive matching allows the product to be exported if any of "
+"the variations pass."
+msgstr ""
+"Строгое соответствие требует, чтобы все условия соблюдались для "
+"экспортируемого продукта. Разрешающее соответствие позволяет продукту "
+"экспортироваться, если одно из условий соблюдается."
+
+msgid "Summary"
+msgstr "Итого"
+
+msgid "Support"
+msgstr "Поддержка"
+
+msgid "Taxes & Shipping"
+msgstr "Налоги и доставка"
+
+msgid "Taxonomies"
+msgstr "Таксономии"
+
+msgid "Template"
+msgstr "Шаблон"
+
+msgid ""
+"The Execution script actually executes the import, once it has been "
+"triggered with the Trigger script."
+msgstr ""
+"Скрипт исполнения фактически выполняет импорт, после того, как он запущен "
+"триггер-скриптом."
+
+msgid ""
+"The exported file is missing and can't be downloaded. Please re-run your "
+"export to re-generate it."
+msgstr ""
+"Экспортируемый файл отсутствует и не может быть загружен. Пожалуйста, "
+"перезапустите свой экспорт для его повторного создания."
+
+msgid ""
+"The other two files in this zip are the export file containing all of your "
+"data and the import template for WP All Import. \n"
+"\n"
+"To import this data, create a new import with WP All Import and upload this "
+"zip file."
+msgstr ""
+"Два других файла в этом архиве - это файлы экспорта, содержащие все Ваши "
+"данные и шаблон импорта для WP All Import. \n"
+"\n"
+"Чтобы импортировать эти данные, создайте новый импорт с WP All Import и "
+"загрузить этот архив."
+
+msgid ""
+"The value of the field chosen for export will be passed to the PHP function."
+msgstr "Значение поля, выбранного для экспорта, будет передано в PHP функцию."
+
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s"
+"\">update now</a>."
+msgstr ""
+"Новая версия %1$s доступна. <a target=\"_blank\" class=\"thickbox\" href="
+"\"%2$s\">Посмотреть детали версии %3$s </a> или <a href=\"%4$s\">обновить "
+"сейчас</a>."
+
+msgid ""
+"There is a new version of %1$s available. <a target=\"_blank\" class="
+"\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
+msgstr ""
+"Новая версия %1$s доступна. <a target=\"_blank\" class=\"thickbox\" href="
+"\"%2$s\">Посмотреть детали версии %3$s </a>."
+
+msgid "This format is not supported."
+msgstr "Этот формат не поддерживается."
+
+msgid "Time Elapsed"
+msgstr "Времени прошло"
+
+msgid "Title"
+msgstr "Заголовок (Title)"
+
+msgid ""
+"To schedule an import, you must create two cron jobs in your web hosting "
+"control panel. One cron job will be used to run the Trigger script, the "
+"other to run the Execution script."
+msgstr ""
+"Чтобы запланировать импорт, необходимо создать два cron задания в панели "
+"управления хостингом. Одно задание будет использоваться для запуска скрипта "
+"триггера, другое для запуска скрипта исполнения."
+
+msgid ""
+"To schedule the import to run once every 24 hours, run the trigger script "
+"every 24 hours. Most hosts require you to use “wget” to access a URL. Ask "
+"your host for details."
+msgstr ""
+"Чтобы запланировать импорт для запуска каждые 24 часа, запускайте скрипт "
+"триггера каждые 24 часа. Большинство хостов требуют использовать “wget” для "
+"доступа к URL. Узнайте подробности у Вашего провайдера."
+
+msgid "Total Discount Amount"
+msgstr "Общая сумма скидки"
+
+msgid "Total Fee Amount"
+msgstr "Общая сумма платежей"
+
+msgid "Total Tax Amount"
+msgstr "Общая сумма налогов"
+
+msgid "Trigger Script"
+msgstr "Скрипт триггера"
+
+msgid "UNIX timestamp - PHP time()"
+msgstr "UNIX timestamp - PHP time()"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Uploads folder %s must be writable"
+msgstr "Папка загрузки %s должна быть доступна для записи"
+
+msgid "User"
+msgstr "Пользователь"
+
+msgid "User Query"
+msgstr "Пользовательский запрос"
+
+msgid "Users"
+msgstr "Пользователи"
+
+msgid "Value"
+msgstr "Значение"
+
+msgid "Variable product matching rules: "
+msgstr "Вариативный продукт, соответствующий правилам: "
+
+msgid "WP All Export"
+msgstr "WP All Export"
+
+msgid "WP All Export Settings"
+msgstr "WP All Export настройки"
+
+msgid "WP All Export Support"
+msgstr "WP All Export поддержка"
+
+msgid ""
+"WP All Export must be able to process this many records in less than your "
+"server's timeout settings. If your export fails before completion, to "
+"troubleshoot you should lower this number."
+msgstr ""
+"WP All Export должен быть в состоянии обработать это количество записей "
+"быстрее, чем установленный тайм-аут Вашего сервера. Если экспорт не "
+"выполняется до завершения, для устранения ошибки следует уменьшить это число."
+
+msgid "WP All Export successfully exported your data!"
+msgstr "WP All Export успешно экспортировал Ваши данные!"
+
+msgid "WP All Export will export %d %s."
+msgstr "WP All Export будет экспортировать %d %s."
+
+msgid "WP Query field is required"
+msgstr "WP поле запроса требуется"
+
+msgid "WP_Query Results"
+msgstr "Результаты WP_Query"
+
+msgid ""
+"Warning: without _sku and product_type columns, you won't be able to re-"
+"import this data using WP All Import."
+msgstr ""
+"Внимание: без столбцов _sku и product_type Вы не сможете повторно "
+"импортировать эти данные через WP All Import."
+
+msgid ""
+"Warning: without an ID column, you won't be able to re-import this data "
+"using WP All Import."
+msgstr ""
+"Внимание: без ID столбца Вы не сможете повторно импортировать эти данные "
+"через WP All Import."
+
+msgid ""
+"Warning: without post_type column, you won't be able to re-import this data "
+"using WP All Import."
+msgstr ""
+"Внимание: без столбца post_type Вы не сможете повторно экспортировать эти "
+"данные через WP All Import."
+
+msgid "What field would you like to export?"
+msgstr "Какие поля Вы хотите экспортировать?"
+
+msgid "What would you like to name the column/element in your exported file?"
+msgstr "Как бы Вы хотели назвать столбец/элемент в файле эспорта?"
+
+msgid "WooCommerce Data"
+msgstr "WooCommerce данные"
+
+msgid "WooCommerce Order"
+msgstr "WooCommerce заказ"
+
+msgid "WooCommerce Products"
+msgstr "WooCommerce товары"
+
+msgid "WooCommerce Taxonomies"
+msgstr "WooCommerce таксономии"
+
+msgid "XML"
+msgstr "XML"
+
+msgid "Y/m/d g:i a"
+msgstr "Г/м/д g:i a"
+
+msgid "You do not have permission to install plugin updates"
+msgstr "У вас нет разрешения для установки обновлений плагина"
+
+msgid "You haven't selected any columns for export."
+msgstr "Вы не отметили никакие столбцы для экспорта."
+
+msgid "Your export is ready to run."
+msgstr "Ваш экспорт готов к запуску"
+
+msgid ""
+"Your web host may require you to use a command other than wget, although "
+"wget is most common. In this case, you must asking your web hosting provider "
+"for help."
+msgstr ""
+"Ваш провайдер может требовать использования команды, отличной от wget, хотя "
+"wget является наиболее распространенной. В этом случае, Вы должны обратиться "
+"за помощью к Вашему провайдеру."
+
+msgid "contains"
+msgstr "содержат"
+
+msgid "currently processing with cron"
+msgstr "в настоящее время обработка с помощью cron"
+
+msgid "date() Format"
+msgstr "date() формат"
+
+msgid "element"
+msgid_plural "elements"
+msgstr[0] "элемент"
+msgstr[1] "элемента"
+msgstr[2] "элементов"
+
+msgid "equals"
+msgstr "равны"
+
+msgid "equals or greater than"
+msgstr "равны или больше, чем"
+
+msgid "equals or less than"
+msgstr "равны или меньше, чем"
+
+msgid "export"
+msgid_plural "exports"
+msgstr[0] "экспорт"
+msgstr[1] "экспорта"
+msgstr[2] "экспортов"
+
+msgid "greater than"
+msgstr "больше, чем"
+
+msgid "is empty"
+msgstr "пустые"
+
+msgid "is not empty"
+msgstr "не пустые"
+
+msgid "last activity %s ago"
+msgstr "последняя активность %s назад"
+
+msgid "less than"
+msgstr "меньше, чем"
+
+msgid "more"
+msgstr "еще"
+
+msgid "never"
+msgstr "никогда"
+
+msgid "not contains"
+msgstr "не содержат"
+
+msgid "not equals"
+msgstr "не равны"
+
+msgid "records"
+msgstr "записей"
+
+msgid "settings edited since last run"
+msgstr "параметры изменены с момента последнего запуска"
+
+msgid "triggered with cron"
+msgstr "запускается с помощью cron"

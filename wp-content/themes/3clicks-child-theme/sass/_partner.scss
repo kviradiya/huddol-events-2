@@ -1,0 +1,99 @@
+div.tcn-partner-banner-container {
+    margin-top: 24px;
+    margin-bottom: 30px;
+    padding: 0px 40px;
+    padding-top: 30px;
+    border: 5px solid #f2f2f2;
+    border-radius: 8px;
+    position: relative;
+    img {
+        position: absolute;
+        top: -26px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+    }
+    .tcn-partner-banner-title {
+        font-size: 29px;
+        color: #fb4400;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .tcn-parter-banner-text {
+        font-size: 16px;
+        color: #000000;
+        text-align: center;
+        line-height: 32px;
+        font-weight: 300;
+    }
+}
+
+div.tcn-partner-content {
+    li.g1-column {
+        min-height: 80px;
+    }
+    .g1-toggle__title {
+        height: 40px;
+        font-size: 18px;
+        color: #fb4400; 
+        line-height: 20px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .g1-toggle {
+        text-align: center;
+    }
+    .g1-toggle a {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+div.tcn-partner-become-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+div.tcn-partner-signup {
+    .tcn-partner-signup-title {
+        font-size: 38px;
+        text-align: center;
+    }
+    .tcn-partner-signup-subtitle {
+        font-size: 22px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .tcn-partner-signup-banner {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .tcn-partner-signup-grid {
+        margin-top: 25px;
+        .unit {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+            .inner {
+                padding-left: 80px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                position: relative;
+                img {
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                }
+            }
+            @media #{$media-query-smallest} {
+                display: block;
+                width: auto;
+                .inner {
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+}

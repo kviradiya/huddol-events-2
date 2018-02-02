@@ -1,0 +1,15 @@
+.DS_Store
+env.sh
+wp-config.php
+wp-config-dev.php
+wp-config-staging.php
+wp-content/cache/
+docs/work.xlsx
+docs/schedule.md
+docs/bugs.md
+docs/~work.xlsx
+.idea/
+.htaccess
+
+# sass cache
+*.scssc

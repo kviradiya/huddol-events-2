@@ -1,0 +1,84 @@
+div.tcn-about {
+    .one-third {
+        position: relative;
+        padding-top: 32px;
+        .left-content {
+           width: 28%;
+           margin-right: 3%;
+           float: left;
+        }
+        .center-content {
+            width: 28%;
+            margin-right: 3%;
+            margin-left: 3%;
+            float: left;
+        }
+        .right-content {
+            width: 28%;
+            margin-left: 3%;
+            float: left;
+        }
+	h2 {
+		font-size: 22px;
+	}
+        h3.tcn-about-subtitle {
+            color: #fb4400;
+            font-size: 20px;
+        }
+        h4.tcn-about-subtitle {
+            color: #fb4400;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        img.tcn-about-people-banner {
+            margin-bottom: 10px; 
+        }
+        @media #{$media-query-small} {
+            .left-content, .center-content, .right-content {
+                float: none;
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    
+    div.tcn-about-thumbs-up-container {
+        margin-bottom: 22px;
+    }
+     .tcn-about-thumbs-up-container img {margin-top: 22px}
+    
+    h2.tcn-companies {
+       font-size: 28px;
+       text-align: center;
+    }
+    
+    h3.tcn-non-profit {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    div.tcn-contact-us-button {
+       text-align: center;
+    }
+    
+    div.tcn-sponsors-container {
+        margin-top: 40px;
+        text-align: center;
+        & > div {
+            min-height: 150px;
+            @media #{$media-query-small} {
+                a {
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    
+    a.tcn-about-link {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}

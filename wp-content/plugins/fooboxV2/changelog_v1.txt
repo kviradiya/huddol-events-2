@@ -1,0 +1,203 @@
+FooBox Changelog
+================
+
+> Last updated 16 Sep 2012
+
+2012.06.20 - version 1.0
+------------------------
+ * Initial release
+
+2012.09.05 - version 1.1
+------------------------
+ * Google+ share link updated
+ * Translation Ready! (incl. German translation)
+
+2012.09.07 - version 1.1.1 (unreleased)
+---------------------------------------
+ * Added support for WooCommerce Products
+ * Disabled OpenGraph by default
+ * Improved the OpenGraph implementation to take HTML excerpts into account
+
+2012.09.11 - version 1.1.2 (unreleased)
+---------------------------------------
+ * Play / pause fix for mobile themes
+ * Added pre JS and post JS to advanced options
+ * Refactored JS so nothing is run on plugin creation but only on when the init method is called
+ * Upgraded FooBox jquery & css to v1.1
+
+2012.09.13 - version 1.1.3 (unreleased)
+---------------------------------------
+ * fixed JS case sensitivity regex
+ * share URL is now querystring happy
+ * fixed the open graph URL to point to the correct URL too
+
+2012.09.15 - version 1.1.4 (unreleased)
+---------------------------------------
+ * Upgraded FooBox jquery and css to v.1.2
+ * check for min version of jquery and write to console if using less than 1.6
+
+2012.09.16 - version 1.1.5
+--------------------------
+ * changed the order in which the image preloading was working
+ * takes the title from the anchor if it has one, and then the thumbnail
+ * escaped all js options that could potentially cause issues
+ * fixed placement issue with social icons on bottom
+
+2012.09.17 - version 1.1.6
+--------------------------
+ * allow HTML image captions
+ * ignores empty titles that are empty or only whitespace
+
+2012.10.05 - version 1.1.7
+--------------------------
+ * allow image deeplinking for better image sharing
+ * improved unbinding of other lightboxes
+ * improved swipe support on mobile devices
+ * support added for attachment images within pages and post
+ * added support for titles and captions for images
+ * better support for Wordpress image captions
+ * click image to hide social buttons and captions
+ * no longer requires the link to have an image to init the foobox
+ * moved image counter to below the foobox and centered
+
+2012.10.27 - version 1.1.8
+--------------------------
+ * improved facebook sharing to not rely on open graph meta tags
+
+2012.11.05 - version 1.1.9
+ * changed the way preloading works - only the prev and next images are preloaded when the image is displayed
+ * Updated translations
+ * improved pinterest sharing
+ * refactored generated JS
+
+2012.11.06 - version 1.2
+ * minor fixes and changes to translations
+ * fixed issue with deeplink hashes
+
+2012.11.10 - version 1.2.1
+ * fixed bug when disabling social icons
+ * added full settings support for Justified Image Grid plugin
+ * altered CSS to move credit and count slightly down
+
+2012.11.16 - version 1.2.2
+ * made captions for JIG smarter
+
+2012.11.22 - version 1.2.2.1
+ * made a change to support images loaded from Amazon S3 CDN
+
+2012.11.23 - version 1.2.2.2
+ * caters for multiple posts on an archive page
+
+2012.11.25 - version 1.2.3
+ * ability to share the image files directly rather than the deeplink URL
+
+2012.12.01 - version 1.2.4
+ * fixed swipe javascript bug in IE7 + IE8
+
+2012.12.15 - version 1.2.5
+ * fixed intermittent bug with jquery delegate events
+ * fixed bug when error image is not found then FooBox navigate buttons stop working
+
+2012.12.28 - version 1.2.6
+ * upgrade to use pluginbase v2.1 - license input now is a password input
+ * validating license now saves the license (so no need to click save settings too)
+ * only show settings messages once for WP 3.5
+ * fixed incompatibility with jQuery UI and outerHeight
+ * fixed reverse swipe bug on mobile devices
+
+2013.01.03 - version 1.2.7.1
+ * Fixed up settings menu and title
+ * social links title are configurable (title|caption|h1|custom)
+ * ability to add hashtags to tweets
+ * Added Admin tab on settings page
+ * Added ability to hide settings summary on settings page
+ * ability to 'prettify' captions
+ * fixed issue in FF where opening FooBox was causing jump to top of page
+
+2013.01.05 - version 1.3
+ * Added caption title source setting
+ * Added caption title desc setting
+ * Added buffer social network setting
+ * Added "download original image" social network setting
+ * Added email social network setting
+
+2013.01.16 - version 1.3.5
+ * added new social setting to stack the icons on top of each other
+ * fixed deeplinking image opening when gallery images are sorted randomly
+ * added new social horizontal position "above"
+ * new setting for only show social icons when hovering over the image
+ * added new Facebook feed dialog share options
+
+2013.01.20 - version 1.3.5.3
+ * Updates and fixed translations
+ * removed checks for IE when adding css
+
+2013.02.08 - version 1.3.7
+ * Fixed bug where title was not pulling into social share properly
+ * Fixed bug where Foobox interferes with plugin listing page
+ * Added setting to include any custom javascript FooBox options
+ * Separated "Disable Other Lightboxes" option into 2 (one for javascript and one for php)
+ * support for NextGen gallery widgets out of the box
+
+2013.02.25 - version 1.4
+ * Image protection setting to disable right clicks on images
+ * Fixed bug with multiple social icons in some instances
+ * Added fullscreen button and force fullscreen mode
+ * Added setting to force captions to be fixed to bottom
+ * Added setting to only show captions on hover
+ * minor bugs and changes
+
+2013.03.13 - version 1.4.0.2
+ * Fixed issue with Facebook share thumbnails not pulling through in some cases
+ * Fixed issue with JIG galleries not working since 1.4
+ * Changed all image sharing URLs to not be encoded by default
+ * Assign foobox class to a global variable for better integration
+
+2013.03.24 - version 1.4.0.4
+ * Fixed issue with JIG galleries not pulling the correct captions when HTML is being used
+ * Fixed issue with JIG galleries not working with the "load more" JIG setup
+
+2013.04.17 - version 1.4.1
+ * Changed URLs to all point to http://fooplugins.com
+ * Getting auto updates from http://fooplugins.com
+
+2013.05.05 - version 1.4.1.6
+ * Refactored license key validation
+ * Added support tab in settings page
+ * Added admin notice until FooBox is validated
+
+2013.05.11 - version 1.4.1.7
+ * Fixed bug referencing old utils
+
+2013.05.12 - version 1.4.1.8
+ * Added foobox debug script for easier debugging
+ * Built in support for Jetpack tiled image galleries
+ * enabled FooBox jQuery wordpress option by default
+
+2013.05.05 - version 1.4.1.9
+ * Fixed pinterest share issue when share image directly option is enabled
+ * Fixed blank Facebook redirect URL
+
+2013.05.26 - version 1.4.2
+ * Improved deregsiter other lightbox option
+ * Added Extra JS option
+
+2013.06.01 - version 1.4.2.5
+ * Fixed issue with JIG galleries showing wrong image counts
+ * Fixed issue with JIG galleries not opening correct image
+ * Fixed issue with JIG galleries not excluding certain images
+ * Fixed issue with captions only showing a description looking squashed
+ * Fixed issue with JIG galleries captions
+
+ 2013.06.12 - version 1.4.2.6
+ * Fixed issue with JIG galleries not filtering correctly
+ * Fixed issue with woocommerce variations were not showing correctly
+
+2013.07.31 - version 1.4.2.7
+ * Added proper support for NextGen v2!!!!
+
+2013.08.09 - version 1.4.2.8
+ * Changed how I check for NextGen V2
+ * Added filter to override when foobox scripts are added 'foobox_enqueue_scripts'
+ * Added filter to override when foobox styles are added 'foobox_enqueue_styles'
+ * Added check in javascript for foobox object in case foobox was not loaded

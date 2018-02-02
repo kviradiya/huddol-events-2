@@ -1,0 +1,23 @@
+-You can remove the share icons
+    DONE
+    
+-The French logo appears distorted on the bottom
+    DONE
+    
+-The top level social media icons are stacked vertically rather than laid out horizontally
+    DONE
+    
+-French log in link on FR email reminder goes to english sign in page
+    DONE
+    
+-upcoming event promotion email in both FR and EN should contain event description, not just title
+    DONE
+    
+- for the emails where there is a slash in the title, please put a space before and after. french title must come before english.
+    DONE
+    
+- for the select your email correspondence preference email, we need to put the french button before the English and we need to show a clearer division between those two entities- they need to stand out as buttons...put them in orange rectangle...
+    DONE
+    
+- the general password reset email is missing
+    - try it through the site, it's the only way to get it actually working?

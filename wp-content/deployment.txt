@@ -1,0 +1,100 @@
+
+IP of prod:
+
+104.236.253.140
+
+Domains:
+thecaregivernetwork.ca
+lereseauaidant.ca
+
+All partner passwords:
+
+partner@lratcn.ca
+yokS-eD-bylg-eRg-Et
+
+
+
+
+--------------------------------------------------------------------------------------------
+TODO
+
+- set up digital ocean machine
+    -----> DONE
+- remove htaccess
+    -----> DONE
+- set up godaddy
+    -----> DONE
+- set up cronjob
+    -----> DONE
+- dump staging database
+    -----> DONE
+- deploy on prod
+    -----> DONE
+- good admin password
+    ------> hkM-Tjxs
+- add channels
+    ------> DONE
+- add partners
+    ------> DONE
+- setup menus
+    ------> DONE
+- check menus
+    ------> DONE
+- add French translations
+    ------> DONE
+- migrate users 
+    ------> DONE
+- send email to Mark aobut users
+    ------> DONE
+- migrate events
+    ------> DONE
+- set up WPML domains
+    ------> DONE
+- links on help page in French
+    ------> DONE
+- FRENCH partner guide
+    ------> DONE
+- FRENCH troubleshooting guide
+    ------> DONE
+    
+- fix up migrated events
+    -language
+        -----> DONE
+    -locations
+        -----> DONE
+    -channels
+        -----> DONE
+    -content
+        -----> DONE
+
+- migrate user provinces
+    -----> DONE
+    
+- migrate events to users
+    -----> DONE
+    
+- emails
+    - ensure translated
+        -----> DONE
+    - fix images
+    - ensure sent at right times
+        -----> DONE
+    - ensure sent in right languages
+        -----> DONE
+        
+
+- ensure emails don't go to spam
+    -----> DONE
+    
+- configure mail
+    -----> DONE
+    
+    
+- final fixes from spreadsheet
+
+- good admin email on prod site
+
+- QA
+    - FRENCH
+    - ENGLISH
+

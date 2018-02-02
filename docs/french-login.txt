@@ -1,0 +1,11 @@
+-fix abonne actuel (one line)
+    -----> DONE
+-s'enregistre -> S'inscrire, in the title AND on the button
+    -----> DONE
+-Nouvel abonne
+    -----> DONE
+-Forgot your username or password
+    -----> DONE
+    
+-Provide your email
+-"More"

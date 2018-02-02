@@ -1,0 +1,37 @@
+.tcn-read-list {
+    article {
+        .entry-title {
+            font-size: 24px;
+        }
+        .g1-meta.entry-meta {
+            font-size: $font-size-smallest;
+        }
+        .entry-content {
+            font-size: $font-size-smallest;
+            color: $color-gray;
+        }
+    }
+}
+
+#g1-precontent > header.entry-header.g1-layout-inner {
+    padding-top: 10px;
+    .g1-hgroup {
+        margin-bottom: 28px;
+    }
+    .g1-meta.entry-meta {
+        font-size: 14px;
+        color: $color-gray;
+        a {
+            color: $color-red;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+.g1-sidebar {
+    .g1-links {
+        font-size: $font-size-smallest;
+    }
+}

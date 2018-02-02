@@ -1,0 +1,14 @@
+The Caregiver Network: Newsletter
+    - french stories
+Le Réseau Aidant : Sondage événement
+    + bad date language
+Le Réseau Aidant : Rappel événement
+    + bad language date
+Welcome to The Caregiver Network/Bienvenue au Réseau aidant
+    - implement the whole thing
+    
+Ensure they are sent in the right language!!!
+    - DONE
+Check site links (logos to homepage) in the right language!!!
+
+

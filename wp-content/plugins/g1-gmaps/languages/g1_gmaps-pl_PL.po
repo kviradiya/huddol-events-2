@@ -1,0 +1,430 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gmaps v0.6.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-07 09:48+0100\n"
+"PO-Revision-Date: 2014-03-07 09:51+0100\n"
+"Last-Translator: bringthepixel <we@bringthepixel.com>\n"
+"Language-Team: bringthepixel <we@bringthepixel.com>\n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.6.3\n"
+
+#: g1-gmaps/g1-gmaps-admin.php:146
+msgid "Shortcode"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:215
+msgid "You need to fill all required fields"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:216
+msgid "Are you sure you want to remove this marker?"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:217
+msgid "Some error occurred while saving. Marker couldn't be removed!"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:218
+msgid "Some error occurred while saving. Marker couldn't be added!"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:219
+msgid "Some error occurred while saving. Marker couldn't be updated!"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:220
+msgid "At least one of specified coordinates are invalid!"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:221
+msgid "Geocode was not successful for the following reason: "
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:222
+msgid ""
+"Some markers have been changed. Do you want to proceed and lose these "
+"changes?"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:242
+msgid "Size"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:252
+msgid "Center Point"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:262
+msgid "Preview"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:272
+msgid "User Interface"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:282
+msgid "Custom Colors"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:292
+msgid "Markers"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:306
+msgid "Map marker"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:332
+msgid "Width"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:335
+msgid "Force full width"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:339
+msgid "Height"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:365 g1-gmaps/g1-gmaps-admin.php:443
+#: g1-gmaps/g1-gmaps-admin.php:520
+msgid "Location"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:368 g1-gmaps/g1-gmaps-admin.php:446
+msgid "Type an address&hellip;"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:369 g1-gmaps/g1-gmaps-admin.php:447
+#: g1-gmaps/g1-gmaps-admin.php:524
+msgid "Find"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:374 g1-gmaps/g1-gmaps-admin.php:530
+#: g1-gmaps/g1-gmaps-admin.php:814
+msgid "Latitude"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:382 g1-gmaps/g1-gmaps-admin.php:468
+#: g1-gmaps/g1-gmaps-admin.php:538 g1-gmaps/g1-gmaps-admin.php:816
+msgid "Longitude"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:390
+msgid "Zoom"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:437
+msgid "Add new marker"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:452 g1-gmaps/g1-gmaps-admin.php:512
+msgid "Label"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:460
+msgid "Latitide"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:478
+msgid "Add"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:479 g1-gmaps/g1-gmaps-admin.php:596
+msgid "Locate on map"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:488
+msgid "Save all markers"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:523
+msgid "Type an address"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:546
+msgid "Visibility"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:550
+msgid "Show"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:551
+msgid "Hide"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:557
+msgid "Icon"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:561 g1-gmaps/g1-gmaps-admin.php:562
+msgid "Select an image"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:566
+msgid "Clear"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:572
+msgid "Description"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:580
+msgid "Description visibility"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:584
+msgid "Leave closed on startup"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:585
+msgid "Open on startup"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:586
+msgid "(reload page to see effect)"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:595
+msgid "Save"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:597
+msgid "Remove"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:611
+msgid "Use current map center point"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:612
+msgid "Move map to center point"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:637
+msgid "Type"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:639
+msgid "Roadmap"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:640
+msgid "Satellite"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:641
+msgid "Hybrid"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:642
+msgid "Terrain"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:647
+msgid "Type control"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:649
+msgid "horizontal"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:650
+msgid "dropdown"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:651 g1-gmaps/g1-gmaps-admin.php:659
+#: g1-gmaps/g1-gmaps-admin.php:668 g1-gmaps/g1-gmaps-admin.php:676
+#: g1-gmaps/g1-gmaps-admin.php:684 g1-gmaps/g1-gmaps-admin.php:693
+msgid "hide"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:656
+msgid "Pan control"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:658 g1-gmaps/g1-gmaps-admin.php:675
+#: g1-gmaps/g1-gmaps-admin.php:683
+msgid "show"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:664
+msgid "Zoom control"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:666
+msgid "show small"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:667
+msgid "show large"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:673
+msgid "Street view control"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:681
+msgid "Scale control"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:689
+msgid "Overview control"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:691
+msgid "show opened"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:692
+msgid "show collapsed"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:697
+msgid "Draggable"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:699 g1-gmaps/g1-gmaps-admin.php:706
+#: g1-gmaps/g1-gmaps-admin.php:713 g1-gmaps/g1-gmaps-admin.php:720
+msgid "yes"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:700 g1-gmaps/g1-gmaps-admin.php:707
+#: g1-gmaps/g1-gmaps-admin.php:714 g1-gmaps/g1-gmaps-admin.php:721
+msgid "no"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:704
+msgid "Scroll to zoom"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:711
+msgid "Double click to zoom"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:718
+msgid "Parallax effect"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:723
+msgid "not available in preview"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:749
+msgid "Color"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:754
+msgid "Saturation"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:758
+msgid "Lightness"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:762
+msgid "Gamma"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:766
+msgid "Invert lightness"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:788
+msgid "none"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:799
+msgid "Assigned to map"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps-admin.php:811
+msgid "Coordinates"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:145 g1-gmaps/g1-gmaps.php:148
+msgid "GMap"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:147 g1-gmaps/g1-gmaps.php:149
+msgid "GMaps"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:150
+msgid "Add GMap"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:151
+msgid "Add New GMap"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:152
+msgid "Edit"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:153
+msgid "Edit GMap"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:154
+msgid "New GMap"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:155 g1-gmaps/g1-gmaps.php:156
+msgid "View GMap"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:157
+msgid "Search GMaps"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:158
+msgid "No GMaps found"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:159
+msgid "No GMaps found in trash"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:160
+msgid "Parent GMap"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:186
+msgid "GMap marker"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:227
+msgid "Some errors occurred while fetching map list!"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:370
+msgid "You need to set map width (or force full width) and height."
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:443
+msgid "G1 Gmaps"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:444
+msgid "G1 GMaps Widget"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:481
+msgid "New title"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:485
+msgid "Title:"
+msgstr ""
+
+#: g1-gmaps/g1-gmaps.php:498
+msgid "Map:"
+msgstr ""

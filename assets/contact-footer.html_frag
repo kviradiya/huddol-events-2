@@ -1,0 +1,40 @@
+<ul class="g1-grid">
+    <li class="g1-column g1-one-third g1-valign-top">
+        <ul class="g1-grid">
+            <li class="g1-column g1-one-fourth g1-valign-top">
+                <i class="icon-map-marker g1-icon g1-icon--solid g1-icon--medium g1-icon--inherit " id="icon-1"></i>
+            </li><!-- -->
+            
+            <li class="g1-column g1-three-fourth g1-valign-top">
+            <p><strong>Address:</strong><br>
+            United States of America.<br>
+            New York. 123 Fifth Avenue.</p>
+            </li><!-- -->
+        </ul>
+        
+    </li><!-- -->
+    <li class="g1-column g1-one-third g1-valign-top">
+        <ul class="g1-grid">
+            <li class="g1-column g1-one-fourth g1-valign-top">
+                <i class="icon-phone g1-icon g1-icon--solid g1-icon--medium g1-icon--inherit " id="icon-2"></i>
+            </li><!-- -->
+            <li class="g1-column g1-three-fourth g1-valign-top">
+            <p><strong>Phone:</strong><br>
+            GFX Team: (123) 456-7890<br>
+            Dev Team: (987) 654-3210</p>
+            </li><!-- -->
+        </ul>
+    </li><!-- -->
+    <li class="g1-column g1-one-third g1-valign-top">
+        <ul class="g1-grid">
+            <li class="g1-column g1-one-fourth g1-valign-top">
+                <i class="icon-envelope-alt g1-icon g1-icon--solid g1-icon--medium g1-icon--inherit " id="icon-3"></i>
+            </li><!-- -->
+            <li class="g1-column g1-three-fourth g1-valign-top">
+                <p><strong>Email:</strong><br>
+                <a href="mailto:gfx@somecompany.com">gfx@somecompany.com</a><br>
+                <a href="mailto:devteam@somecompany.com">devteam@somecompany.com</a></p>
+            </li><!-- -->
+        </ul>
+        </li><!-- -->
+</ul>

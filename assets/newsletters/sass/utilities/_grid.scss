@@ -1,0 +1,35 @@
+/* GRID */
+
+.grid {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+.unit {
+	width: 100%;
+	min-height: 1px;
+	float: left;
+}
+
+@for $n from 1 through 20 {
+	@for $m from 1 through max($n - 1, 1) {
+		.u-#{$m}-of-#{$n} {
+			width: $m * (100% / $n);
+		}
+	}
+}
+
+@for $n from 1 through 200 {
+	@if $n < 30 or round($n / 5) == ($n / 5) {
+		$padding: round($n / 2) + 0px;
+		.spacing-#{$n} {
+			margin: 0px -#{$padding};
+			& > .unit {
+				padding: 0px #{$padding};
+			}
+		}
+	}
+}

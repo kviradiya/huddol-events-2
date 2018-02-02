@@ -1,0 +1,14 @@
+/* SPRITES */
+
+$sprites: sprite-map("sprites/*.png", $layout: smart);
+
+.sprite {
+  display: inline-block;
+  background: $sprites;
+  @each $i in sprite_names($sprites){
+    &.#{$i}{
+      @include sprite-dimensions($sprites, $i);
+      background-position: sprite-position($sprites, $i);
+    }
+  }
+}

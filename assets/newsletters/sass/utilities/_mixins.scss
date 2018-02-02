@@ -1,0 +1,97 @@
+/* HOVER STATES FOR LINKS */
+
+@mixin link-color($color, $hover-lighter: true, $percentage: 20%) {
+	color: $color;
+	&:hover {
+		@if ($hover-lighter) {
+			color: lighten($color, $percentage);
+		}
+		@else {
+			color: darken($color, $percentage);
+		}
+	}
+}
+
+@mixin link-background($color, $hover-lighter: true, $percentage: 10%) {
+	background-color: $color;
+	&:hover {
+		@if ($hover-lighter) {
+			background-color: lighten($color, $percentage);
+		}
+		@else {
+			background-color: darken($color, $percentage);
+		}
+	}
+}
+
+@mixin link-opacity($hover-opaque: false, $opacity: 0.75) {
+	@if ($hover-opaque) {
+		opacity: $opacity;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	@else {
+		opacity: 1;
+		&:hover {
+			opacity: $opacity;
+		}
+	}
+}
+
+
+/* AUTO ELEMENTS (SHAPES, IMAGES, ETC.) */
+
+@mixin retina-image($image, $scale: false) {
+	background-image: image-url($image);
+	@include background-size(100% 100%);
+	@if ($scale) {
+	  height: 0px;
+    padding-bottom: (image-height($image) / image-width($image) * 100) + 0%;
+	}
+	@else {
+    width: round(image-width($image) / 2);
+    height: round(image-height($image) / 2);
+	}
+}
+
+@mixin circle($size, $color: null) {
+	width: $size;
+	height: $size;
+	@include border-radius(round($size / 2));
+	@if ($color) {
+		background-color: $color;
+	}
+}
+
+@mixin triangle($direction: "down", $size: 20px, $color: black) {
+	width: 0px; 
+	height: 0px;
+	border-left: $size solid #{setTriangleColor($direction, "left", $color)};
+	border-right: $size solid #{setTriangleColor($direction, "right", $color)};
+	border-bottom: $size solid #{setTriangleColor($direction, "bottom", $color)};
+	border-top: $size solid #{setTriangleColor($direction, "top", $color)};
+}
+
+@function setTriangleColor($direction, $side, $color) {
+	@if $direction == "left" and $side == "right" 
+	or  $direction == "right" and $side == "left" 
+	or $direction == "down" and $side == "top" 
+	or $direction == "up" and $side == "bottom" {
+		@return $color
+	} @else {
+		@return "transparent";
+	}
+}
+
+
+/* MISC */
+
+@mixin position-center {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+}
