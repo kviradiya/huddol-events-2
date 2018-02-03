@@ -18,7 +18,7 @@ h1,h2 {
 .single-tribe_events a.tribe-events-ical:hover,
 .single-tribe_events a.tribe-events-gcal:hover
 {
-    color: #ef3e29;
+    color: #29abe2;
     border-style: solid;
     border-color: #CCC;
     border-width: 2px;
@@ -59,7 +59,7 @@ h1,h2 {
 }
 
 .g1-hgroup .entry-title {
-    color: #fb4400;
+    color: #5f8eca;
     font-size: 34px;
 }
 
@@ -68,7 +68,7 @@ h1,h2 {
 }
 
 .g1-precontent, .g1-precontent .g1-regular, .g1-precontent h1 + h3, .g1-precontent h1 + h4, .g1-precontent h1 + h5, .g1-precontent h1 + h6, .g1-precontent h2 + h4, .g1-precontent h2 + h5, .g1-precontent h2 + h6, .g1-precontent h3 + h5, .g1-precontent h3 + h6, .g1-precontent h4 + h6, .g1-precontent .g1-h1 + h3, .g1-precontent .g1-h1 + h4, .g1-precontent .g1-h1 + h5, .g1-precontent .g1-h1 + h6, .g1-precontent .g1-h2 + h4, .g1-precontent .g1-h2 + h5, .g1-precontent .g1-h2 + h6, .g1-precontent .g1-h3 + h5, .g1-precontent .g1-h3 + h6, .g1-precontent .g1-h4 + h6, .g1-precontent .g1-meta a, .g1-precontent .g1-side-nav a, .g1-precontent .g1-duplicator--simple .g1-duplicate--active i, .g1-precontent .g1-isotope-filter > a, .g1-precontent .g1-links a, .g1-precontent .g1-searchbox__switch, .g1-precontent .g1-cartbox__switch {
-  color: #fb4400;
+  color: #5f8eca;
 }
 
 .g1-content input[type="button"], .g1-content input[type="submit"], .g1-content button, .g1-content .g1-button--solid, .g1-content a.button {
@@ -129,7 +129,7 @@ a.button-big {
         height: 1px;
         position: absolute;
         left: 0px;
-        background: #fb4400;
+        background: #5f8eca;
     }
 }
 
@@ -491,8 +491,8 @@ ul.tcn-event-numbers {
                 border-top: 0px;
                 border-bottom-left-radius: $radius;
                 border-bottom-right-radius: $radius;
-                @include link-color($color-red);
-                line-height: $preheader-height - 3px;
+                color: #29abe2;
+		line-height: $preheader-height - 3px;
                 position: relative;
                 img.email {
                     position: absolute;
@@ -604,7 +604,7 @@ ul.tcn-event-numbers {
   display: none; }
 
 #videoTutClosed {
-  background: #ef3e29;
+  background: #29abe2;
   border-radius: 6px;
   cursor: pointer;
   padding: 14px 4px 4px 0; }
@@ -632,7 +632,7 @@ ul.tcn-event-numbers {
   font-family: 'Open Sans';
   font-size: 20px;
   font-weight: bold;
-  color: #fb4400;
+  color: #5f8eca;
   margin: 0 0 6px 6px; }
 
 .tutTabWrap {

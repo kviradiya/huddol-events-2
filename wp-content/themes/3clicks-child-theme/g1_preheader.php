@@ -69,46 +69,6 @@ if ( !defined('ABSPATH') )
         <div class="g1-layout-inner">
             <!-- BEGIN #g1-preheader-bar -->
             <div id="g1-preheader-bar" class="g1-meta">
-                
-                <div class="preheader-left">
-                    <a href="#" class="subscribe-button" onClick="toggle_slider('subscribe'); return false;">
-                        <img src="<?php echo $image_path; ?>email.png" class="email" alt="Email" />
-                        <span><?php _e("Our programming to your <b>inbox</b>", "tcn"); ?></span>
-                        <img src="<?php echo $image_path; ?>red_arrow_down.png" class="arrow down" alt="Down Arrow" />
-                        <img src="<?php echo $image_path; ?>red_arrow_up.png" class="arrow up" alt="Up Arrow" />
-                    </a><div class="preheader-left-links">
-                        <?php if(is_current_user_network_partner()): ?>
-                            <a href="<?php echo site_url(); ?>/wp-admin/">
-                                <?php _e("Partner Access", "tcn"); ?>
-                            </a>
-                        <?php elseif(is_super_admin()): ?>
-                            <a href="<?php echo site_url(); ?>/wp-admin/">
-                                <?php _e("Admin Dashboard", "tcn"); ?>
-                            </a>
-                        <?php else: ?>
-                            <?php if(is_user_logged_in()): ?>
-                                <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
-                                    <a href="<?php echo get_the_permalink(ENGLISH_DASHBOARD_POST_ID); ?>">
-                                <?php else: ?> 
-                                    <a href="http://lereseauaidant.ca/mon-compte/">
-                                <?php endif ?>
-                                <?php _e("Go to My Account", "tcn"); ?>
-                                </a>
-                            <?php endif ?>
-                        <?php endif ?>
-                        <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
-                        <a href="<?php echo site_url(); ?>/help/">
-                    <?php else : ?>
-                        <a href="/aide/">
-                    <?php endif ?>
-                        
-                            <strong><?php _e("Help!", "tcn"); ?></strong>
-                        </a>
-                        
-                        <?php get_language_chooser(); ?>
-                    </div>
-                </div>
-                
                 <?php
                 // Render feeds
                 if ( shortcode_exists( 'g1_social_icons') ) {
@@ -426,9 +386,8 @@ if ( !defined('ABSPATH') )
                                         <li><label><input type="checkbox" name="terms_of_use" /><span><?php _e("I have read the", "tcn"); ?> <a href="http://lereseauaidant.ca/conditions-utilisation/"><?php _e("Terms of Use", "tcn"); ?></a> <?php _e("and", "tcn"); ?> la <a href="<?php echo site_url(); ?>/politique-de-confidentialite/"><?php _e("Privacy Policy", "tcn"); ?></a></span></label></li>
                                     <?php endif ?>
                                     </ul>
-                                    
-<div id="example1" class="google_captcha"></div>
-<input type="hidden" id="signup_form_secondary_is_human" name="signup_form_is_human" value="" />
+                                   <div class="g-recaptcha" data-sitekey="6Ld6F0QUAAAAAGc2TeUbh-ujQyOXu7GBNWPkj9Qg"></div> 
+				   <input type="hidden" id="signup_form_secondary_is_human" name="signup_form_is_human" value="" />
                                     <br />
                                     <input type="hidden" name="lang" value="<?php echo ICL_LANGUAGE_CODE; ?>" />
                                     <?php if(ICL_LANGUAGE_CODE =='en'):?>

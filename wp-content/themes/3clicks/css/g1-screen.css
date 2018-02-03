@@ -2979,7 +2979,7 @@ article.format-video .entry-featured-media iframe { background: #000000; }
 
 @media only screen and (min-width: 1025px) { #g1-header.g1-fixed { margin-left: 0; margin-right: 0; position: fixed; top: 0; left: 0; right: 0; }
   #g1-header.g1-fixed > .g1-background { opacity: 0.95; -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15); box-shadow: 0 0 3px rgba(0, 0, 0, 0.15); }
-  #g1-logo { display: block !important; }
+  #g1-logo { display: block !important; width: 150px; }
   #g1-mobile-logo { display: none !important; }
   #g1-primary-nav-switch { display: none; }
   /* 0-level */

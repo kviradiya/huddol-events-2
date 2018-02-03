@@ -349,7 +349,7 @@ add_filter( 'body_class', array(G1_Theme(), 'secondary_after_body_class') );
 		    ?>
 		    
 		    <?php
-		        include(locate_template('template-parts/tcn_sidebar-related-posts.php'));
+		        // include(locate_template('template-parts/tcn_sidebar-related-posts.php'));
 		    ?>
 		</div> <!-- #g1-inner -->
 	</div> <!-- END #secondary -->

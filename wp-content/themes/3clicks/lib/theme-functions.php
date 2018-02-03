@@ -894,15 +894,8 @@ class G1_Theme {
         $description = get_bloginfo( 'description' );
         
 
-        if(ICL_LANGUAGE_CODE == 'en')
-        {
-            $desktop_src = '//thecaregivernetwork.ca/wp-content/uploads/2017/04/tcn-huddol.png';
-        }
-        else
-        {
-            $desktop_src = '//thecaregivernetwork.ca/wp-content/uploads/2017/04/tcn-huddol-fr.png';
-        }
-        
+        $desktop_src = 'http://events.huddol.com/wp-content/uploads/2018/02/logo.png';
+
         // Compose logo element
         $out_desktop = '';
         $out_mobile = '';

@@ -184,12 +184,9 @@
                     
                      <?php endif ?>
                 </ul>
-                
-                
-                     <!--div class="g-recaptcha" data-sitekey="6LfAOg8TAAAAAFHGVHvpPih5LYH38rlHU65mOMEx"></div-->
-					<div id="example2" class="google_captcha"></div>
-					<input type="hidden" id="signup_form_secondary_is_human" name="signup_form_is_human" value="" />
-                    
+
+		<div class="g-recaptcha" data-sitekey="6Ld6F0QUAAAAAGc2TeUbh-ujQyOXu7GBNWPkj9Qg"></div> 
+		<input type="hidden" id="signup_form_secondary_is_human" name="signup_form_is_human" value="" />
                     
                 <input type="submit" value="<?php _e("Sign up", "tcn"); ?>" />
             

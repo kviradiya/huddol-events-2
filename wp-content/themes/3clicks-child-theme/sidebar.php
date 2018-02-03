@@ -53,7 +53,7 @@ if ( !defined('ABSPATH') )
                     $author = get_userdata(1);
 	                include(locate_template('template-parts/tcn_sidebar-author.php'));
     		        include(locate_template('template-parts/tcn_sidebar-related-events.php'));
-    		        include(locate_template('template-parts/tcn_sidebar-related-posts.php'));
+    		        // include(locate_template('template-parts/tcn_sidebar-related-posts.php'));
     		    }
 	        }
 	        else

@@ -67,9 +67,9 @@ if ( !defined('ABSPATH') )
                     <?php get_template_part('template-parts/tcn_home', 'network'); ?>
                 <?php endif ?>
                 
-                <hr style="margin-top:0px">
-                <h2><?php _e("Latest Stories", "tcn"); ?></h2>
-                <?php get_template_part('template-parts/tcn_home', 'latest-stories'); ?>
+                <!--hr style="margin-top:0px"-->
+                <?php /* <h2><?php _e("Latest Stories", "tcn"); ?></h2>
+                <?php get_template_part('template-parts/tcn_home', 'latest-stories'); */?>
         
                 <hr />
                 <h2><?php _e("Popular Channels", "tcn"); ?></h2>

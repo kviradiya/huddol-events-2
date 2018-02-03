@@ -36,7 +36,7 @@ if($event_is_over): ?>
     
     <?php if(is_user_logged_in()): ?>
         
-		<?php print_cta(); ?>
+		<?php /* print_cta(); */?>
         
         <div class="event-details-share">
             <header>

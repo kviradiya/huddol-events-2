@@ -153,7 +153,7 @@ class OMAPI_Api {
         $response      = 'GET' == $this->method ? wp_remote_get( esc_url_raw( $this->url ) . '?' . $body, $data ) : wp_remote_post( esc_url_raw( $this->url ), $data );
         $response_code = wp_remote_retrieve_response_code( $response );
         $response_body = json_decode( wp_remote_retrieve_body( $response ) );
-        // return new WP_Error( 'debug', '<pre>' . var_export( $response, true ) . '</pre>' );
+        return new WP_Error( 'debug', '<pre>' . var_export( $response, true ) . '</pre>' );
 
         // Bail out early if there are any errors.
         if ( is_wp_error( $response_body ) ) {
