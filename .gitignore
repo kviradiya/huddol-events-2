@@ -4,6 +4,7 @@ wp-config.php
 wp-config-dev.php
 wp-config-staging.php
 wp-content/cache/
+wp-content/uploads
 docs/work.xlsx
 docs/schedule.md
 docs/bugs.md

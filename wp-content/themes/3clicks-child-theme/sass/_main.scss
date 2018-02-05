@@ -732,15 +732,24 @@ ul.tcn-event-numbers {
                     color: $color-red;
                 }
             }
+
             & > .g1-type-column .g1-submenus > ul {
-                padding-bottom: 0px;
+                padding-bottom: 0;
+		margin-left: 0;
+		margin-right: 0;
+		width: 100%;
+
                 & > .g1-menu-item-with-icon > a .g1-nav-item__icon {
                     display: none;
                 }
                 & > .menu-item {
-                    padding-bottom: 22px;
                     & > a {
                         font-size: 14px;
+			margin: 2px 0 0 2px;
+			display: block;
+			position: relative;
+			padding: 10px;
+			background-color: #94949c;
                     }
                 }
             }
