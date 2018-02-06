@@ -2416,9 +2416,16 @@ div.tcn-partner-signup .tcn-partner-signup-grid .unit .inner img {
 }
 
 /* language changer dropdown */
+.language_changer_container {
+  position: absolute;
+  right: 320px;
+  top: 7px;
+}
+
 .language_changer {
-  background: none;
+  background: none !important;
   border: none;
+  color: #4a4a4a !important;
   display: flex;
   justify-content: center;
   padding: 0;

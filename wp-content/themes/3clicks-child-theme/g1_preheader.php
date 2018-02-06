@@ -649,7 +649,5 @@ if ( !defined('ABSPATH') )
                 updateLocation(locale);
               });
             });
-          });
         });
-
 	</script>
