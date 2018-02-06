@@ -285,8 +285,8 @@ if( is_front_page() ) { ?>
 ?>
 <div id="banner-container">
 <div id="banner-space">
-<span class="top-title"><?php _e("The brightest minds with the biggest hearts.", "tcn"); ?></span><br>
-<span class="sub-title"><?php _e("Helping <strong>1,000,000's of family caregivers</strong> find their way.", "tcn"); ?></span>
+<span class="top-title"><?php _e("Benefit from our online learning experiences.", "tcn"); ?></span><br>
+<span class="sub-title"><?php _e("We bring together the brightest minds with the biggest hearts to help you on your way.", "tcn"); ?></span>
 </div>
 </div>
  <div id="g1-content-home" class="g1-content">

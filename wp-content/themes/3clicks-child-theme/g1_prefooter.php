@@ -22,24 +22,18 @@ if ( !defined('ABSPATH') )
     <?php if ( is_front_page() ): ?>
         <div class="tcn-footer-about">
             <div class="tcn-footer-about-inner">
-                <h2><?php _e("About The Caregiver Network", "tcn"); ?></h2>
+                <h2><?php _e("About Huddol", "tcn"); ?></h2>
             
                 <h4>
-                    <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
-                    The Caregiver Network broadcasts programming for the benefit of caregiving Canadians. Started in 2004 as a pilot project, TCN is now Canada's largest tele-learning network for family caregivers offering content on a broad range of health and wellness issues. We strive to share ideas, information, and resources that affect meaningful change.
-                <?php else: ?>
-                    Ce qui a d'abord été un projet pilote en 2004 est aujourd'hui le plus grand réseau de téléapprentissage au Canada pour les proches aidants. Le Réseau aidant offre une variété d’ateliers portant sur la santé et le bien-être. Nous nous efforçons de partager des idées, des informations et des ressources qui pourront, peut-être, apporter un changement significatif dans la vie des proches aidants.
-                <?php endif ?>
+                    <?php _e("We created Huddol because we believe that caring better means caring together. The Huddol community helps you build your own dedicated support team. Connect with others like you and our network of helping professionals.", "tcn"); ?>
                 </h4>
         
-                <!-- TODO JHILL: FRENCH -->
-                
                 <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
                     <a href="<?php echo site_url(); ?>/about/" class="button-big">
                 <?php else: ?>
                     <a href="/apropos/" class="button-big">
                 <?php endif ?>
-                    <?php _e("Learn more about TCN", "tcn"); ?>
+                    <?php _e("Join the Huddol Community", "tcn"); ?>
                 </a>
             </div>
         </div>
