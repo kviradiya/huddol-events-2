@@ -69,23 +69,25 @@ if ( !defined('ABSPATH') )
         <div class="g1-layout-inner">
             <!-- BEGIN #g1-preheader-bar -->
             <div id="g1-preheader-bar" class="g1-meta">
-                <button id="language_changer" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="language_changer">
-                    <span><?php echo(strtoupper(ICL_LANGUAGE_CODE)) ?></span>
-                    <span class="chevron"></span>
-                </button>
-                <div class="dropdown">
-                <ul id="language_dropdown" role="menu" class="dropdown-menu close" aria-labelledby="language_changer">
-                    <li role="presentation" class="">
-                    <a role="menuitem" tabindex="-1" href="#">
-                        <span>English</span>
-                    </a>
-                    </li>
-                    <li role="presentation" class="">
-                    <a role="menuitem" tabindex="-1" href="#">
-                        <span>Français</span>
-                    </a>
-                    </li>
-                </ul>
+                <div class="language_changer_container">
+                    <button id="language_changer" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="language_changer">
+                        <span><?php echo(strtoupper(ICL_LANGUAGE_CODE)) ?></span>
+                        <span class="chevron"></span>
+                    </button>
+                    <div class="dropdown">
+                        <ul id="language_dropdown" role="menu" class="dropdown-menu close" aria-labelledby="language_changer">
+                        <li role="presentation" class="">
+                            <a role="menuitem" tabindex="-1" href="#">
+                                <span>English</span>
+                            </a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a role="menuitem" tabindex="-1" href="#">
+                                <span>Français</span>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
                 </div>
                 <?php
                 // Render feeds
@@ -617,48 +619,37 @@ if ( !defined('ABSPATH') )
 	    });
 
         // language dropdown handler code
-        jQuery(document).ready(function() {  
+        jQuery(document).ready(function() {
             function updateLocation(locale) {
-                var origin = window.location.origin;
-                var pathname = window.location.pathname;
-                var newPath;
-                
-                if (locale === "fr") {
-                newPath = origin + "/fr" + pathname;
-                } else {
-                pathname = pathname.replace(/^\/fr/, "");
-                newPath = origin + pathname;
-                }
-                
-                window.location = newPath;    
+              var origin = window.location.origin;
+          
+              switch (locale) {
+                case 'fr':
+                  window.location = origin + '/fr';
+                  break;
+                default:
+                  window.location = origin;
+              }
             }
-            
-            var languageChanger = jQuery("#language_changer");
-            var languageDropdown = jQuery("#language_dropdown");
-            var languageOptions = languageDropdown.find("a");
-
-            
-            if (/^\/fr/.test(window.location.pathname)) {
-                languageChanger.innerText = 'FR';
-            } else {
-                languageChanger.innerText = 'EN';
-            }
-            
-
-            languageChanger.on("click", function() {
-                languageDropdown.toggleClass("open");
-                languageDropdown.toggleClass("close");
+          
+            var languageChanger = jQuery('#language_changer');
+            var languageDropdown = jQuery('#language_dropdown');
+            var languageOptions = languageDropdown.find('a');
+          
+            languageChanger.on('click', function() {
+              languageDropdown.toggleClass('open');
+              languageDropdown.toggleClass('close');
             });
-
+          
             languageOptions.each(function(index) {
-                jQuery(this).on("click", function(e) {
-                
+              jQuery(this).on('click', function(e) {
                 e.preventDefault();
                 var opt = this.innerText;
                 var locale = opt.toLowerCase().slice(0, 2);
                 updateLocation(locale);
-                });
+              });
             });
+          });
         });
 
 	</script>
