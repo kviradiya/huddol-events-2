@@ -72,7 +72,7 @@ if ( !defined('ABSPATH') )
                 <?php get_template_part('template-parts/tcn_home', 'latest-stories'); */?>
         
                 <hr />
-                <h2><?php _e("Popular Channels", "tcn"); ?></h2>
+                <h2><?php _e("Popular Events", "tcn"); ?></h2>
                 <?php get_template_part('template-parts/tcn_home', 'popular-channels'); ?>
         
                 <?php get_template_part('template-parts/tcn_home', 'partner'); ?>

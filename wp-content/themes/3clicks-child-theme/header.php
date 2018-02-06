@@ -293,7 +293,7 @@ if( is_front_page() ) { ?>
  <div class="g1-layout-inner">
     <div class="tcn-filter">
                     <span class="tcn-filter-title">
-                         <?php _e("Filter programming by:", "tcn"); ?>
+                         <?php _e("Filter events by:", "tcn"); ?>
                     </span>
                     
                     <?php if(is_user_logged_in() && count($network_events)): ?>
