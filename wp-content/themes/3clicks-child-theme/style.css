@@ -11,6 +11,20 @@ Tags: flexible-width, custom-colors, custom-menu, featured-images, post-formats,
 /* MIXINS */
 /* CONSTANTS */
 /* RESETS / COMMON ELEMENTS */
+
+@font-face {
+  font-family: proxima-nova-soft-normal;
+  src: url('wp-content/themes/3clicks-child-theme/fonts/proxima-nova-soft-normal-webfont.eot'),
+    url('wp-content/themes/3clicks-child-theme/fonts/proxima-nova-soft-normal-webfont.ttf')
+      format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: proxima-nova-soft-normal, 'Open Sans', sans-serif;
+}
+
 h1 .small,
 h2 .small {
   font-size: 16px;
