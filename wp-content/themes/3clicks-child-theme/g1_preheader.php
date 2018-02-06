@@ -256,12 +256,6 @@ if ( !defined('ABSPATH') )
                         <div class="g1-links tcn-">
                             <ul>
                                 <li class="tcn-logged-in"><?php _e("You are logged in as", "tcn"); ?> <?php echo $current_user->user_email; ?></li>
-                                
-                                <li><a href="<?php echo get_account_dashboard_url(); ?>"><?php _e("Go to My Account", "tcn"); ?></a></li>
-                                <!-- TODO FRENCH -->
-                                <?php if(is_current_user_network_partner() || is_super_admin()): ?>
-                                    <li><a href="<?php echo site_url(); ?>/partner-forum/"><?php _e("Forum", "tcn"); ?></a></li>
-                                <?php endif ?>
                                 <li><a href="<?php echo wp_logout_url(site_url()); ?>"tw><?php _e("Logout", "tcn"); ?></a></li>
                             </ul>
                         </div>
