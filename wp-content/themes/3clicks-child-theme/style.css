@@ -2422,6 +2422,13 @@ div.tcn-partner-signup .tcn-partner-signup-grid .unit .inner img {
   top: 7px;
 }
 
+.language_changer_container .dropdown {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 300px;
+}
+
 .language_changer {
   background: none !important;
   border: none;
@@ -2454,13 +2461,13 @@ div.tcn-partner-signup .tcn-partner-signup-grid .unit .inner img {
 }
 
 .dropdown-menu a {
-  color: #fff;
+  color: #fff !important;
   display: block;
   text-decoration: none;
 }
 
 .dropdown-menu a:hover {
-  color: hsl(198, 75%, 75%);
+  color: hsl(198, 75%, 75%) !important;
 }
 
 .close {
