@@ -13,16 +13,16 @@ Tags: flexible-width, custom-colors, custom-menu, featured-images, post-formats,
 /* RESETS / COMMON ELEMENTS */
 
 @font-face {
-  font-family: proxima-nova-soft-normal;
-  src: url('wp-content/themes/3clicks-child-theme/fonts/proxima-nova-soft-normal-webfont.eot'),
-    url('wp-content/themes/3clicks-child-theme/fonts/proxima-nova-soft-normal-webfont.ttf')
+  font-family: 'proxima-nova-soft-normal';
+  src: url('/wp-content/themes/3clicks-child-theme/fonts/proxima-nova-soft-normal-webfont.eot'),
+    url('/wp-content/themes/3clicks-child-theme/fonts/proxima-nova-soft-normal-webfont.ttf')
       format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 * {
-  font-family: proxima-nova-soft-normal, 'Open Sans', sans-serif;
+  font-family: 'proxima-nova-soft-normal', 'Open Sans', sans-serif;
 }
 
 h1 .small,

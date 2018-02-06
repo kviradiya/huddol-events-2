@@ -1608,32 +1608,32 @@ function send_all_emails($email, $event, $lang)
 function send_validation_email($email_address, $lang)
 {   
     ob_start();
-    include(locate_template('emails/' . $lang . '/validation.php'));
+    include(locate_template('huddol_emails/' . $lang . '/' . $lang . '_confirm-membership.php'));
     $content = ob_get_contents();
     ob_end_clean();
+
     if($lang == 'en')
-        $success = send_email($email_address, 'The Caregiver Network: Signup Confirmation', $content);
+        $success = send_email($email_address, 'Huddol Events: Signup Confirmation', $content);
     else
-        $success = send_email($email_address, 'Le Réseau Aidant : Confirmation de votre inscription', $content);
+        $success = send_email($email_address, 'Huddol Événements : Confirmation de votre inscription', $content);
     return $success;
-    
 }
 
 function send_event_reminder_email($email_address, $event, $lang)
 {
     global $sitepress;
     $sitepress->switch_lang($lang, true);
-    
+
     ob_start();
-    include(locate_template('emails/' . $lang . '/event_reminder.php'));
+    include(locate_template('huddol_emails/' . $lang . '/' . $lang . '_event-reminder.php'));
     $content = ob_get_contents();
     ob_end_clean();
-    
+
     if($lang == 'en')
-        $success = send_email($email_address, 'The Caregiver Network: Event Reminder', $content);
+        $success = send_email($email_address, 'Huddol Events: Event Reminder', $content);
     else
-        $success = send_email($email_address, 'Le Réseau Aidant : Rappel événement', $content);
-        
+        $success = send_email($email_address, 'Huddol Événements : Rappel événement', $content);
+
     return $success;
 }
 
@@ -1833,15 +1833,15 @@ function send_new_password_email($email_address)
 function send_event_confirmation_email($email_address, $event, $lang)
 {
     ob_start();
-    include(locate_template('emails/' . $lang . '/event_confirmation.php'));
+    include(locate_template('huddol_emails/' . $lang . '/' . $lang . '_confirm-registration.php'));
     $content = ob_get_contents();
     ob_end_clean();
-    
+
     if($lang == 'en')
-        $success = send_email($email_address, 'The Caregiver Network: Event Confirmation', $content);
+        $success = send_email($email_address, 'Huddol Events: Event Confirmation', $content);
     else
-        $success = send_email($email_address, 'Le Réseau Aidant : Confirmation de votre inscription', $content);
-        
+        $success = send_email($email_address, 'Huddol Événements : Confirmation de votre inscription', $content);
+
     return $success;
 }
 
@@ -1859,7 +1859,6 @@ function send_event_reminder_emails($event, $lang)
         {
             send_event_reminder_email($user, $event, $lang);
         }
-        send_event_reminder_email('admin@lratcn.ca', $event, $lang);
     }
 }
 
