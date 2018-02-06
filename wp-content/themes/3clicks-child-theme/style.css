@@ -22,7 +22,7 @@ Tags: flexible-width, custom-colors, custom-menu, featured-images, post-formats,
 }
 
 * {
-  font-family: 'proxima-nova-soft-normal', 'Open Sans', sans-serif;
+  font-family: 'proxima-nova-soft-normal', 'Open Sans', sans-serif !important;
 }
 
 h1 .small,
@@ -2434,6 +2434,7 @@ div.tcn-partner-signup .tcn-partner-signup-grid .unit .inner img {
   position: absolute;
   right: 320px;
   top: 7px;
+  z-index: 100;
 }
 
 .language_changer_container .dropdown {
