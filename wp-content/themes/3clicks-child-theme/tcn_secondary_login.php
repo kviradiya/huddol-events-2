@@ -45,7 +45,7 @@
             <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
             <form id="login_form_secondary" action="/signup_login/" method="POST" style="width: 230px;">
             <?php else: ?>
-                <form id="login_form_secondary" action="/signup_login_fr/" method="POST" style="width: 230px;">
+                <form id="login_form_secondary" action="/fr/signup_login_fr/" method="POST" style="width: 230px;">
             <?php endif ?>
                 <input type="hidden" name="action" value="login" />
                 <h2><?php _e("Log in", "tcn"); ?> <span class="small">/ <?php _e("current subscriber", "tcn"); ?></span></h2>
@@ -87,7 +87,7 @@
             <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
              <form id="forgot_email_password_form_secondary" action="<?php echo site_url(); ?>/signup_login/" method="POST" style="display: none; width:240px;">
             <?php else: ?>
-                 <form id="forgot_email_password_form_secondary" action="<?php echo site_url(); ?>/signup_login_fr/" method="POST" style="display: none; width:240px;">
+                 <form id="forgot_email_password_form_secondary" action="<?php echo site_url(); ?>/fr/signup_login_fr/" method="POST" style="display: none; width:240px;">
             <?php endif ?>
             
            
@@ -115,7 +115,7 @@
                 <form id="signup_form_secondary" action="/signup_login/" method="POST" >
              
             <?php else: ?>
-                 <form id="signup_form_secondary" action="/signup_login_fr/" method="POST" >
+                 <form id="signup_form_secondary" action="/fr/signup_login_fr/" method="POST" >
                  
             <?php endif ?>
                 <h2><?php _e("Sign up", "tcn"); ?> <span class="small">/ <?php _e("new subscriber", "tcn"); ?></span></h2>

@@ -136,7 +136,7 @@ if ( !defined('ABSPATH') )
                     <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
                     <form id="newsletter_signup_form" action="<?php echo site_url(); ?>/signup_login/" method="POST" style="width: 500px;">
                     <?php else: ?>
-                    <form id="newsletter_signup_form" action="<?php echo site_url(); ?>/signup_login_fr/" method="POST" style="width: 500px;">
+                    <form id="newsletter_signup_form" action="<?php echo site_url(); ?>/fr/signup_login_fr/" method="POST" style="width: 500px;">
                     <?php endif ?>
                     
                         <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
@@ -266,7 +266,7 @@ if ( !defined('ABSPATH') )
                                 <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
                                 <form id="login_form" action="/signup_login/" method="POST" style="width: 250px">
                                 <?php else: ?>
-                                    <form id="login_form" action="/signup_login_fr/" method="POST" style="width: 250px">
+                                    <form id="login_form" action="/signup_login/" method="POST" style="width: 250px">
                                 <?php endif ?>
                                 
                                     <input type="hidden" name="action" value="login" />
@@ -306,7 +306,7 @@ if ( !defined('ABSPATH') )
                                 <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
                                 <form id="forgot_email_password_form" action="/signup_login/" method="POST" style="display: none; width:240px;">
                                 <?php else: ?>
-                                    <form id="forgot_email_password_form" action="/signup_login_fr/" method="POST" style="display: none; width:240px;">
+                                    <form id="forgot_email_password_form" action="/fr/signup_login_fr/" method="POST" style="display: none; width:240px;">
                                 <?php endif ?>
                                 
                                 
@@ -332,7 +332,7 @@ if ( !defined('ABSPATH') )
                                 <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
                                     <form id="signup_form" action="/signup_login/" method="POST" >
                                 <?php else: ?>
-                                    <form id="signup_form" action="/signup_login_fr/" method="POST" >
+                                    <form id="signup_form" action="/fr/signup_login_fr/" method="POST" >
                                 <?php endif ?>
                                     <h2><?php _e("Sign up", "tcn"); ?> <span class="small">/ <?php _e("new subscriber", "tcn"); ?></span></h2>
                                 

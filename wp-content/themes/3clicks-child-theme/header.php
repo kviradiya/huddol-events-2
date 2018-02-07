@@ -46,12 +46,11 @@ if ( !defined('ABSPATH') )
     <script type="text/javascript" src="/wp-content/themes/3clicks-child-theme/scripts/jquery.cookie.js"></script>
     
   <!-- Add recaptch -->
-  <?/*php if(ICL_LANGUAGE_CODE=='en'): ?>
-               <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=en" async defer></script>
-                <?php else: ?>
-               <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=fr" async defer></script>
-                <?php endif */?>
-	<script src='https://www.google.com/recaptcha/api.js' async defer></script>
+  <?php if(ICL_LANGUAGE_CODE=='en'): ?>
+	<script src="https://www.google.com/recaptcha/api.js?hl=en" async defer></script>
+	<?php else: ?>
+	<script src="https://www.google.com/recaptcha/api.js?hl=fr" async defer></script>
+	<?php endif ?>
             
 </head>
 <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">

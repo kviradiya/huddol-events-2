@@ -36,7 +36,7 @@ if ( !defined('ABSPATH') )
                     <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
                     <form id="newsletter_signup_form_2" action="<?php echo site_url(); ?>/signup_login/" method="POST" style="width: 500px;">
                     <?php else: ?>
-                    <form id="newsletter_signup_form_2" action="<?php echo site_url(); ?>/signup_login_fr/" method="POST" style="width: 500px;">
+                    <form id="newsletter_signup_form_2" action="<?php echo site_url(); ?>/fr/signup_login_fr/" method="POST" style="width: 500px;">
                     <?php endif ?>
                     
                         <input type="hidden" name="action" value="subscribe">
