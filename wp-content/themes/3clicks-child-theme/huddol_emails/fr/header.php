@@ -14,4 +14,4 @@
 	            Proxima, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 
 				'Segoe UI Emoji', 'Segoe UI Symbol'">
 		<div style="background-color: #fff; width: 700px; margin: auto; padding-bottom: 25px;">
-			<img src="http://events.huddol.com/wp-content/themes/3clicks-child-theme/images/huddol-logo-header.png" style="padding: 75px 0 0;">
+		<img src="http://events.huddol.com/wp-content/themes/3clicks-child-theme/images/huddol-logo-header.png" style="padding: 75px 0 0;  width: 600px; max-width: 600px;">
