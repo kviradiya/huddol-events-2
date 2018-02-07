@@ -24,7 +24,7 @@
 </p>
 
 
-<a href="<?php echo 'https://events.huddol.com/wp-login.php?action=rp&key='. $key. '&login=' . rawurlencode($user_login); ?>">
+<a href="<?php echo network_site_url('wp-login.php?action=rp&key='. $key. '&login=' . rawurlencode($user_login), 'login'); ?>">
   <img src="<?php echo $image_path ?>reset_password_english.png" style="margin-bottom: 20px" />
 </a>
 

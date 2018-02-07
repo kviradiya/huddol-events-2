@@ -26,7 +26,7 @@
     Nous espérons que vous appréciez le nouveau site du Réseau aidant.
   </p>
 
-  <a href="<?php echo network_site_url('https://events.huddol.com/wp-login.php?action=rp&key='. $key. '&login=' . rawurlencode($user_login), 'login'); ?>">
+  <a href="<?php echo network_site_url('fr/wp-login.php?action=rp&key='. $key. '&login=' . rawurlencode($user_login), 'login'); ?>">
     <img src="<?php echo $image_path ?>reset_password_french.png" />
   </a>
 

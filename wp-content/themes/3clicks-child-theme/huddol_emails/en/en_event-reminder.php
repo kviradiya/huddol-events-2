@@ -65,7 +65,7 @@
 				<p>
 					- <a href="http://huddol.adobeconnect.com/common/help/en/support/meeting_test.htm" style="color:#25aae1;">Test your computer</a><br>
 					- <a href="http://www.adobe.com/products/acrobatconnectpro/systemreqs/" style="color:#25aae1;">Adobe Connect System Requirements</a><br>
-					- <a href="#" style="color:#25aae1;">Download our troubleshooting guide</a>
+					- <a href="https://events.huddol.com/wp-content/uploads/2018/01/adobeconnect-troubleshooting-guide-en.pdf" style="color:#25aae1;">Download our troubleshooting guide</a>
 				</p>
 			</div>
 

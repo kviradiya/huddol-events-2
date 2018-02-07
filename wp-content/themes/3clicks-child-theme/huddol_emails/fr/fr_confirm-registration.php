@@ -61,7 +61,7 @@
 				<p>
 					- <a href="http://huddol.adobeconnect.com/common/help/en/support/meeting_test.htm" style="color:#25aae1;">Testez votre ordinateur</a><br>
 					- <a href="http://www.adobe.com/products/acrobatconnectpro/systemreqs/" style="color:#25aae1;">Exigence du système Adobe Connect</a><br>
-					- <a href="https://thecaregivernetwork.ca/wp-content/uploads/2018/01/adobeconnect-troubleshooting-guide-fr.pdf" style="color:#25aae1;">Téléchargez notre guide de dépannage</a>
+					- <a href="https://events.huddol.com/wp-content/uploads/2018/01/adobeconnect-troubleshooting-guide-fr.pdf" style="color:#25aae1;">Téléchargez notre guide de dépannage</a>
 				</p>
 			</div>
 		</div>
