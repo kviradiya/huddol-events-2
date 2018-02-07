@@ -78,6 +78,12 @@ function g1_add_some_font_face_fonts( $manager ) {
         'ttf'	=> $uri . 'merriweather-fontfacekit/Merriweather-Light-webfont.ttf',
         'svg'	=> $uri . 'merriweather-fontfacekit/Merriweather-Light-webfont.svg',
     )));
+
+    $manager->add_font( new G1_Font_Face_Font( 'fontface_proxima-nova-soft',  array(
+        'name'	=> 'proxima-nova-soft',
+        'eot'	=> $uri . 'proxima-nova-soft/proxima-nova-soft-normal-webfont.eot',
+        'ttf'	=> $uri . 'proxima-nova-soft/proxima-nova-soft-normal-webfont.ttf',
+    )));
 }
 add_action( 'g1_font_manager_register', 'g1_add_some_font_face_fonts' );
 

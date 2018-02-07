@@ -894,7 +894,8 @@ class G1_Theme {
         $description = get_bloginfo( 'description' );
         
 
-        $desktop_src = 'http://events.huddol.com/wp-content/uploads/2018/02/logo.png';
+        // Why is this even being set here?
+        $desktop_src = 'https://events.huddol.com/wp-content/uploads/2018/02/Huddolevents_logo.png';
 
         // Compose logo element
         $out_desktop = '';

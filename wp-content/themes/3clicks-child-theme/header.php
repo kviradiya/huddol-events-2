@@ -202,8 +202,8 @@ if ( !defined('ABSPATH') )
 						?>
 						<?php if ( 'none' !== $g1_value && !is_404() ): ?>
 						<div class="<?php echo  sanitize_html_classes($g1_class); ?>">
-							<a class="g1-searchbox__switch" href="#">
-								<span class="caption"><?php _e("Search"); ?></span><strong><?php _ex( '&nbsp;', 'searchbox switch label',  'g1_theme' ); ?></strong>
+							<a class="g1-searchbox__switch tcn-search-box" href="#">
+								<span class="caption"><?php _e("Search"); ?></span>
 								<div class="g1-searchbox__arrow"></div>
 							</a>
 							<?php get_search_form(); ?>

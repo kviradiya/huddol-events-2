@@ -29,9 +29,9 @@ if ( !defined('ABSPATH') )
                 </h4>
         
                 <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
-                    <a href="https://www.huddol.com" class="button-big">
+                    <a href="https://www.huddol.com" class="button-big" target="_blank">
                 <?php else: ?>
-                    <a href="https://www.huddol.com/fr" class="button-big">
+                    <a href="https://www.huddol.com/fr" class="button-big" target="_blank">
                 <?php endif ?>
                     <?php _e("Join the Huddol Community", "tcn"); ?>
                 </a>

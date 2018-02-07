@@ -1,6 +1,14 @@
 <?php
     $events_buttons = new Three_Clicks_Child_Theme_Email_Buttons;
     
+		$event_meta_phone_number = get_post_meta($event->ID, 'event_meta_phone_number', true);
+    $event_meta_conference_id = get_post_meta($event->ID, 'event_meta_conference_id', true);
+    $event_meta_webinar_link = get_post_meta($event->ID, 'event_meta_webinar_link', true);
+
+    $event_meta_phone_number = override_from_user($event->ID, 'event_meta_phone_number', $event_meta_phone_number);
+    $event_meta_conference_id = override_from_user($event->ID, 'event_meta_conference_id', $event_meta_conference_id);
+    $event_meta_webinar_link = override_from_user($event->ID, 'event_meta_webinar_link', $event_meta_webinar_link);
+
     $author = get_user_by('id', $event->post_author);
     $partner_url = get_user_meta($author->ID, 'tcn_partner_english_website', true); 
 
@@ -42,7 +50,9 @@
 					1. Click the “Join Presentation” button below<br>
 					2. Log in to the meeting room by selecting the option “Enter as a Guest”<br>
 					3. Enter your name then select “Enter Room”<br>
-					4. Dial the following toll-free number: 1-877-394-5901, access code: 7481585
+					<?php if( $event_meta_phone_number != '' && $event_meta_conference_id != ''): ?>
+					4. Dial the following toll-free number: <?php echo $event_meta_phone_number ?>, access code: <?php echo $event_meta_conference_id ?>
+					<?php endif ?>
 				</p>
 			</div>
 				

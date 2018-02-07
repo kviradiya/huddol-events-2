@@ -1,6 +1,14 @@
 <?php
     $events_buttons = new Three_Clicks_Child_Theme_Email_Buttons;
     
+		$event_meta_phone_number = get_post_meta($event->ID, 'event_meta_phone_number', true);
+    $event_meta_conference_id = get_post_meta($event->ID, 'event_meta_conference_id', true);
+    $event_meta_webinar_link = get_post_meta($event->ID, 'event_meta_webinar_link', true);
+
+    $event_meta_phone_number = override_from_user($event->ID, 'event_meta_phone_number', $event_meta_phone_number);
+    $event_meta_conference_id = override_from_user($event->ID, 'event_meta_conference_id', $event_meta_conference_id);
+		$event_meta_webinar_link = override_from_user($event->ID, 'event_meta_webinar_link', $event_meta_webinar_link);
+		
     $author = get_user_by('id', $event->post_author);
     $partner_url = get_user_meta($author->ID, 'tcn_partner_english_website', true); 
 
@@ -41,8 +49,10 @@
 				<p>
 					1. Cliquez sur le bouton “Rejoindre présentation” en dessous<br>
 					2. Connectez-vous à la salle de réunion en sélectionnant l’option “Entrer comme invité” <br>
-					3. Entrez votre nom puis sélectionnez “Entrer dans la salle” <br>
-					4. Composez le numéro gratuit suivant: 1-877-394-5901, code d’accès: 7481585
+					3. Entrez votre nom puis sélectionnez “Entrer dans la salle” <br>					
+					<?php if( $event_meta_phone_number != '' && $event_meta_conference_id != ''): ?>
+					4. Composez le numéro gratuit suivant: <?php echo $event_meta_phone_number ?>, code d’accès: <?php echo $event_meta_conference_id ?>
+					<?php endif ?>
 				</p>
 			</div>
 				
