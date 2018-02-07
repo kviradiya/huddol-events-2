@@ -1,4 +1,6 @@
 <?php
+    $events_buttons = new Three_Clicks_Child_Theme_Email_Buttons;
+    
     $author = get_user_by('id', $event->post_author);
     $partner_url = get_user_meta($author->ID, 'tcn_partner_english_website', true); 
 
@@ -19,9 +21,7 @@
 			
 			<h1 style="font-size:24px;">You Are Registered</h1>
 			
-			<a id="add_to_calendar" href="#" style="display: inline-block; margin:10px 0 35px; background-color:#4e85cc; padding:20px 30px; border-radius:30px; 
-							   color: #fff; font-size:18px; font-weight: bold; border: 0px; outline: 0; text-decoration: none;">
-			</a>
+      <p><?php echo $events_buttons->my_single_event_links($event->ID); ?></p>
 			
 			<img src="<?php echo $imgURL; ?>" style="width: 100%;">
 			
