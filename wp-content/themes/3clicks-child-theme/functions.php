@@ -1904,7 +1904,40 @@ function send_event_1hr_reminder_email($email_address, $event, $lang)
     return $success;
 }
 
+function send_recording_ready_email($email_address, $event, $lang)
+{
+    global $sitepress;
+    $sitepress->switch_lang($lang, true);
 
+    ob_start();
+    include(locate_template('huddol_emails/' . $lang . '/' . $lang . '_event-recording.php'));
+    $content = ob_get_contents();
+    ob_end_clean();
+
+    if($lang == 'en')
+        $success = send_email($email_address, 'Huddol Events: Event Recording Ready', $content);
+    else
+        $success = send_email($email_address, 'Huddol Événements', $content);
+
+    return $success;
+}
+
+function send_recording_ready_emails($event, $lang)
+{
+    $event_registration = new EventRegistration;
+    $users = $event_registration->get_registrants($event->ID);
+    foreach($users as $user)
+    {
+        if(is_object($user))
+        {
+            send_recording_ready_email($user->user_email, $event, $lang);
+        }
+        else
+        {
+            send_recording_ready_email($user, $event, $lang);
+        }
+    }
+}
 
 function send_event_survey_emails($event, $lang)
 {
@@ -2257,3 +2290,32 @@ function add_theme_caps_admin() {
     $role->add_cap( 'tcn_add_phone_number_only' );
 }
 add_action( 'admin_init', 'add_theme_caps_admin');
+
+function tcn_first_category($post) 
+{
+    
+    $cats = get_the_category($post);
+    return $cats[0]->name;
+}
+
+function tcn_capture_entry_categories($post) 
+{
+    $taxonomy_objects = get_object_taxonomies( $post, 'objects' );
+
+    // Remove non-public and hierarchical taxonomies
+    foreach ( $taxonomy_objects as $name => $object ) {
+        if ( !$object->query_var || !$object->hierarchical ) {
+            unset( $taxonomy_objects[$name] );
+        }
+    }
+
+    $count = count( $taxonomy_objects ) ;
+
+    $out = '';
+    foreach ( $taxonomy_objects as $object ) 
+    {
+        $out .= get_the_term_list( $post->ID, $object->name, '', ', ', '' );
+    }
+
+    return $out;
+}
