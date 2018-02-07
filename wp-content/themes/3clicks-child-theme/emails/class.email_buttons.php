@@ -14,8 +14,8 @@
 			$str = '';
 	
 			$str.= '<div class="tribe-events-cal-links">'."\r\n";
-			$str.= '<a href="' . googleCalendarLink($postId) . '" title="' . __( 'Add to Google Calendar', 'tribe-events-calendar' ) . '" style="color: #29abe2; border-style: solid; border-color: #CCC; border-width: 2px; border-radius: 4px; padding: 10px; font-size: 14px; font-weight: bold; text-decoration:none;font-family: \'Open Sans\', \'Helvetica Neue\', Helvetica, Arial, sans-serif;" mc:disable-tracking>+ ' . __( 'Google Calendar', 'tribe-events-calendar' ) . '</a>&nbsp;'."\r\n";
-			$str.= '<a href="' . tribe_get_single_ical_link() . '" title="' . __( 'Download .ics file', 'tribe-events-calendar' ) . '" style="color: #29abe2; border-style: solid; border-color: #CCC; border-width: 2px; border-radius: 4px; padding: 10px; font-size: 14px; font-weight: bold; text-decoration:none;font-family: \'Open Sans\', \'Helvetica Neue\', Helvetica, Arial, sans-serif;" >+ ' . __( 'iCal Export', 'tribe-events-calendar' ) . '</a>'."\r\n";
+			$str.= '<a href="' . googleCalendarLink($postId) . '" title="' . __( 'Add to Google Calendar', 'tribe-events-calendar' ) . '" style="color: #fff; background-color: #29abe2; border-radius: 30px; display: inline-block; padding: 10px; font-size: 14px; font-weight: bold; text-decoration:none;font-family: \'Open Sans\', \'Helvetica Neue\', Helvetica, Arial, sans-serif;" mc:disable-tracking>+ ' . __( 'Google Calendar', 'tribe-events-calendar' ) . '</a>&nbsp;'."\r\n";
+			$str.= '<a href="' . tribe_get_single_ical_link() . '" title="' . __( 'Download .ics file', 'tribe-events-calendar' ) . '" style="color: #fff; background-color: #29abe2; border-radius: 30px; display: inline-block; padding: 10px; font-size: 14px; font-weight: bold; text-decoration:none;font-family: \'Open Sans\', \'Helvetica Neue\', Helvetica, Arial, sans-serif;" >+ ' . __( 'iCal Export', 'tribe-events-calendar' ) . '</a>'."\r\n";
 			$str.= '</div><!-- .tribe-events-cal-links -->'."\r\n";
 			
 			echo $str;
