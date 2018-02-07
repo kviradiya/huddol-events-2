@@ -1,4 +1,14 @@
-			<?php
+<?php
+		$events_buttons = new Three_Clicks_Child_Theme_Email_Buttons;
+		
+		$event_meta_phone_number = get_post_meta($event->ID, 'event_meta_phone_number', true);
+    $event_meta_conference_id = get_post_meta($event->ID, 'event_meta_conference_id', true);
+    $event_meta_webinar_link = get_post_meta($event->ID, 'event_meta_webinar_link', true);
+
+    $event_meta_phone_number = override_from_user($event->ID, 'event_meta_phone_number', $event_meta_phone_number);
+    $event_meta_conference_id = override_from_user($event->ID, 'event_meta_conference_id', $event_meta_conference_id);
+    $event_meta_webinar_link = override_from_user($event->ID, 'event_meta_webinar_link', $event_meta_webinar_link);
+		
     $hosted_by_url = '';
 
     $imgURL = get_post_thumbnail($event->ID, 'full'); 
@@ -22,19 +32,16 @@
 			
 			<h1 style="font-size:24px;">Rappel d’évènement</h1>
 			
-			<a href="" style="display: inline-block; margin:10px 0 35px; background-color:#4e85cc; padding:20px 30px; border-radius:30px; 
-							   color: #fff; font-size:18px; font-weight: bold; border: 0px; outline: 0; text-decoration: none;">
-				Ajouter au calendrier
-			</a>
-			
+			<p><?php echo $events_buttons->my_single_event_links($event->ID); ?></p>
+
 			<img src="<?php echo $imgURL; ?>" style="width: 100%;">
 			
 			<div style="text-align: left;padding: 10px 40px;"> 
 				<h2><?php echo $event->post_title ?></h2>
 				
 				<p>
-					Hosted by: <a href="<?php echo $partner_url; ?>" style="color:#25aae1;"><?php echo $author->user_login?></a><br>
-					Topics: <?php echo tcn_capture_entry_categories($event); ?><br>
+					Présenté par: <a href="<?php echo $partner_url; ?>" style="color:#25aae1;"><?php echo $author->user_login?></a><br>
+					Sujets: <?php echo tcn_capture_entry_categories($event); ?><br>
 					Date: <?php echo get_event_date($event); ?>
 				</p>
 				
@@ -45,8 +52,10 @@
 				<p>
 					1. Cliquez sur le bouton “Rejoindre présentation” en dessous<br>
 					2. Connectez-vous à la salle de réunion en sélectionnant l’option “Entrer comme invité” <br>
-					3. Entrez votre nom puis sélectionnez “Entrer dans la salle” <br>
-					4. Composez le numéro gratuit suivant: 1-877-394-5901, code d’accès: 7481585
+					3. Entrez votre nom puis sélectionnez “Entrer dans la salle” <br>					
+					<?php if( $event_meta_phone_number != '' && $event_meta_conference_id != ''): ?>
+					4. Composez le numéro gratuit suivant: <?php echo $event_meta_phone_number ?>, code d’accès: <?php echo $event_meta_conference_id ?>
+					<?php endif ?>
 				</p>
 			</div>
 				

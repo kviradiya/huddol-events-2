@@ -1,6 +1,16 @@
 <?php include('header.php'); ?>
 			
 <?php
+		$events_buttons = new Three_Clicks_Child_Theme_Email_Buttons;
+
+		$event_meta_phone_number = get_post_meta($event->ID, 'event_meta_phone_number', true);
+    $event_meta_conference_id = get_post_meta($event->ID, 'event_meta_conference_id', true);
+    $event_meta_webinar_link = get_post_meta($event->ID, 'event_meta_webinar_link', true);
+
+    $event_meta_phone_number = override_from_user($event->ID, 'event_meta_phone_number', $event_meta_phone_number);
+    $event_meta_conference_id = override_from_user($event->ID, 'event_meta_conference_id', $event_meta_conference_id);
+    $event_meta_webinar_link = override_from_user($event->ID, 'event_meta_webinar_link', $event_meta_webinar_link);
+		
     $hosted_by_url = '';
 
     $imgURL = get_post_thumbnail($event->ID, 'full'); 
@@ -20,12 +30,9 @@
     
 ?>
 
-			<h1 style="font-size:24px;">Event Reminder</h1>
+			<h1 style="font-size:24px;">Event Reminder</h1>				
 			
-			<a href="#" style="display: inline-block; margin:10px 0 35px; background-color:#4e85cc; padding:20px 30px; border-radius:30px; 
-							   color: #fff; font-size:18px; font-weight: bold; border: 0px; outline: 0; text-decoration: none;">
-				Add to Calendar
-			</a>
+      <p><?php echo $events_buttons->my_single_event_links($event->ID); ?></p>
 			
 			<img src="<?php echo $imgURL; ?>" style="width: 100%;">
 			
@@ -46,7 +53,9 @@
 					1. Click the “Join Presentation” button below<br>
 					2. Log in to the meeting room by selecting the option “Enter as a Guest”<br>
 					3. Enter your name then select “Enter Room”<br>
-					4. Dial the following toll-free number: 1-877-394-5901, access code: 7481585
+					<?php if( $event_meta_phone_number != '' && $event_meta_conference_id != ''): ?>
+					4. Dial the following toll-free number: <?php echo $event_meta_phone_number ?>, access code: <?php echo $event_meta_conference_id ?>
+					<?php endif ?>
 				</p>
 			</div>
 				

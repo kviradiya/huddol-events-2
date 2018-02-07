@@ -1892,7 +1892,7 @@ function send_event_1hr_reminder_email($email_address, $event, $lang)
     $sitepress->switch_lang($lang, true);
     
     ob_start();
-    include(locate_template('huddol_emails/' . $lang . '/' . $lang . '_event-1hr-reminder.php'));
+    include(locate_template('huddol_emails/' . $lang . '/' . $lang . '_event-reminder.php'));
     $content = ob_get_contents();
     ob_end_clean();
     
