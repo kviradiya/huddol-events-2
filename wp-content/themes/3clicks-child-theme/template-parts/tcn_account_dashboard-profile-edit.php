@@ -22,7 +22,7 @@
 <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
 <form action="<?php echo site_url(); ?>/edit_profile/" method="POST" class="dashboard-profile">
 <?php else: ?>
-<form action="<?php echo site_url(); ?>/edit_profile_fr/" method="POST" class="dashboard-profile">
+<form action="<?php echo site_url(); ?>/fr/edit_profile_fr/" method="POST" class="dashboard-profile">
 <?php endif ?>
 
 

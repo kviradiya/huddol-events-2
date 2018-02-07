@@ -180,7 +180,7 @@
                  <?php if(ICL_LANGUAGE_CODE=='en'): ?>
                     <li><label><input type="checkbox" name="terms_of_use" /><span><?php _e("I have read the", "tcn"); ?> <a href="<?php echo site_url(); ?>/terms-use/"><?php _e("Terms of Use", "tcn"); ?></a> <?php _e("and", "tcn"); ?> <a href="<?php echo site_url(); ?>/privacy-policy/"><?php _e("Privacy Policy", "tcn"); ?></a>.</span></label></li>
                     <?php else: ?>
-                     <li><label><input type="checkbox" name="terms_of_use" /><span><?php _e("I have read the", "tcn"); ?> <a href="<?php echo site_url(); ?>/conditions-utilisation/"><?php _e("Terms of Use", "tcn"); ?></a> <?php _e("and", "tcn"); ?> la <a href="<?php echo site_url(); ?>/politique-de-confidentialite/"><?php _e("Privacy Policy", "tcn"); ?></a>.</span></label></li>
+                     <li><label><input type="checkbox" name="terms_of_use" /><span><?php _e("I have read the", "tcn"); ?> <a href="<?php echo site_url(); ?>/fr/conditions-utilisation/"><?php _e("Terms of Use", "tcn"); ?></a> <?php _e("and", "tcn"); ?> la <a href="<?php echo site_url(); ?>/fr/politique-de-confidentialite/"><?php _e("Privacy Policy", "tcn"); ?></a>.</span></label></li>
                     
                      <?php endif ?>
                 </ul>

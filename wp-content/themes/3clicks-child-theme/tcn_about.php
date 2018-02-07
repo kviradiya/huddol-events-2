@@ -34,7 +34,7 @@ if ( !defined('ABSPATH') )
                                 <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
                                     <a class="tcn-about-link" href="<?php echo site_url(); ?>"><?php _e("Check out our upcoming events >", "tcn"); ?></a>
                                 <?php else: ?>
-                                    <a class="tcn-about-link" href="<?php echo site_url(); ?>"><?php _e("Check out our upcoming events >", "tcn"); ?></a>
+                                    <a class="tcn-about-link" href="<?php echo site_url(); ?>/fr"><?php _e("Check out our upcoming events >", "tcn"); ?></a>
                                 <?php endif ?>
                             </p>
                         </div>
@@ -48,7 +48,7 @@ if ( !defined('ABSPATH') )
                                 <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
                                     <a class="tcn-about-link" href="<?php echo site_url(); ?>/partners/"><?php _e("Meet our partners >", "tcn"); ?></a>
                                 <?php else: ?>
-                                    <a class="tcn-about-link" href="<?php echo site_url(); ?>/nos-partenaires/"><?php _e("Meet our partners >", "tcn"); ?></a>
+                                    <a class="tcn-about-link" href="<?php echo site_url(); ?>/fr/nos-partenaires/"><?php _e("Meet our partners >", "tcn"); ?></a>
                                 <?php endif ?>
                             </p>
                         </div>
@@ -61,7 +61,7 @@ if ( !defined('ABSPATH') )
                                 <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
                                     <a class="tcn-about-link" href="<?php echo site_url(); ?>/login/?callout=true"><?php _e("Join our community >", "tcn"); ?></a>
                                 <?php else: ?>
-                                    <a class="tcn-about-link" href="<?php echo site_url(); ?>/login-fr/?callout=true"><?php _e("Join our community >", "tcn"); ?></a>
+                                    <a class="tcn-about-link" href="<?php echo site_url(); ?>/fr/login-fr/?callout=true"><?php _e("Join our community >", "tcn"); ?></a>
                                 <?php endif ?>
                             </p>
  
@@ -88,7 +88,7 @@ if ( !defined('ABSPATH') )
                         <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
                             <a href="<?php echo site_url(); ?>/contact-us/" class="button-big">
                         <?php else: ?>
-                            <a href="<?php echo site_url(); ?>/contact/" class="button-big">
+                            <a href="<?php echo site_url(); ?>/fr/contact/" class="button-big">
                         <?php endif ?>
                             <?php _e("Contact Us", "tcn"); ?>
                         </a>

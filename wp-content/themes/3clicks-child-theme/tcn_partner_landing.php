@@ -131,7 +131,7 @@ if ( !defined('ABSPATH') )
                     <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
                     <a href="<?php echo site_url(); ?>/becoming-a-partner/" class="button-big">
                 <?php else: ?>
-                    <a href="<?php echo site_url(); ?>/devenir-partenaire/" class="button-big">
+                    <a href="<?php echo site_url(); ?>/fr/devenir-partenaire/" class="button-big">
                 <?php endif ?>
                         <?php _e("Become A Partner", "tcn"); ?>
                     </a>

@@ -95,7 +95,7 @@
         <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
             <form action="/register_event/" method="POST">
         <?php else: ?>
-             <form action="/register_event_fr/" method="POST">
+             <form action="/fr/register_event_fr/" method="POST">
         <?php endif ?>
         
             <input type="submit" value="<?php _e("Unregister", "tcn"); ?>" class="gray" />

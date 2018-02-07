@@ -611,7 +611,7 @@ case 'rp' :
 		}
 		else
 		{
-		        login_header( __( 'Password Reset' ), '<p class="message reset-pass">' . __( 'Your password has been reset.' ) . ' <a href="' . site_url() . '/login-fr/' . '">' . __( 'Log in' ) . '</a></p>' );
+		        login_header( __( 'Password Reset' ), '<p class="message reset-pass">' . __( 'Your password has been reset.' ) . ' <a href="' . site_url() . '/fr/login-fr/' . '">' . __( 'Log in' ) . '</a></p>' );
 		}
 		login_footer();
 		exit;

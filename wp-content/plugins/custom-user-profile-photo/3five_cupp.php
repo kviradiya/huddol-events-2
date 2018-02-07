@@ -178,8 +178,8 @@ function get_attachment_image_by_url( $url ) {
     // $this_host = str_ireplace( 'www.', '', parse_url( home_url(), PHP_URL_HOST ) );
     // $file_host = str_ireplace( 'www.', '', parse_url( $url, PHP_URL_HOST ) );
  
-    $this_host = 'http://thecaregivernetwork.ca';
-    $file_host = 'http://thecaregivernetwork.ca';
+    $this_host = 'http://events.huddol.com';
+    $file_host = 'http://events.huddol.com';
     
     // Return nothing if there aren't any $url parts or if the current host and $url host do not match.
     if ( !isset( $parse_url[1] ) || empty( $parse_url[1] ) || ( $this_host != $file_host ) ) {

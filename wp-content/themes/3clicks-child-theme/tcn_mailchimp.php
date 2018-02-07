@@ -29,7 +29,7 @@ if ( !defined('ABSPATH') )
                     <?php if(ICL_LANGUAGE_CODE=='en'): ?>
                         <span style="font-size: 14px">Your email is safe with us. View our <a href="/privacy-policy">privacy policy.</a></span>
                 <?php else: ?>
-                    <span style="font-size: 14px">Votre courriel est en sécurité avec nous. Affichez notre <a href="/politique-de-confidentialite/"> Politique de confidentialité </a></span>
+                    <span style="font-size: 14px">Votre courriel est en sécurité avec nous. Affichez notre <a href="/fr/politique-de-confidentialite/"> Politique de confidentialité </a></span>
                 <?php endif ?>
                     </h2>
                     

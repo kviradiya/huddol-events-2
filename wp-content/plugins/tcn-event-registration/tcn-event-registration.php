@@ -723,9 +723,9 @@ class EventRegistration {
         <li>  Step 3
             <li>  Add advanced variables
 
-                notify_url=http://thecaregivernetwork.ca/ipn/
+                notify_url=https://events.huddol.com/ipn/
                     OR
-                notify_url=http://thecaregivernetwork.ca/ipn/
+                notify_url=https://events.huddol.com/ipn/
         </ul>
         <?php
     	

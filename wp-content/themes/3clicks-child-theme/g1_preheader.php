@@ -44,22 +44,6 @@
 	 
 $image_path = get_stylesheet_directory_uri() .'/images/';
 
-function get_language_chooser()
-{
-    if(ICL_LANGUAGE_CODE === 'en')
-    {
-    ?>
-        <a href="http://lereseauaidant.ca">Français</a>
-    <?php    
-    }
-    else
-    {
-    ?>
-        <a href="http://thecaregivernetwork.ca">English</a>    
-    <?php
-    }
-}
-
 // Prevent direct script access
 if ( !defined('ABSPATH') )
     die ( 'No direct script access allowed' );
@@ -266,7 +250,7 @@ if ( !defined('ABSPATH') )
                                 <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
                                 <form id="login_form" action="/signup_login/" method="POST" style="width: 250px">
                                 <?php else: ?>
-                                    <form id="login_form" action="/signup_login/" method="POST" style="width: 250px">
+                                    <form id="login_form" action="/fr/signup_login_fr/" method="POST" style="width: 250px">
                                 <?php endif ?>
                                 
                                     <input type="hidden" name="action" value="login" />
@@ -394,10 +378,10 @@ if ( !defined('ABSPATH') )
                                         
                                     <?php endif ?>
                                     <ul class="options">
-                                        <?php if(ICL_LANGUAGE_CODE=='en'): ?>
-                                        <li><label><input type="checkbox" name="terms_of_use" /><span><?php _e("I have read the", "tcn"); ?> <a href="<?php echo site_url(); ?>/terms-use/"><?php _e("Terms of Use", "tcn"); ?></a> <?php _e("and", "tcn"); ?> <a href="<?php echo site_url(); ?>/politique-de-confidentialite/"><?php _e("Privacy Policy", "tcn"); ?></a></span></label></li>
+                                    <?php if(ICL_LANGUAGE_CODE=='en'): ?>
+                                        <li><label><input type="checkbox" name="terms_of_use" /><span><?php _e("I have read the", "tcn"); ?> <a href="<?php echo site_url(); ?>/terms-use/"><?php _e("Terms of Use", "tcn"); ?></a> <?php _e("and", "tcn"); ?> <a href="<?php echo site_url(); ?>/privacy-policy/"><?php _e("Privacy Policy", "tcn"); ?></a></span></label></li>
                                     <?php else: ?>
-                                        <li><label><input type="checkbox" name="terms_of_use" /><span><?php _e("I have read the", "tcn"); ?> <a href="http://lereseauaidant.ca/conditions-utilisation/"><?php _e("Terms of Use", "tcn"); ?></a> <?php _e("and", "tcn"); ?> la <a href="<?php echo site_url(); ?>/politique-de-confidentialite/"><?php _e("Privacy Policy", "tcn"); ?></a></span></label></li>
+                                        <li><label><input type="checkbox" name="terms_of_use" /><span><?php _e("I have read the", "tcn"); ?> <a href="http://huddol.events.com/fr/conditions-utilisation/"><?php _e("Terms of Use", "tcn"); ?></a> <?php _e("and", "tcn"); ?> la <a href="<?php echo site_url(); ?>/fr/politique-de-confidentialite/"><?php _e("Privacy Policy", "tcn"); ?></a></span></label></li>
                                     <?php endif ?>
                                     </ul>
                                    <div class="g-recaptcha" data-sitekey="6Ld6F0QUAAAAAGc2TeUbh-ujQyOXu7GBNWPkj9Qg"></div> 

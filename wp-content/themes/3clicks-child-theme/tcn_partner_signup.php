@@ -58,7 +58,7 @@ if ( !defined('ABSPATH') )
                                     </p>
                                 </div>
                                 <figcaption class="g1-meta">
-                                    <span class="g1-quote__image"><img src="//thecaregivernetwork.ca/wp-content/uploads/2015/04/als_logo.jpg"></span><strong>Elizabeth Barbosa</strong><span><?php _e("Support Group Coordinator, ALS Society of Quebec", "tcn"); ?></span>
+                                    <span class="g1-quote__image"><img src="//events.huddol.com/wp-content/uploads/2015/04/als_logo.jpg"></span><strong>Elizabeth Barbosa</strong><span><?php _e("Support Group Coordinator, ALS Society of Quebec", "tcn"); ?></span>
                                 </figcaption>
                             </figure>
                         </li>
@@ -84,9 +84,9 @@ if ( !defined('ABSPATH') )
                                     <span class="g1-quote__image"></span><strong>Carrie</strong><span><?php _e("Client Services Coordinator, Multiple Sclerosis Society of Canada", "tcn"); ?>
                                         
                                         <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
-                                            <img src="//thecaregivernetwork.ca/wp-content/uploads/2015/04/ms_logo.jpg"></span>
+                                            <img src="//events.huddol.com/wp-content/uploads/2015/04/ms_logo.jpg"></span>
                                     <?php else: ?>
-                                            <img src="//thecaregivernetwork.ca/wp-content/uploads/2015/04/ms_logo_fr.jpg"></span>
+                                            <img src="//events.huddol.com/wp-content/uploads/2015/04/ms_logo_fr.jpg"></span>
                                     <?php endif ?>
                                 </figcaption>
                             </figure>
@@ -135,7 +135,7 @@ if ( !defined('ABSPATH') )
                         <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
                             <a target="_blank" href="<?php echo site_url(); ?>/wp-content/uploads/2015/02/TCN_BecomingAPartner.pdf" class="button-big">
                         <?php else: ?>
-                            <a target="_blank" href="http://thecaregivernetwork.ca/wp-content/uploads/2015/03/LRA_devenir-un-partenaire-du-re%CC%81seau.pdf" class="button-big">
+                            <a target="_blank" href="<?php echo site_url(); ?>/wp-content/uploads/2015/03/LRA_devenir-un-partenaire-du-re%CC%81seau.pdf" class="button-big">
                         <?php endif ?>
                         <?php _e("Download Our Partner Guide", "tcn"); ?>
                         </a>

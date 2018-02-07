@@ -89,27 +89,12 @@ function googleCalendarLink( $postId = null ) {
 			&dates=20151006T190000/20151006T201500
 			&details=Borderline+personality+disorder+%28BPD%29+is+a+serious+condition.+Symptoms+can+include+problems+regulating+emotions+and+thoughts,+impulsive+and/or+reckless+behaviour,+unstable+relationships,+and+sometimes+psychotic+episodes.+These+topics+will+be+discussed+as+well+as+defense+mechanisms+,+neurosis,+%E2%80%9Cblack+and+white%E2%80%9D+perceptions+and+self+harming+behaviour.+We+will+have+an+overview+of+treatment+methods.+The+impact+of+BPD+on+family+and+friends+will+also+be+addressed.+There+will+be+a+question+and+answer+period.+The+presentation+will+be+in+English+Speaker:+Sally+Butterworth,+psychologist+
 			&location
-			&sprop=website:http://thecaregivernetwork.ca
+			&sprop=website:https://events.huddol.com
 			&trp=false
 			&pli=1
 			&sf=true
 			&output=xml#eventpage_6";
 			
-			
-			/*
-			https://www.google.com/calendar/render
-			?action=TEMPLATE
-			&text=Borderline+Personality+Disorder
-			&dates=20151006T190000/20151006T201500
-			&details
-			&location
-			&sprop=website:http://thecaregivernetwork.ca
-			&trp=false
-			&pli=1
-			&sf=true
-			&output=xml#eventpage_6
-			*/
-			//$params = apply_filters( 'tribe_google_calendar_parameters', $params );
 			$url    = add_query_arg( $params, $base_url );
 			
 			return esc_url( $url );

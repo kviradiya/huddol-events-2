@@ -1341,7 +1341,7 @@ function get_comment_reply_link( $args = array(), $comment = null, $post = null 
 		}
 		else
 		{
-		    $link = '<a rel="nofollow" class="comment-reply-login" href="' . esc_url( site_url() . "/login-fr/" ) . '">' . $args['login_text'] . '</a>';
+		    $link = '<a rel="nofollow" class="comment-reply-login" href="' . esc_url( site_url() . "/fr/login-fr/" ) . '">' . $args['login_text'] . '</a>';
 		}
 	} else {
 		$link = "<a class='comment-reply-link' href='" . esc_url( add_query_arg( 'replytocom', $comment->comment_ID ) ) . "#" . $respond_id . "' onclick='return addComment.moveForm(\"$add_below-$comment->comment_ID\", \"$comment->comment_ID\", \"$respond_id\", \"$post->ID\")'>$reply_text</a>";
@@ -2111,7 +2111,7 @@ function comment_form( $args = array(), $post_id = null ) {
 	}
 	else
 	{
-	    $must = '<p class="must-log-in">' . sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.' ), site_url() . "/login-fr/?redirect=" . get_permalink($post_id) ) . '</p>';
+	    $must = '<p class="must-log-in">' . sprintf( __( 'You must be <a href="%s">logged in</a> to post a comment.' ), site_url() . "/fr/login-fr/?redirect=" . get_permalink($post_id) ) . '</p>';
 	}
 	$defaults = array(
 		'fields'               => $fields,

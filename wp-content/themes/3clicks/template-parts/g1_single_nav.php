@@ -44,7 +44,7 @@ if ( !defined('ABSPATH') )
 	}
 	else
 	{
-	    $href = "/blog/";
+	    $href = "/fr/blog/";
 	}
 	
 	$post_type_obj = get_post_type_object( $post_type );

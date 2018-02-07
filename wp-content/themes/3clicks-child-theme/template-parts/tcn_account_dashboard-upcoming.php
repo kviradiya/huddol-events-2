@@ -10,9 +10,9 @@
         <img src="<?php echo $image_path ?>exclamation_icon.png" />
         <span style="display: inline-block; min-width:240px;"><?php _e("Trouble connecting to an event?", "tcn"); ?> 
             <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
-                <a href="http://thecaregivernetwork.ca/help/">
+                <a href="<?php echo site_url(); ?>/help/">
             <?php else: ?>
-                <a href="http://lereseauaidant.ca/aide/">
+                <a href="<?php echo site_url(); ?>/fr/aide/">
             <?php endif ?>
             <br/>
                 <?php _e("Visit our help page", "tcn"); ?>

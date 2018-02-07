@@ -98,7 +98,7 @@ if($event_is_over): ?>
                 <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
                     <a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>"><?php _e("Log in", "tcn" ); ?></a> <?php _e("or", "tcn"); ?> <a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>"><?php _e("Sign up", "tcn"); ?></a> <?php _e("to add to favorites.", "tcn"); ?>
                 <?php else: ?>
-                    <a href="<?php echo site_url(); ?>/login-fr/?redirect=<?php echo $actual_link; ?>">Inscrivez-vous</a> pour l'ajouter à vos favoris.                    
+                    <a href="<?php echo site_url(); ?>/fr/login-fr/?redirect=<?php echo $actual_link; ?>">Inscrivez-vous</a> pour l'ajouter à vos favoris.                    
                 <?php endif ?>
             </div>
         </div>
@@ -115,7 +115,7 @@ if($event_is_over): ?>
                     <form action="/register_event/" method="POST">
 
                 <?php else: ?>
-                    <form action="/register_event_fr/" method="POST">
+                    <form action="/fr/register_event_fr/" method="POST">
 
                 <?php endif ?>
                     <button type="submit" class="unregister"><?php _e("Unregister", "tcn"); ?></button>
@@ -142,7 +142,7 @@ if($event_is_over): ?>
                                 <form action="/register_event/" method="POST">
 
                             <?php else: ?>
-                                <form action="/register_event_fr/" method="POST">
+                                <form action="/fr/register_event_fr/" method="POST">
 
                             <?php endif ?>
                                 <button type="submit" class="register logged-in">
@@ -204,7 +204,7 @@ if($event_is_over): ?>
 				
 				<?php _e('To register, you must be a', 'tnc')?> <a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>" class="orange bold"><?php _e('subscriber to TCN', 'tnc') ?></a>.
                 <?php else : ?>
-                <?php _e('To register, you must be a', 'tnc')?> <a href="<?php echo site_url(); ?>/login-fr/?redirect=<?php echo $actual_link; ?>" class="orange bold"><?php _e('subscriber to TCN', 'tnc') ?></a>.
+                <?php _e('To register, you must be a', 'tnc')?> <a href="<?php echo site_url(); ?>/fr/login-fr/?redirect=<?php echo $actual_link; ?>" class="orange bold"><?php _e('subscriber to TCN', 'tnc') ?></a>.
                  <?php endif ?>
 			</div>
 
@@ -224,9 +224,9 @@ if($event_is_over): ?>
 					<?php //_e("to register.", "tcn"); ?>
 					
                 <?php else: ?>
-					<a href="<?php echo site_url(); ?>/login-fr/?redirect=<?php echo $actual_link; ?>" class="orange_btn_fr g1-button g1-button--small g1-button--solid g1-button--standard ">S'inscrire</a> 
+					<a href="<?php echo site_url(); ?>/fr/login-fr/?redirect=<?php echo $actual_link; ?>" class="orange_btn_fr g1-button g1-button--small g1-button--solid g1-button--standard ">S'inscrire</a> 
 					<span class="spacer size14px"><?php _e("or", "tcn"); ?></span>
-                    <a href="<?php echo site_url(); ?>/login-fr/?redirect=<?php echo $actual_link; ?>" class="orange_btn_fr g1-button g1-button--small g1-button--solid g1-button--standard "><?php _e("Log in", "tcn" ); ?></a> 
+                    <a href="<?php echo site_url(); ?>/fr/login-fr/?redirect=<?php echo $actual_link; ?>" class="orange_btn_fr g1-button g1-button--small g1-button--solid g1-button--standard "><?php _e("Log in", "tcn" ); ?></a> 
                     
                 <?php endif ?>
 				
