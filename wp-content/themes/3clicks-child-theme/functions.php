@@ -1643,14 +1643,14 @@ function send_password_reset_email($email_address, $user_login, $key, $lang)
     $sitepress->switch_lang($lang, true);
     
     ob_start();
-    include(locate_template('emails/' . $lang . '/password_reset.php'));
+    include(locate_template('huddol_emails/' . $lang . '/' . $lang . '_password-reset.php'));
     $content = ob_get_contents();
     ob_end_clean();
     
     if($lang == 'en')
-        $success = send_email($email_address, 'The Caregiver Network: Password Reset', $content);
+        $success = send_email($email_address, 'Huddol Events: Password Reset', $content);
     else
-        $success = send_email($email_address, 'Le Réseau Aidant : Réinitialisation du mot de passe', $content);
+        $success = send_email($email_address, 'Huddol Événements : Réinitialisation du mot de passe', $content);
         
     return $success;
 }
@@ -1658,16 +1658,16 @@ function send_password_reset_email($email_address, $user_login, $key, $lang)
 function send_event_survey_email($email_address, $event, $lang)
 {
     ob_start();
-    include(locate_template('emails/' . $lang . '/survey.php'));
+    include(locate_template('huddol_emails/' . $lang . '/' . $lang . '_survey.php'));
     $content = ob_get_contents();
     ob_end_clean();
     
 	//return false;
 	
     if($lang == 'en')
-        $success = send_email($email_address, 'The Caregiver Network: Event Survey', $content);
+        $success = send_email($email_address, 'Huddol Events: Event Survey', $content);
     else
-        $success = send_email($email_address, 'Le Réseau Aidant : Sondage événement', $content);
+        $success = send_email($email_address, 'Huddol Événements : Sondage événement', $content);
         
     return $success;
 }
@@ -1688,7 +1688,7 @@ function send_welcome_email($email_address)
     $content = ob_get_contents();
     ob_end_clean();
     
-    $success = send_email($email_address, 'Bienvenue au Réseau aidant / Welcome to The Caregiver Network', $content);
+    $success = send_email($email_address, 'Bienvenue au Réseau aidant / Welcome to Huddol Events', $content);
     if($success)
     {
         echo 'Sent email to: ';
@@ -1807,11 +1807,16 @@ function send_new_password_email($email_address)
     
     
         ob_start();
-        include(locate_template('emails/en/new_password.php'));
+        include(locate_template('huddol_emails/' . $lang . '/' . $lang . '_new-password.php'));
         $content = ob_get_contents();
         ob_end_clean();
 
-        $success = send_email($email_address, 'Important-Réinitialiser votre mot de passe / Important-Resetting Your Password', $content);
+
+        if($lang == 'en')
+            $success = send_email($email_address, 'Huddol Events: Important-Resetting Your Password', $content);
+        else
+            $success = send_email($email_address, 'Huddol Événements : Important-Réinitialiser votre mot de passe', $content);
+
         if($success)
         {
             echo 'Sent email to: ';
@@ -1876,6 +1881,7 @@ function send_event_1hr_reminder_emails($event, $lang)
         {
             send_event_1hr_reminder_email($user, $event, $lang);
         }
+        
         send_event_1hr_reminder_email('admin@lratcn.ca', $event, $lang);
     }
 }
@@ -1886,14 +1892,14 @@ function send_event_1hr_reminder_email($email_address, $event, $lang)
     $sitepress->switch_lang($lang, true);
     
     ob_start();
-    include(locate_template('emails/' . $lang . '/event_1hr_reminder.php'));
+    include(locate_template('huddol_emails/' . $lang . '/' . $lang . '_event-1hr-reminder.php'));
     $content = ob_get_contents();
     ob_end_clean();
     
     if($lang == 'en')
-        $success = send_email($email_address, 'The Caregiver Network: Your TCN event is about to start ', $content);
+        $success = send_email($email_address, 'Huddol Events: Your TCN event is about to start ', $content);
     else
-        $success = send_email($email_address, 'Le Réseau Aidant : Votre événement LRA est sur le point de commencer', $content);
+        $success = send_email($email_address, 'Huddol Événements : Votre événement LRA est sur le point de commencer', $content);
         
     return $success;
 }
@@ -2071,8 +2077,8 @@ function check_events_and_send_emails()
     
     global $wpdb;
     $results = $wpdb->get_results("INSERT INTO wp_tcn_cron_runs () VALUES ()");
-    echo send_email('aronblack@bell.net', 'The Caregiver Network: Surveys and Reminders Summary', $message);
-    echo send_email('aronblack@bell.net', 'The Caregiver Network: Surveys and Reminders Actually Sent', $sent_message);
+    echo send_email('aronblack@bell.net', 'Huddol Events: Surveys and Reminders Summary', $message);
+    echo send_email('aronblack@bell.net', 'Huddol Events: Surveys and Reminders Actually Sent', $sent_message);
     echo '<br/>';
 }
 
