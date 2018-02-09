@@ -1582,23 +1582,37 @@ function send_email($email_address, $title, $content)
 function send_all_emails($email, $event, $lang)
 {
     send_validation_email($email, 'en');
+    sleep(1);
     send_validation_email($email, 'fr');
+    sleep(1);
     
     send_event_survey_email($email, $event, 'en');
+    sleep(1);
     send_event_survey_email($email, $event, 'fr');
+    sleep(1);
     
-    send_password_reset_email($email, $event, 'fake', 'en');
-    send_password_reset_email($email, $event, 'fake', 'fr');
+    send_password_reset_email($email, 'fake', 'fake', 'en');
+    sleep(1);
+    send_password_reset_email($email, 'fake','fake', 'fr');
+    sleep(1);
     
     send_event_reminder_email($email, $event, 'en');
+    sleep(1);
     send_event_reminder_email($email, $event, 'fr');
+    sleep(1);
     
     send_event_1hr_reminder_email($email, $event, 'en');
+    sleep(1);
     send_event_1hr_reminder_email($email, $event, 'fr');
+    sleep(1);
     
     send_event_confirmation_email($email, $event, 'en');
+    sleep(1);
     send_event_confirmation_email($email, $event, 'fr');
-    send_new_password_email($email);  
+    sleep(1);
+    send_new_password_email($email, 'en');  
+    sleep(1);
+    send_new_password_email($email, 'fr');  
     // send_mailchimp_email($email);
     // send_welcome_email($email);
     
@@ -1723,7 +1737,7 @@ function send_mailchimp_email($email_address)
     return $success;
 }
 
-function send_new_password_email($email_address)
+function send_new_password_email($email_address, $lang)
 {
     
     $user = get_user_by( 'email', trim( $email_address ) );
@@ -1897,9 +1911,9 @@ function send_event_1hr_reminder_email($email_address, $event, $lang)
     ob_end_clean();
     
     if($lang == 'en')
-        $success = send_email($email_address, 'Huddol Events: Your TCN event is about to start ', $content);
+        $success = send_email($email_address, 'Huddol Events: Your event is about to start ', $content);
     else
-        $success = send_email($email_address, 'Huddol Événements : Votre événement LRA est sur le point de commencer', $content);
+        $success = send_email($email_address, 'Huddol Événements : Votre événement est sur le point de commencer', $content);
         
     return $success;
 }

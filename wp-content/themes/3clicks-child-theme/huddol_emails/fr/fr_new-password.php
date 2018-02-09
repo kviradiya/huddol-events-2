@@ -23,11 +23,11 @@
   </p>
 
   <p style="margin: 0px; padding: 0px; margin-bottom: 32px; font-size: 14px; font-weight: normal; line-height: 1.75;">
-    Nous espérons que vous appréciez le nouveau site du Réseau aidant.
+    Nous espérons que vous appréciez la nouvelle page évènements de Huddol.
   </p>
 
   <a href="<?php echo network_site_url('fr/wp-login.php?action=rp&key='. $key. '&login=' . rawurlencode($user_login), 'login'); ?>">
-    <img src="<?php echo $image_path ?>reset_password_french.png" />
+    <?php echo network_site_url('fr/wp-login.php?action=rp&key='. $key. '&login=' . rawurlencode($user_login), 'login'); ?>
   </a>
 
 <?php include('footer.php'); ?>

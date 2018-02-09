@@ -42,7 +42,7 @@
 				<p>
 					Hosted by: <a href="<?php echo $hosted_by_url ?>" style="color:#25aae1;"><?php echo $author->display_name ?></a><br>
 					Topics: <?php echo tcn_capture_entry_categories($event); ?><br>
-					Date: <?php echo get_event_date($post); ?>
+					Date: <?php echo get_event_date($event); ?>
 				</p>
 				
 				<p style="font-weight: bold">

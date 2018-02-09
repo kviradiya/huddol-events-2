@@ -1,5 +1,11 @@
 <?php include('header.php'); ?>
 
+<?php 
+  $hosted_by = get_userdata($event->post_author);
+  $hosted_by_image = get_cupp_meta( $event->post_author, 'small' );
+  $event_image_path = get_post_thumbnail($event->ID, 'full');
+?>
+
 <div id="content" style="position: relative;min-height: 350px;padding-top: 20px;padding-bottom: 50px;">
 
   <h2 style="position: relative;margin: 0px;padding: 0px;margin-bottom: 15px;font-size: 18px;font-weight: 300;color: #29abe2;">
@@ -9,7 +15,7 @@
     <?php _e("Vous avez récemment participé à l'événement suivant:", "tcn" ); ?>
   </h4>
 
-  <table class="events-list" style="position: relative;border-collapse: collapse;border-spacing: 0;">
+  <table class="events-list" style="position: relative;border-collapse: collapse;border-spacing: 0; margin: 0 auto;">
     <tr style="position: relative;">
       <td style="position: relative;padding: 0;padding-bottom: 25px;vertical-align: top; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;">
         <a href="<?php echo get_the_permalink($event->ID); ?>" class="picture" style="position: relative;background-color: transparent;text-decoration: none;color: #444;cursor: pointer;outline: none;display: block;width: 172px;height: 104px;">
@@ -56,6 +62,7 @@
         ?>
       <p style="margin: 0px; margin-bottom: 18px;">
         <?php _e("Nous vous invitons à prendre quelques minutes pour répondre au présent sondage afin que nous puissions obtenir vos réactions sur l'événement.", "tcn"); ?>
+        <br />
         <a href="<?php echo $survey_link; ?>" style="position: relative;text-decoration: none;color: #29abe2;font-weight: bold;">
           <?php _e("Cliquez ICI pour commencer le sondage", "tcn" ); ?>
         </a>

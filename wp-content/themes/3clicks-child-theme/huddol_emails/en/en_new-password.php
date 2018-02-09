@@ -20,12 +20,12 @@
 </p>
 
 <p style="margin: 0px; padding: 0px; margin-bottom: 32px; font-size: 14px; font-weight: normal; line-height: 1.75;">
-  We hope you enjoy the all new Caregiver Network.
+  We hope you enjoy the all new Huddol Events.
 </p>
 
 
 <a href="<?php echo network_site_url('wp-login.php?action=rp&key='. $key. '&login=' . rawurlencode($user_login), 'login'); ?>">
-  <img src="<?php echo $image_path ?>reset_password_english.png" style="margin-bottom: 20px" />
+<?php echo network_site_url('wp-login.php?action=rp&key='. $key. '&login=' . rawurlencode($user_login), 'login'); ?>
 </a>
 
 <?php include('footer.php'); ?>
