@@ -1317,10 +1317,7 @@ ul.tcn-event-numbers li .content a {
   padding-top: 35px;
   padding-bottom: 0px;
 }
-#g1-footer #g1-footer-area .footer-social-icons {
-  height: 0px;
-  position: relative;
-}
+
 #g1-footer #g1-footer-area .footer-social-icons .g1-social-icons {
   position: absolute;
   right: 0px;
@@ -2497,4 +2494,23 @@ div.tcn-partner-signup .tcn-partner-signup-grid .unit .inner img {
   background: linear-gradient(to right, #34477d 0%, #6b44b7 100%);
   color: #fff;
 }
+
+/* Override social button background colours */
+.g1-social-icon--huddol,
+.g1-social-icon--facebook,
+.g1-social-icon--twitter,
+.g1-social-icon--instagram,
+.g1-social-icon--youtube {
+  background-color: transparent !important;
+}
+
+.footer-social-icons {
+  text-align: center;
+}
+
+.footer-social-icons > .g1-social-icons {
+  display: inline-block;
+  position: inherit !important;
+}
+
 /*# sourceMappingURL=style.css.map */

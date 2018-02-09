@@ -138,6 +138,7 @@ class G1_Social_Icons {
 
     private function get_default_items () {
         return array(
+            'huddol'            => array('color' => '#29abe2'),
             '500px'             => array('color' => '#444444'),
             'aboutme'           => array('color' => '#00405D'),
             'alistapart'        => array('color' => '#222222'),

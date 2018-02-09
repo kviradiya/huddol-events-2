@@ -539,8 +539,10 @@ function g1_theme_options_register ( $sections ) {
             'sub_desc'  =>
                 '<p>' . sprintf( __( 'You can edit social icons from the <a href="%s">G1 Social Icons Plugin Settings</a>', Redux_TEXT_DOMAIN ), network_admin_url( 'options-general.php?page=g1_social_icons_options' ) ) . '</p>',
             'options'   => array(
-		'none'      => 'off',
-                '24'        => 'on',
+                'none'      => 'off',
+                '24'        => '24',
+                '32'        => '32',
+                '48'        => '48',
             ),
             'switch'    => true,
             'std'       => '24',
