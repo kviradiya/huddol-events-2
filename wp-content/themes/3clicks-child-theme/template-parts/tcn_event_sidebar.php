@@ -53,10 +53,6 @@ if($event_is_over): ?>
             <div class="rating">
                 <?php the_ratings(); ?>
             </div>
-            
-            <div class="add-to-favorites">
-                <?php echo $favorites->link_button($post->ID); ?>
-            </div>
         </div>
     <?php else: ?>
         
@@ -76,16 +72,6 @@ if($event_is_over): ?>
             </header>
             <div class="rating">
                 <?php the_ratings(); ?>
-            </div>
-            
-            <div class="add-to-favorites" style="margin-bottom: 6px;">
-                <a href="#" class="favorites-logged-out">
-                    <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
-                        <img src="<?php echo $image_path ?>favorites_banner.png" alt="Add to my favorites" />
-                    <?php else: ?>
-                        <img src="<?php echo $image_path ?>favorites_banner_fr.png" alt="Ajouter à mes favoris" />
-                    <?php endif ?>
-                </a>
             </div>
             
             <div class="italic-message">

@@ -375,8 +375,7 @@ if ( !defined('ABSPATH') )
                                     <?php endif ?>
                                     </ul>
                                    <div class="g-recaptcha" data-sitekey="6Ld6F0QUAAAAAGc2TeUbh-ujQyOXu7GBNWPkj9Qg"></div> 
-				   <input type="hidden" id="signup_form_secondary_is_human" name="signup_form_is_human" value="" />
-                                    <br />
+				                    <input type="hidden" id="signup_form_secondary_is_human" name="signup_form_is_human" value="" />
                                     <input type="hidden" name="lang" value="<?php echo ICL_LANGUAGE_CODE; ?>" />
                                     <?php if(ICL_LANGUAGE_CODE =='en'):?>
                                         <input type="submit" value="<?php _e("Sign up", "tcn"); ?>" />

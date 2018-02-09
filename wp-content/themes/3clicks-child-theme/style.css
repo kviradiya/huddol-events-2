@@ -159,14 +159,12 @@ div.ssba img {
 
 a.button-big {
   display: inline-block;
-  height: 58px;
-  padding: 0px 50px;
+  padding: 20px 20px;
   background-color: #29abe2;
   border-radius: 6px;
   font-size: 18px;
   font-weight: 300;
   color: white;
-  line-height: 57px;
 }
 a.button-big:hover {
   filter: brightness(120%);
@@ -835,7 +833,7 @@ ul.tcn-event-numbers li .content a {
   opacity: 0;
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 400px) {
   #g1-header #g1-primary-nav {
     margin-top: 50px;
     margin-right: -35px;
@@ -962,6 +960,7 @@ ul.tcn-event-numbers li .content a {
 #g1-header #g1-primary-nav .g1-searchbox a strong {
   display: inline-block;
 }
+
 #g1-header #g1-primary-nav .g1-searchbox form {
   width: 600px;
   max-width: none;
@@ -974,12 +973,10 @@ ul.tcn-event-numbers li .content a {
 }
 @media only screen and (max-width: 600px) {
   #g1-header #g1-primary-nav .g1-searchbox form {
-    width: 90vw;
-    max-width: none;
-    margin: 0px;
-    position: absolute;
-    left: -80vw;
-    left: calc(80px - 90vw);
+    width: 100vw !important;
+    margin: 0px !important;
+    position: absolute !important;
+    left: -33vw !important;
   }
 }
 
@@ -2471,11 +2468,26 @@ div.tcn-partner-signup .tcn-partner-signup-grid .unit .inner img {
 }
 
 /* language changer dropdown */
+
+@media only screen and (max-width: 600px) {
+}
 .language_changer_container {
   position: absolute;
   right: 180px;
   top: 7px;
   z-index: 100;
+}
+
+@media only screen and (max-width: 600px) {
+  .language_changer_container {
+    position: relative;
+    right: 0;
+  }
+
+  .language_changer_container .dropdown {
+    left: -30px;
+    right: auto;
+  }
 }
 
 .language_changer_container .dropdown {
@@ -2529,10 +2541,12 @@ div.tcn-partner-signup .tcn-partner-signup-grid .unit .inner img {
 
 .close {
   opacity: 0;
+  display: none;
 }
 
 .open {
   opacity: 1;
+  display: block;
 }
 
 .chevron::before {
@@ -2558,6 +2572,10 @@ div.tcn-partner-signup .tcn-partner-signup-grid .unit .inner img {
 .u-purple-grad {
   background: linear-gradient(to right, #34477d 0%, #6b44b7 100%);
   color: #fff;
+}
+
+.g-recaptcha {
+  margin-bottom: 20px;
 }
 
 /* Override social button background colours */
