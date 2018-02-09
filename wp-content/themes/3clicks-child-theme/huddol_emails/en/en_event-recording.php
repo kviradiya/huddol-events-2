@@ -29,7 +29,7 @@
 				<h2><?php echo $event->post_title ?></h2>
 				
 				<p>
-					Hosted by: <a href="<?php echo $partner_url; ?>" style="color:#25aae1;"><?php echo $author->user_login?></a><br>
+					Hosted by: <?php echo $author->user_login?><br>
 					Topics: <?php echo tcn_capture_entry_categories($event); ?><br>
 					Date: <?php echo get_event_date($event); ?>
 				</p>

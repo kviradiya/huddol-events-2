@@ -10,8 +10,8 @@
 				</p>
 				
 				<p>
-					1. Visiter notre page d’évènements ou <br>
-					2. Visiter notre communauté de soutien 
+					1. Visiter notre <a href="https://events.huddol.com/fr" target="_blank">page d’évènements</a> ou <br>
+					2. Visiter notre <a href="https://www.huddol.com/fr" target="_blank">communauté de soutien</a>
 				</p>
 			</div>
 		</div>

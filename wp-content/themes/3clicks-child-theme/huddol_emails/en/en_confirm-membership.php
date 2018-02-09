@@ -12,8 +12,8 @@
 				</p>
 				
 				<p>
-					1. Visit our events page or<br>
-					2. Visit our support community
+					1. Visit our <a href="https://events.huddol.com" target="_blank">events page</a> or<br>
+					2. Visit our <a href="https://www.huddol.com" target="_blank">support community</a>
 				</p>
 			</div>
 

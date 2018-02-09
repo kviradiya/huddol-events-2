@@ -2328,8 +2328,30 @@ function tcn_capture_entry_categories($post)
     $out = '';
     foreach ( $taxonomy_objects as $object ) 
     {
-        $out .= get_the_term_list( $post->ID, $object->name, '', ', ', '' );
+        $out .= get_the_cat_list( $post->ID, $object->name, '', ', ', '' );
     }
 
     return $out;
+}
+
+
+function get_the_cat_list( $id, $taxonomy, $before = '', $sep = '', $after = '' ) {
+	$terms = get_the_terms( $id, $taxonomy );
+
+	if ( is_wp_error( $terms ) )
+		return $terms;
+
+	if ( empty( $terms ) )
+		return false;
+
+	foreach ( $terms as $term ) {
+		$link = get_term_link( $term, $taxonomy );
+		if ( is_wp_error( $link ) )
+			return $link;
+		$term_links[] = $term->name;
+	}
+
+	$term_links = apply_filters( "term_links-$taxonomy", $term_links );
+
+	return $before . join( $sep, $term_links ) . $after;
 }
