@@ -370,7 +370,7 @@ function print_cta(){
 	$is_full = false;
 	
 	$str = '';
-	$str.= '<div id="btn_cta">';
+	$str.= '<div id="btn_cta" class="u-purple-grad">';
 	
 	if(!empty($fields) && is_array($fields)){
 		
@@ -386,21 +386,17 @@ function print_cta(){
 		
 	}
 	
-	if(!empty($fields) && $is_full){
-		
-		$str.= '<img class="cta_logo" src="'.$fields['logo_du_bouton'].'">';
-		$str.= '<span class="cta_title">'.$fields['titre_du_bouton'].'</span>';
+	if(!empty($fields) && $is_full){		
+		$str.= '<h2 class="cta_title">'.$fields['titre_du_bouton'].'</h2>';
 		$str.= '<p class="cta_parag">'.$fields['texte_du_bouton'].'</p>';
-		$str.= '<a href="'.$fields['lien_sur_le_bouton'].'" target="_blank" class="cta_link">'.$fields['texte_call_to_action'].'</a>';
+		$str.= '<a href="'.$fields['lien_sur_le_bouton'].'" target="_blank"><button class="cta_btn">'.$fields['texte_call_to_action'].'</button></a>';
 	}
 	else{
 		$lang = ( ICL_LANGUAGE_CODE == 'en' ? '_eng' : false );
 		$options = get_option('mac_general_options');
-
-		$str.= '<img class="cta_logo" src="'.$options['image_attachment_id'.$lang].'">';
-		$str.= '<span class="cta_title">'.$options['btn_title'.$lang].'</span>';
+		$str.= '<h2 class="cta_title">'.$options['btn_title'.$lang].'</h2>';
 		$str.= '<p class="cta_parag">'.$options['btn_text'.$lang].'</p>';
-		$str.= '<a href="'.$options['btn_cta_link'.$lang].'" target="_blank" class="cta_link">'.$options['btn_cta_text'.$lang].'</a>';
+		$str.= '<a href="'.$options['btn_cta_link'.$lang].'" target="_blank"><button class="cta_btn">'.$options['btn_cta_text'.$lang].'</button></a>';
 	}
 	
 	$str.= '</div>';

@@ -922,7 +922,7 @@ ul.tcn-event-numbers li .content a {
 #g1-header #g1-primary-nav .g1-searchbox form {
   width: 600px;
   max-width: none;
-  margin-left: -400px;
+  margin-left: 400px;
 }
 @media only screen and (max-width: 1024px) {
   #g1-header #g1-primary-nav .g1-searchbox {
@@ -2493,4 +2493,8 @@ div.tcn-partner-signup .tcn-partner-signup-grid .unit .inner img {
   margin-bottom: 10px !important;
 }
 
+.u-purple-grad {
+  background: linear-gradient(to right, #34477d 0%, #6b44b7 100%);
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */

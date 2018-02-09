@@ -21,6 +21,10 @@ $event_registration =  new EventRegistration;
 $favorites = WeDevs_Favorite_Posts::init();
                         $category = get_event_category( $post->ID );
 
+// Add call to action before the inner content is rendered so it can span the full
+// page width
+add_action( 'g1_content_before', 'print_cta');
+
 // Add proper body classes
 add_filter( 'body_class', array(G1_Theme(), 'secondary_wide_body_class') );
 add_filter( 'body_class', array(G1_Theme(), 'secondary_after_body_class') );

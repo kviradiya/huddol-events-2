@@ -36,8 +36,6 @@ if($event_is_over): ?>
     
     <?php if(is_user_logged_in()): ?>
         
-		<?php /* print_cta(); */?>
-        
         <div class="event-details-share">
             <header>
                 <?php _e("Share this", "tcn"); ?>
@@ -61,8 +59,6 @@ if($event_is_over): ?>
             </div>
         </div>
     <?php else: ?>
-    	
-		<?php print_cta(); ?>
         
         <div class="event-details-share">
             <header>
@@ -108,9 +104,6 @@ if($event_is_over): ?>
         <?php if($is_user_logged_in): ?>
             <?php if($event_registration->is_user_registered($post_id, $user->ID)): ?>
                
-               <?php 
-				print_cta();
-				?>
                 <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
                     <form action="/register_event/" method="POST">
 
