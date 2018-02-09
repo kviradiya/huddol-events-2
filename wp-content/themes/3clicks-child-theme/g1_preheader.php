@@ -73,16 +73,6 @@ if ( !defined('ABSPATH') )
                         </ul>
                     </div>
                 </div>
-                <?php
-                // Render feeds
-                if ( shortcode_exists( 'g1_social_icons') ) {
-                    $g1_social_icons_size = g1_get_theme_option( 'ta_preheader', 'g1_social_icons' );
-                    if ( is_numeric( $g1_social_icons_size ) ) {
-                        $g1_social_icons_size = intval( $g1_social_icons_size );
-                        echo do_shortcode('[g1_social_icons template="list-horizontal" size="'. $g1_social_icons_size . '" hide="label, caption"]');
-                    }
-                }
-                ?>
                 
                 <a href="#" id="g1-preheader__switch" onClick="toggle_slider('account'); return false;">
                     <?php if(is_user_logged_in()): ?>

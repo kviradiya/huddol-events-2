@@ -19,7 +19,7 @@ if ( !defined('ABSPATH') )
 $image_path = get_stylesheet_directory_uri() .'/images/';
 $event_registration =  new EventRegistration;
 $favorites = WeDevs_Favorite_Posts::init();
-                        $category = get_event_category( $post->ID );
+$category = get_event_category( $post->ID );
 
 // Add call to action before the inner content is rendered so it can span the full
 // page width
