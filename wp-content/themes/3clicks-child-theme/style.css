@@ -812,10 +812,7 @@ ul.tcn-event-numbers li .content a {
 
 #g1-header #g1-primary-nav {
   margin-top: 10px;
-  margin-right: -35px;
   width: 100%;
-  display: flex;
-  position: relative;
   text-align: center;
 }
 

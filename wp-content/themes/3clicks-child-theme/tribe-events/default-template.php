@@ -21,9 +21,17 @@ $event_registration =  new EventRegistration;
 $favorites = WeDevs_Favorite_Posts::init();
 $category = get_event_category( $post->ID );
 
+$user = wp_get_current_user();
+$is_user_logged_in = is_user_logged_in();
+$event_is_over = is_event_over($post->ID);
+$is_user_registered = $event_registration->is_user_registered($post->ID, $user->ID);
+
 // Add call to action before the inner content is rendered so it can span the full
 // page width
-add_action( 'g1_content_before', 'print_cta');
+if(($is_user_logged_in && $is_user_registered) || $event_is_over) {
+    add_action( 'g1_content_before', 'print_cta');
+}
+
 
 // Add proper body classes
 add_filter( 'body_class', array(G1_Theme(), 'secondary_wide_body_class') );
@@ -92,7 +100,7 @@ add_filter( 'body_class', array(G1_Theme(), 'secondary_after_body_class') );
                             <?php endif ?>
                         	
 							<?php
-							if(is_user_logged_in())
+							if($is_user_logged_in && $category)
 							{
 								print_category_reminder($category->term_id);
 							}

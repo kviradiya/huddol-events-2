@@ -9812,7 +9812,13 @@ article.format-video .entry-featured-media iframe {
 #g1-primary-nav-menu {
   margin: 0;
   list-style: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* well I don't like this but it's need because of the absolute positioning */
+  width: 250px;
 }
+
 #g1-primary-nav-menu ul {
   margin: 0 auto;
   list-style: none;
@@ -11190,10 +11196,6 @@ article.format-video .entry-featured-media iframe {
   -moz-transition: opacity 0.35s ease-in-out, -moz-transform 0.35s ease-in-out;
   -o-transition: opacity 0.35s ease-in-out, -o-transform 0.35s ease-in-out;
   transition: opacity 0.35s ease-in-out, transform 0.35s ease-in-out;
-}
-
-#g1-primary-nav .g1-searchbox {
-  margin-right: 26px;
 }
 
 #g1-preheader-bar .g1-searchbox {

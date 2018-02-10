@@ -54,8 +54,6 @@ if ( !defined('ABSPATH') )
             
 </head>
 <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
- <map name="Map"><area shape="rect" coords="165,2,298,46" href="https://www.huddol.com" target="_blank"></map>
-
  
 	<script>(function() {
 	var _fbq = window._fbq || (window._fbq = []);
