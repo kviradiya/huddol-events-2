@@ -811,7 +811,7 @@ ul.tcn-event-numbers li .content a {
 }
 
 #g1-header #g1-primary-nav {
-  margin-top: 10px;
+  margin-top: 0;
   width: 100%;
   text-align: center;
 }
@@ -832,13 +832,9 @@ ul.tcn-event-numbers li .content a {
 
 @media only screen and (max-width: 400px) {
   #g1-header #g1-primary-nav {
-    margin-top: 50px;
-    margin-right: -35px;
     width: auto;
-    display: flex;
-    flex-direction: column;
-    position: inherit;
     text-align: inherit;
+    margin-left: 40px;
   }
 
   #g1-primary-nav-menu::after {
@@ -961,26 +957,22 @@ ul.tcn-event-numbers li .content a {
 #g1-header #g1-primary-nav .g1-searchbox form {
   width: 600px;
   max-width: none;
-  margin-left: 400px;
+  margin-left: 500px;
 }
 @media only screen and (max-width: 1024px) {
   #g1-header #g1-primary-nav .g1-searchbox {
-    top: 50px;
+    top: 100px;
+    position: absolute;
+    right: 35px;
   }
 }
 @media only screen and (max-width: 600px) {
   #g1-header #g1-primary-nav .g1-searchbox form {
-    width: 100vw !important;
-    margin: 0px !important;
-    position: absolute !important;
-    left: -33vw !important;
-  }
-}
-
-@media only screen and (max-width: 370px) {
-  #g1-header #g1-primary-nav .g1-searchbox form {
-    width: auto;
-    left: auto;
+    width: 90vw;
+    max-width: none;
+    margin: 0px;
+    position: absolute;
+    left: calc(80px - 90vw);
   }
 }
 
