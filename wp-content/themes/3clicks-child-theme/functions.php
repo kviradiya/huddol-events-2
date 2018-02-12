@@ -25,7 +25,7 @@ add_filter('post_comments_feed_link','remove_comments_rss');
 
 function override_comment_notice_repicient($emails, $comment_id) 
 {
-    $emails[] = 'admin@lratcn.ca';
+    $emails[] = 'events@huddol.com';
     //$emails[] = 'jon@jonhill.ca';
     return $emails;
 }
@@ -1896,7 +1896,7 @@ function send_event_1hr_reminder_emails($event, $lang)
             send_event_1hr_reminder_email($user, $event, $lang);
         }
         
-        send_event_1hr_reminder_email('admin@lratcn.ca', $event, $lang);
+        send_event_1hr_reminder_email('events@huddol.com', $event, $lang);
     }
 }
 

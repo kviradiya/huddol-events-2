@@ -35,7 +35,7 @@ function tcn_wp_title( $title, $sep ) {
 
     // Remove auto-appended site title if title is > 55 characters
     if( is_single() && strlen( $title ) > 55) {
-        $title = preg_replace( '/(?: \W{1}){0,1} (?:The Caregiver Network|Le Réseau Aidant)$/i', '', $title );
+        $title = preg_replace( '/(?: \W{1}){0,1} (?:Huddol Events|Huddol Événements)$/i', '', $title );
     }
 
     return $title;

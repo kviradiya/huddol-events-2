@@ -29,7 +29,7 @@ if ( !defined('ABSPATH') )
 <![endif]--><head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
    <?php if(!is_single()): ?> 
-	<meta property="og:image" content="https://events.huddol.com/wp-content/uploads/2015/04/lratcn_logo.png" />
+	<meta property="og:image" content="https://events.huddol.com/wp-content/uploads/2018/02/Huddolevents_logo.png" />
 <?php endif ?>
 	<title><?php wp_title( '', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
