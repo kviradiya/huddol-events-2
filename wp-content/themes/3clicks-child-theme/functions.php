@@ -2124,8 +2124,8 @@ function check_events_and_send_emails()
     
     global $wpdb;
     $results = $wpdb->get_results("INSERT INTO wp_tcn_cron_runs () VALUES ()");
-    echo send_email('aronblack@bell.net', 'Huddol Events: Surveys and Reminders Summary', $message);
-    echo send_email('aronblack@bell.net', 'Huddol Events: Surveys and Reminders Actually Sent', $sent_message);
+    echo send_email('events@huddol.com', 'Huddol Events: Surveys and Reminders Summary', $message);
+    echo send_email('events@huddol.com', 'Huddol Events: Surveys and Reminders Actually Sent', $sent_message);
     echo '<br/>';
 }
 
