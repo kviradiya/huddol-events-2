@@ -103,7 +103,7 @@ function login()
     	$user = wp_signon( $creds, true );
     	if ( is_wp_error($user) )
     	{
-            $data['error'] = __("Your username or password is incorrect. Please try again.", 'tcn');
+            $data['error'] = __("Your username or password is incorrect. Please try again or reset your password.<br />PLEASE NOTE: you cannot use your huddol.com username and password on events.huddol.com. You will need to create a new account.", 'tcn');
             $data['success'] = false;
     	}
     	else
