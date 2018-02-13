@@ -79,7 +79,25 @@ class ExtraEventMeta {
     	if ( ! current_user_can( 'edit_post', $post->ID ) ) 
     	{
 			return;
-		}
+        }
+        
+        $recording_now = get_post_meta($post->ID, 'event_meta_recording')[0];
+        /*
+        echo "Now" . $recording_now; 
+        echo '<br>';
+        echo "Later: " . $_POST['event_meta_recording'];
+        echo '<br>';
+        */
+
+        if ($recording_now == '')
+        {
+            if($_POST['event_meta_recording'] != '')
+            {
+                update_post_meta($post->ID, 'event_meta_recording', $_POST['event_meta_recording']);
+                send_recording_ready_emails($post, 'en');
+            }
+        }
+        
 		
         foreach($this->fields as $field)
         {
