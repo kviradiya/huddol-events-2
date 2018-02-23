@@ -957,7 +957,7 @@ ul.tcn-event-numbers li .content a {
 #g1-header #g1-primary-nav .g1-searchbox form {
   width: 600px;
   max-width: none;
-  margin-left: 500px;
+  margin-right: 465px;
 }
 @media only screen and (max-width: 1024px) {
   #g1-header #g1-primary-nav .g1-searchbox {
