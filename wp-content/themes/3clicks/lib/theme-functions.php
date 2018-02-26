@@ -895,7 +895,7 @@ class G1_Theme {
         
 
         // Why is this even being set here?
-        $desktop_src = 'https://events.huddol.com/wp-content/uploads/2018/02/Huddolevents_logo.png';
+        $desktop_src = ICL_LANGUAGE_CODE == 'fr' ? 'https://events.huddol.com/wp-content/uploads/2018/02/Huddolevents_logo_fr.png': 'https://events.huddol.com/wp-content/uploads/2018/02/Huddolevents_logo.png';
 
         // Compose logo element
         $out_desktop = '';
@@ -943,12 +943,15 @@ class G1_Theme {
             $data_desktop_str = trim( $data_desktop_str );
             $data_mobile_str = trim( $data_mobile_str );
 
-            $size_desktop = '';
-            $logo_width = absint(g1_get_theme_option('branding', 'logo_width'));
-            $logo_height = absint(g1_get_theme_option('branding', 'logo_height'));
 
-            if ( !empty($logo_width) && !empty($logo_height) ) {
-                $size_desktop = sprintf(' width="%s" height="%s"', $logo_width, $logo_height);
+            // Who doesn't love a good hack? This code has been modified because
+            // the English and French version of the logo are different widths
+            // and can't be handled in CSS.
+            $size_desktop = '';
+            $logo_width = ICL_LANGUAGE_CODE == 'fr'? '450' : absint(g1_get_theme_option('branding', 'logo_width'));
+
+            if ( !empty($logo_width) ) {
+                $size_desktop = sprintf(' width="%s"', $logo_width);
             }
 
             $size_mobile = '';
