@@ -78,7 +78,7 @@ if ( !defined('ABSPATH') )
                     <?php if(is_user_logged_in()): ?>
                         <b><?php _e("My Account", "tcn"); ?></b>
                          <?php if(count($missings_fields) || empty($cats)) { ?>
-        				<div class="incomplete-profile-box"><img src="<?php echo $image_path; ?>reminder-bell.png" alt="" /></div>
+        				<!-- <div class="incomplete-profile-box"><img src="<?php echo $image_path; ?>reminder-bell.png" alt="" /></div> -->
    						<?php } ?>
                     <?php else: ?>
                         <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
