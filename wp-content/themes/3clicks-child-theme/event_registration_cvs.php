@@ -121,7 +121,9 @@
                 }
                 
                 $role = '';
-                foreach(get_user_meta( $result->user_id, 'tcn_user_meta_caregiver_role', true ) as $r)
+                $roles = get_user_meta( $user->ID, 'tcn_user_meta_caregiver_role', true );
+                $roles = $roles == '' ? [] : $roles;
+                foreach($roles as $r)
                 {
                     $role .= get_caregiver_role_name($r) . ' ';
                 }

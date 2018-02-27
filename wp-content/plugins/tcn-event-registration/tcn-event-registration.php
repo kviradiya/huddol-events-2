@@ -924,7 +924,9 @@ class EventRegistration {
                     echo '</td>';
 
                     echo '<td>';
-                    foreach(get_user_meta( $user->ID, 'tcn_user_meta_caregiver_role', true ) as $role)
+                    $roles = get_user_meta( $user->ID, 'tcn_user_meta_caregiver_role', true );
+                    $roles = $roles == '' ? [] : $roles;
+                    foreach($roles as $role)
                     {
                         echo get_caregiver_role_name($role);
                         echo ' ';
