@@ -26,7 +26,7 @@
 			<img src="<?php echo $imgURL; ?>" style="width: 100%;">
 			
 			<div style="text-align: left;padding: 10px 40px;"> 
-				<h2><?php echo $event->post_title ?></h2>
+				<h2 style="font-size: 25px;"><?php echo $event->post_title ?></h2>
 				
 				<p>
 					Hosted by: <?php echo $author->user_login?><br>

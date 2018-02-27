@@ -32,7 +32,7 @@
 			<img src="<?php echo $imgURL; ?>" style="width: 100%;">
 			
 			<div style="text-align: left;padding: 10px 40px;"> 
-				<h2><?php echo $event->post_title ?></h2>
+				<h2 style="font-size: 25px;"><?php echo $event->post_title ?></h2>
 				
 				<p>
 					Hosted by: <?php echo $author->user_login?><br>
@@ -54,7 +54,7 @@
 				</p>
 			</div>
 				
-			<a href="<?php echo $event_meta_webinar_link; ?>" style="display: inline-block; margin:10px 0 35px; background-color:#3bc38f; padding:20px 30px; border-radius:30px; color: #fff; font-size:18px; font-weight: bold; border: 0px; outline: 0; text-decoration: none;">
+			<a href="<?php $event_meta_webinar_link; ?>" style="display: inline-block; margin:10px 0 35px; background-color:#3bc38f; padding:20px 30px; border-radius:30px; color: #fff; font-size:18px; font-weight: bold; border: 0px; outline: 0; text-decoration: none;">
 				Join Presentation
 			</a>
 			

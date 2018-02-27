@@ -2,7 +2,7 @@
 
 <?php include('header.php'); ?>
 			
-			<h1 style="font-size:24px;">Confirming Your Membership</h1>
+			<h1 style="font-size:25px;">Confirming Your Membership</h1>
 			
 			<div style="text-align: left;padding: 10px 40px;"> 
 				<p style="font-weight: bold">

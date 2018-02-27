@@ -12,7 +12,7 @@
 
 <body style="padding: 0; margin: 0;">
 
-	<div style="background-color: #e8eaef; text-align: center; padding: 21px; font-family: ProximaSoft, Proxima Soft, Proxima Nova, 
+	<div style="background-color: #e8eaef; text-align: center; padding: 21px; font-size: 16px; font-family: ProximaSoft, Proxima Soft, Proxima Nova, 
 	            Proxima, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 
 				'Segoe UI Emoji', 'Segoe UI Symbol'">
 		<div style="background-color: #fff; width: 700px; margin: auto; padding-bottom: 25px;">
