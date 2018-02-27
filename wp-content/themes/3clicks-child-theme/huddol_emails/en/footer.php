@@ -1,4 +1,4 @@
-<p>
+<p style="font-size: 13px">
 	This email was sent to
 	<a href="<?php echo $email_address ?>" style="color:#25aae1;">
 		<?php echo $email_address; ?>
