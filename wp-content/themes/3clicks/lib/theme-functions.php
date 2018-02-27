@@ -948,7 +948,7 @@ class G1_Theme {
             // the English and French version of the logo are different widths
             // and can't be handled in CSS.
             $size_desktop = '';
-            $logo_width = ICL_LANGUAGE_CODE == 'fr'? '450' : absint(g1_get_theme_option('branding', 'logo_width'));
+            $logo_width = ICL_LANGUAGE_CODE == 'fr' ? '450' : absint(g1_get_theme_option('branding', 'logo_width'));
 
             if ( !empty($logo_width) ) {
                 $size_desktop = sprintf(' width="%s"', $logo_width);
