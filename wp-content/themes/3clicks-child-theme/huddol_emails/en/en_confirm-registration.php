@@ -5,10 +5,6 @@
     $event_meta_conference_id = get_post_meta($event->ID, 'event_meta_conference_id', true);
     $event_meta_webinar_link = get_post_meta($event->ID, 'event_meta_webinar_link', true);
 
-    $event_meta_phone_number = override_from_user($event->ID, 'event_meta_phone_number', $event_meta_phone_number);
-    $event_meta_conference_id = override_from_user($event->ID, 'event_meta_conference_id', $event_meta_conference_id);
-    $event_meta_webinar_link = override_from_user($event->ID, 'event_meta_webinar_link', $event_meta_webinar_link);
-
     $event_meta_webinar_link = $event_meta_webinar_link != '' ? $event_meta_webinar_link : get_permalink($event->ID);
 
     $author = get_user_by('id', $event->post_author);
