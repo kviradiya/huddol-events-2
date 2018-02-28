@@ -287,7 +287,8 @@ class G1_Contact_Form_Shortcode extends G1_Shortcode {
 
             if ( !count( $errors ) ) {
                 // Send email
-                $headers = 'From: ' . sanitize_mail_header( $field_name ) . ' <'. sanitize_mail_header( $field_email ) . '>' . "\r\n";
+                $headers[] = 'From: ' . sanitize_mail_header( $field_name ) . ' <'. sanitize_mail_header( $field_email ) . '>' . "\r\n";
+                $message = 'SENDER: ' . $field_email . "\r\n\r\n" . $field_message;
                 $email_sent = wp_mail( $email, $subject, $field_message, $headers);
 
                 // clear form fields
