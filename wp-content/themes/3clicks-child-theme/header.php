@@ -292,15 +292,7 @@ if( is_front_page() ) { ?>
                     <span class="tcn-filter-title">
                          <?php _e("Filter events by:", "tcn"); ?>
                     </span>
-                    
-                    <?php if(is_user_logged_in() && count($network_events)): ?>
-                    <span <?php if($mode === "my_network") echo 'class="tcn-filter-selected"'; ?> >
-                        <a href="?mode=my_network">
-                            <?php _e("My Caregiver Network", "tcn"); ?>
-                        </a>
-                    </span>
-                    <?php endif ?>
-                    
+
                     <?php if(count($upcoming_events) > 0): ?>
                     <span <?php if($mode === "upcoming") echo 'class="tcn-filter-selected"'; ?> >
                         <a href="?mode=upcoming">
