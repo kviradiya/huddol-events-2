@@ -54,7 +54,7 @@
 				</p>
 			</div>
 				
-			<a href="<?php $event_meta_webinar_link; ?>" style="display: inline-block; margin:10px 0 35px; background-color:#3bc38f; padding:20px 30px; border-radius:30px; color: #fff; font-size:18px; font-weight: bold; border: 0px; outline: 0; text-decoration: none;">
+			<a href="<?php echo $event_meta_webinar_link; ?>" style="display: inline-block; margin:10px 0 35px; background-color:#3bc38f; padding:20px 30px; border-radius:30px; color: #fff; font-size:18px; font-weight: bold; border: 0px; outline: 0; text-decoration: none;">
 				Join Presentation
 			</a>
 			
