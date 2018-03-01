@@ -81,7 +81,7 @@ class ExtraEventMeta {
 			return;
         }
         
-        $recording_now = get_post_meta($post->ID, 'event_meta_recording')[0];
+        $recording_now = get_post_meta($post->ID, 'event_meta_recording', true);
         /*
         echo "Now" . $recording_now; 
         echo '<br>';

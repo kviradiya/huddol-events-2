@@ -4,6 +4,7 @@
 <?php $can_user_register = $event_registration->can_user_register($post->ID, $user->ID); ?>
 <?php $is_user_logged_in = is_user_logged_in(); ?>
 <?php $is_event_full = $event_registration->is_event_full($post->ID); ?>
+<?php $actual_link = 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
 
 <!--[if IE]>
 <style>/* this style block is for IE */
@@ -75,8 +76,6 @@ if($event_is_over): ?>
             </div>
             
             <div class="italic-message">
-                <?php // $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']; ?>
-                <?php $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
                 <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
                     <a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>"><?php _e("Log in", "tcn" ); ?></a> <?php _e("or", "tcn"); ?> <a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>"><?php _e("Sign up", "tcn"); ?></a> <?php _e("to add to favorites.", "tcn"); ?>
                 <?php else: ?>
@@ -188,13 +187,7 @@ if($event_is_over): ?>
 			</div>
 
             <div class="italic-message no_more_italic">
-			
-                <?php // $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']; ?>
-                <?php $actual_link = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
-				
-				
-				<h5 class="steps"><?php _e('Step 1', 'tnc')?>:</h5>
-				
+				<h5 class="steps"><?php _e('Step 1', 'tnc')?>:</h5>				
                 <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
 					<a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>" class="orange_btn_en g1-button g1-button--small g1-button--solid g1-button--standard "><?php _e("Sign up", "tcn"); ?></a> 
 					<span class="spacer size14px"><?php _e("or", "tcn"); ?></span>
