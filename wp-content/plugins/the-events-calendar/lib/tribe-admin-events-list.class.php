@@ -216,7 +216,8 @@ if ( ! class_exists( 'TribeEventsAdminList' ) ) {
 		public static function custom_columns( $column_id, $post_id ) {
 			if ( $column_id == 'events-cats' ) {
 				$event_cats = get_the_term_list( $post_id, TribeEvents::TAXONOMY, '', ', ', '' );
-				echo ( $event_cats ) ? strip_tags( $event_cats ) : '—';
+				$event_cats = !is_wp_error($event_cats) ? strip_tags( $event_cats ) : '—';
+				echo $event_cats;
 			}
 			if ( $column_id == 'start-date' ) {
 				echo tribe_get_start_date( $post_id, false );
