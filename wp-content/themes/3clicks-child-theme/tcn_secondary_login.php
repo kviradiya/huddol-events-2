@@ -253,7 +253,7 @@
                 }
                 else
                 {
-                    location.replace(redirect_url);
+                    location.replace(redirect_url + '?loggedin=true');
                 }
             }
 	    }

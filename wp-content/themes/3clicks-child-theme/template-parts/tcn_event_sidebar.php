@@ -86,7 +86,7 @@ if($event_is_over): ?>
     <?php endif ?>
 <?php else: ?>
     <div class="event-details-register">
-        <?php if($is_user_logged_in): ?>
+        <?php if(is_user_logged_in()): ?>
             <?php if($event_registration->is_user_registered($post_id, $user->ID)): ?>
                
                 <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
