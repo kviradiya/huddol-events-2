@@ -49,8 +49,8 @@ if ( !defined('ABSPATH') )
         <div id="primary">
             <div id="content" role="main">
                 
-                
-                <?php 
+                <?php get_template_part('template-parts/tcn_home', 'upcoming'); ?>
+                <?php /* 
                     if($mode === "my_network"): ?>
                     <?php get_template_part('template-parts/tcn_home', 'network'); ?>
                     
