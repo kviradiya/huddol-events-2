@@ -124,7 +124,7 @@ class G1_Mailchimp_Module extends G1_Module {
                     'email_address'     => $subscriber_email,
                     'merge_vars'        => NULL,
                     'email_type'        => 'html',
-                    'double_optin'      => true,
+                    'double_optin'      => false,
                     'update_existing'   => false,
                     'replace_interests' => true,
                     'send_welcome'      => false
