@@ -98,7 +98,9 @@ class G1_Mailchimp_Module extends G1_Module {
                     'id' => $mailing_list,
                     'email' => array(
                         'email' => $subscriber_email
-                    )
+                    ),
+                    'double_optin' => false,
+
                 );
 
                 $subscribe_params = apply_filters( 'g1_mailchimp_subscribe_params', $subscribe_params );
