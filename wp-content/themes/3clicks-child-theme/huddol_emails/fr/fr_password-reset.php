@@ -8,7 +8,7 @@
   <h4 style="position: relative;margin: 0px;padding: 0px;margin-bottom: 20px;margin-top: 24px;font-size: 14px;font-weight: normal;line-height: 1.75;">
     <?php _e("Please follow this link to reset your password:", "tcn"); ?>
     <br style="position: relative;">
-    <?php $url = network_site_url('fr/wp-login.php?action=rp&key='. $key. '&login=' . rawurlencode($user_login), 'login'); ?>
+    <?php $url = network_site_url('wp-login.php?action=rp&key='. $key. '&login=' . rawurlencode($user_login), 'login'); ?>
     <a href="<?php echo $url; ?>" class="important" style="position: relative;background-color: transparent;text-decoration: none;color: #29abe2;cursor: pointer;outline: none;font-size: 16px;font-weight: bold;">
       <?php echo $url; ?>
     </a>
