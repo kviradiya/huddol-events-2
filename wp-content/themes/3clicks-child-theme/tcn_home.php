@@ -48,14 +48,11 @@ if ( !defined('ABSPATH') )
 <?php get_header(); ?>
         <div id="primary">
             <div id="content" role="main">
-                
-                <?php get_template_part('template-parts/tcn_home', 'upcoming'); ?>
-                <?php /* 
-                    if($mode === "my_network"): ?>
-                    <?php get_template_part('template-parts/tcn_home', 'network'); ?>
-                    
+
+                <?php //get_template_part('template-parts/tcn_home', 'upcoming'); ?>
+
                 <?php
-                    elseif( $mode === "upcoming" ): ?>
+                    if( $mode === "upcoming" ): ?>
                     <?php get_template_part('template-parts/tcn_home', 'upcoming'); ?>
                     
                 <?php 
@@ -64,8 +61,8 @@ if ( !defined('ABSPATH') )
                     
                 <?php 
                     else: ?>
-                    <?php get_template_part('template-parts/tcn_home', 'network'); ?>
-                <?php endif ?>
+	                    <?php get_template_part('template-parts/tcn_home', 'upcoming'); ?>
+                    <?php endif ?>
                 
                 <!--hr style="margin-top:0px"-->
                 <?php /* <h2><?php _e("Latest Stories", "tcn"); ?></h2>
