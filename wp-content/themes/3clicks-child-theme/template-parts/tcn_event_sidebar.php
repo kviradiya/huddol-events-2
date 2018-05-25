@@ -47,14 +47,6 @@ if($event_is_over): ?>
             </div>
         </div>
         
-        <div class="event-details-rate">
-            <header>
-                <?php _e("Rate this event", "tcn"); ?>
-            </header>
-            <div class="rating">
-                <?php the_ratings(); ?>
-            </div>
-        </div>
     <?php else: ?>
         
         <div class="event-details-share">
@@ -66,23 +58,7 @@ if($event_is_over): ?>
                 <?php echo do_shortcode('[ssba]'); ?>
             </div>
         </div>
-        
-        <div class="event-details-rate">
-            <header>
-                <?php _e("Rate this event", "tcn"); ?>
-            </header>
-            <div class="rating">
-                <?php the_ratings(); ?>
-            </div>
-            
-            <div class="italic-message">
-                <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
-                    <a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>"><?php _e("Log in", "tcn" ); ?></a> <?php _e("or", "tcn"); ?> <a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>"><?php _e("Sign up", "tcn"); ?></a> <?php _e("to add to favorites.", "tcn"); ?>
-                <?php else: ?>
-                    <a href="<?php echo site_url(); ?>/fr/login-fr/?redirect=<?php echo $actual_link; ?>">Inscrivez-vous</a> pour l'ajouter à vos favoris.                    
-                <?php endif ?>
-            </div>
-        </div>
+
     <?php endif ?>
 <?php else: ?>
     <div class="event-details-register">
