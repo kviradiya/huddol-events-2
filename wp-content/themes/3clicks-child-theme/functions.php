@@ -1967,7 +1967,7 @@ function send_event_survey_emails($event, $lang)
         {
             send_event_survey_email($user, $event, $lang);
         }
-        send_event_survey_email('aronblack@bell.net', $event, $lang);
+        //send_event_survey_email('aronblack@bell.net', $event, $lang);
     }
 }
 
