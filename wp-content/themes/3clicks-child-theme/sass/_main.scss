@@ -559,7 +559,8 @@ ul.tcn-event-numbers {
           margin-left: -10px;
           padding-left: 0px;
           padding-top: 5px;
-          text-align: left a {
+          text-align: left;
+          a {
             padding: 0px 10px;
           }
         }
@@ -579,13 +580,11 @@ ul.tcn-event-numbers {
       float: none;
       width: auto;
       height: $preheader-height;
-      margin: 0px;
-      padding: 0px;
-      padding-left: 26px;
-      padding-right: 45px;
+      margin: 0;
+      padding: 0 26px;
       position: absolute;
-      right: 0px;
-      top: 0px;
+      right: 0;
+      top: 0;
       background-color: $color-red;
       border-bottom-left-radius: $radius;
       border-bottom-right-radius: $radius;
@@ -744,10 +743,10 @@ ul.tcn-event-numbers {
     }
   }
   #g1-primary-nav {
-    $link-padding: 35px;
-    margin-top: 40px;
-    margin-right: -$link-padding;
-    position: relative;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+
     &.g1-nav--expanded {
       margin-right: 0px;
     }
@@ -757,8 +756,7 @@ ul.tcn-event-numbers {
     #g1-primary-nav-menu {
       & > .menu-item {
         & > a {
-          padding: 10px $link-padding;
-          font-size: 15px;
+          font-size: 20px;
           font-weight: bold;
           color: black;
           &:hover {
@@ -766,8 +764,8 @@ ul.tcn-event-numbers {
           }
           &:after {
             width: auto;
-            left: $link-padding;
-            right: $link-padding;
+            left: 35px;
+            right: 35px;
             border-color: $color-red;
           }
         }
@@ -811,6 +809,20 @@ ul.tcn-event-numbers {
         font-weight: bold;
       }
     }
+
+    #g1-primary-nav-menu::after {
+      content: '\f078';
+      font-family: FontAwesome;
+      position: absolute;
+      display: inline-block;
+      top: 25px;
+      color: #4a4a4a;
+      transition: opacity 0.525s;
+    }
+    #g1-primary-nav-menu:hover::after {
+      opacity: 0;
+    }
+
     .g1-searchbox {
       a {
         white-space: nowrap;
@@ -824,10 +836,9 @@ ul.tcn-event-numbers {
         }
       }
       form {
-        $width: 600px;
-        width: $width;
+        width: 600px;
         max-width: none;
-        margin-left: -($width - 100px);
+        margin-right: 465px;
       }
       @media #{$media-query-small} {
         top: 50px;
@@ -1236,22 +1247,24 @@ ul.tcn-event-numbers {
   position: relative;
   #g1-footer-area {
     padding-top: 35px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     .footer-social-icons {
-      height: 0px;
-      position: relative;
       .g1-social-icons {
         position: absolute;
-        right: 0px;
+        right: 0;
         top: -5px;
       }
     }
     #g1-footer-nav {
       margin-bottom: 25px;
-      padding-right: 85px;
     }
     #g1-footer-text {
       margin-bottom: 35px;
     }
   }
+}
+
+#g1-primary-bar {
+  display: flex;
+  align-items: center;
 }
