@@ -9,6 +9,7 @@ require_once('lib/assets.php');         // Asset and file upload related functio
 require_once('lib/titles.php');         // Page and article titles
 require_once('lib/datetime.php');       // Date & Time Related Functions
 require_once('cta_btn/cta_btn_options.php');       // CTA button option page
+require_once('lib/home-cat-list-functions.php');       // Homepage category list
 
 show_admin_bar( false );
 
