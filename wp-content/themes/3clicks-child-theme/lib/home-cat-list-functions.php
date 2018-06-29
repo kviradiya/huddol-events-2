@@ -45,7 +45,7 @@ function print_home_categories_and_posts() {
                 <h2><?php echo get_the_category_by_ID( $category_id ); ?></h2>
                 <div class="g1-collection g1-collection--grid g1-collection--one-fourth g1-collection--filterable g1-effect-none">
                     <ul style="position: relative; overflow: visible"
-                        class="isotope">
+                        class="isotope custom-select">
 						<?php
 
 						foreach ( $my_posts as $post ) {

@@ -1256,6 +1256,9 @@ a {
   #banner-space {
     display: none; } }
 
+.custom-select .channel-category {
+  display: none; }
+
 .tcn-read-list article .entry-title {
   font-size: 24px; }
 
