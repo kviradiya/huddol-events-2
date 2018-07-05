@@ -79,47 +79,41 @@
   }
   .event-details-register {
     padding-bottom: 25px;
-    a {
+    button {
       display: block;
       width: 100%;
-      margin-bottom: 0;
+      margin-bottom: 0px;
       font-size: 20px;
       font-weight: 500;
       color: white;
       position: relative;
-      &.blue {
-        color: #29abe2;
-        display: inline;
-      }
-      &.bold{
-        font-weight: bold;
-      }
       &.register {
         $padding: 24px;
         min-height: 95px;
         padding: 10px $padding;
-        background-color: #3ac38f;
-        color: #fff;
+        background-color: #fff;
+        color: #000;
         text-align: left;
-        border-radius: 12px;
+        border: 3px solid #000;
+        border-radius: 5px;
         line-height: normal;
         .hd {
-          font-size: 40px;
-          font-weight: bold;
+          font-size: 30px;
           clear: both;
           display: block;
-          margin-top: -18px;
+          margin-top: -12px;
         }
         .sub {
           clear: both;
           display: block;
-          font-size: 24px;
-          line-height: 54px;
+          height: 20px;
+          font-size: 14px;
+          line-height: 14px;
         }
         .price {
           position: absolute;
           right: $padding;
-          top: 44px;
+          top: 28px;
           font-size: 24px;
         }
       }
@@ -196,11 +190,10 @@
   margin-bottom: 20px;
 }
 .warning {
-  padding: 20px 1px 2px 46px;
-  margin-top: 22px;
-  font-size: 19px;
+  padding: 20px 30px 20px 50px;
+  font-size: 16px;
   color: #000;
-  background: url(images/bell_icon_large.png) 0 18px no-repeat;
+  background: url(images/bell_icon_large.png) left center no-repeat;
 }
 h5.steps {
   margin-bottom: 10px;

@@ -1355,52 +1355,48 @@ a {
         background-color: transparent; }
   .event-details-sidebar .event-details-register {
     padding-bottom: 25px; }
-    .event-details-sidebar .event-details-register a {
+    .event-details-sidebar .event-details-register button {
       display: block;
       width: 100%;
-      margin-bottom: 0;
+      margin-bottom: 0px;
       font-size: 20px;
       font-weight: 500;
       color: white;
       position: relative; }
-      .event-details-sidebar .event-details-register a.blue {
-        color: #29abe2;
-        display: inline; }
-      .event-details-sidebar .event-details-register a.bold {
-        font-weight: bold; }
-      .event-details-sidebar .event-details-register a.register {
+      .event-details-sidebar .event-details-register button.register {
         min-height: 95px;
         padding: 10px 24px;
-        background-color: #3ac38f;
-        color: #fff;
+        background-color: #fff;
+        color: #000;
         text-align: left;
-        border-radius: 12px;
+        border: 3px solid #000;
+        border-radius: 5px;
         line-height: normal; }
-        .event-details-sidebar .event-details-register a.register .hd {
-          font-size: 40px;
-          font-weight: bold;
+        .event-details-sidebar .event-details-register button.register .hd {
+          font-size: 30px;
           clear: both;
           display: block;
-          margin-top: -18px; }
-        .event-details-sidebar .event-details-register a.register .sub {
+          margin-top: -12px; }
+        .event-details-sidebar .event-details-register button.register .sub {
           clear: both;
           display: block;
-          font-size: 24px;
-          line-height: 54px; }
-        .event-details-sidebar .event-details-register a.register .price {
+          height: 20px;
+          font-size: 14px;
+          line-height: 14px; }
+        .event-details-sidebar .event-details-register button.register .price {
           position: absolute;
           right: 24px;
-          top: 44px;
+          top: 28px;
           font-size: 24px; }
-      .event-details-sidebar .event-details-register a.logged-in {
+      .event-details-sidebar .event-details-register button.logged-in {
         background-color: #29abe2;
         border: 3px solid #29abe2;
         color: #fff; }
-      .event-details-sidebar .event-details-register a.unregister {
+      .event-details-sidebar .event-details-register button.unregister {
         height: 48px;
         background-color: #636466;
         text-align: center; }
-        .event-details-sidebar .event-details-register a.unregister:hover {
+        .event-details-sidebar .event-details-register button.unregister:hover {
           background-color: #757678; }
     .event-details-sidebar .event-details-register .italic-message {
       margin-top: 26px; }
@@ -1445,11 +1441,10 @@ a {
   margin-bottom: 20px; }
 
 .warning {
-  padding: 20px 1px 2px 46px;
-  margin-top: 22px;
-  font-size: 19px;
+  padding: 20px 30px 20px 50px;
+  font-size: 16px;
   color: #000;
-  background: url(images/bell_icon_large.png) 0 18px no-repeat; }
+  background: url(images/bell_icon_large.png) left center no-repeat; }
 
 h5.steps {
   margin-bottom: 10px;

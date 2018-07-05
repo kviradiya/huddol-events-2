@@ -374,8 +374,8 @@ if ( !defined('ABSPATH') )
                                         <li><label><input type="checkbox" name="terms_of_use" /><span><?php _e("I have read the", "tcn"); ?> <a href="http://huddol.events.com/fr/conditions-utilisation/"><?php _e("Terms of Use", "tcn"); ?></a> <?php _e("and", "tcn"); ?> la <a href="<?php echo site_url(); ?>/fr/politique-de-confidentialite/"><?php _e("Privacy Policy", "tcn"); ?></a></span></label></li>
                                     <?php endif ?>
                                     </ul>
-<!--                                   <div class="g-recaptcha" data-sitekey="6Ld6F0QUAAAAAGc2TeUbh-ujQyOXu7GBNWPkj9Qg"></div> -->
-<!--				                    <input type="hidden" id="signup_form_secondary_is_human" name="signup_form_is_human" value="" />-->
+                                   <div class="g-recaptcha" data-sitekey="6Ld6F0QUAAAAAGc2TeUbh-ujQyOXu7GBNWPkj9Qg"></div>
+				                    <input type="hidden" id="signup_form_secondary_is_human" name="signup_form_is_human" value="" />
                                     <input type="hidden" name="lang" value="<?php echo ICL_LANGUAGE_CODE; ?>" />
                                     <?php if(ICL_LANGUAGE_CODE =='en'):?>
                                         <input type="submit" value="<?php _e("Sign up", "tcn"); ?>" />
@@ -455,15 +455,15 @@ if ( !defined('ABSPATH') )
             return true;
 	    }
 
-        function getParameterByName(name, url) {
-          if (!url) url = window.location.href;
-          name = name.replace(/[\[\]]/g, "\\$&");
-          var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-              results = regex.exec(url);
-          if (!results) return null;
-          if (!results[2]) return '';
-          return decodeURIComponent(results[2].replace(/\+/g, " "));
-        }
+//        function getParameterByName(name, url) {
+//          if (!url) url = window.location.href;
+//          name = name.replace(/[\[\]]/g, "\\$&");
+//          var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+//              results = regex.exec(url);
+//          if (!results) return null;
+//          if (!results[2]) return '';
+//          return decodeURIComponent(results[2].replace(/\+/g, " "));
+//        }
 
 	    function subscribe_callback(responseText, statusText, xhr, $form)
 	    {
@@ -476,14 +476,14 @@ if ( !defined('ABSPATH') )
             {
                 jQuery("#subscribe_form_div").hide(1000);
                 jQuery("#subscribe_success").show();
-                console.log('tttt');
-                window.setTimeout(function() {
-                  if (getParameterByName ('redirect')) {
-                    window.location = window.location.origin + '/' + getParameterByName('redirect')
-                  } else {
-                      window.location = '<?php echo get_home_url()?>'
-                  }
-                }, [1000]);
+//                console.log('tttt');
+//                window.setTimeout(function() {
+//                  if (getParameterByName ('redirect')) {
+//                    window.location = window.location.origin + '/' + getParameterByName('redirect')
+//                  } else {
+//                      window.location = '<?php //echo get_home_url()?>//'
+//                  }
+//                }, [1000]);
 
                 jQuery("#newsletter_signup_form").clearForm();
             }
@@ -576,7 +576,7 @@ if ( !defined('ABSPATH') )
             jQuery('#forgot_email_password_form').ajaxForm(options);
 
             options = { 
-//                beforeSubmit:  validate_signup,  // pre-submit callback
+                beforeSubmit:  validate_signup,  // pre-submit callback
                 success:       signup_callback  // post-submit callback 
             };
             jQuery('#signup_form').ajaxForm(options);

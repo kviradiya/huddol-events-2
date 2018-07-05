@@ -185,15 +185,15 @@
                      <?php endif ?>
                 </ul>
 
-		<div class="g-recaptcha" data-sitekey="6Ld6F0QUAAAAAGc2TeUbh-ujQyOXu7GBNWPkj9Qg"></div> 
-		<input type="hidden" id="signup_form_secondary_is_human" name="signup_form_is_human" value="" />
-                    
+<!--		<div class="g-recaptcha" data-sitekey="6Ld6F0QUAAAAAGc2TeUbh-ujQyOXu7GBNWPkj9Qg"></div> -->
+<!--		<input type="hidden" id="signup_form_secondary_is_human" name="signup_form_is_human" value="" />-->
+
                 <input type="submit" value="<?php _e("Sign up", "tcn"); ?>" />
-            
+
                 <input type="hidden" name="lang" value="<?php echo ICL_LANGUAGE_CODE ?>" />
                 <input type="hidden" name="action" value="signup" />
             </form>
-        
+
             <div id="signup_success_secondary" style="display: none">
                 <h2><?php _e("Success!", "tcn"); ?></h2>
                 <?php _e("Please login using the form to the left.", "tcn"); ?>
@@ -202,7 +202,7 @@
         </div>
         </div>
     <?php endif ?>
-    
+
     <script type="text/javascript">
         <?php if($redirect != ''): ?>
             var redirect = true;
@@ -210,12 +210,12 @@
         <?php else: ?>
             var redirect = false;
         <?php endif ?>
-        
-        function secondary_validate_forgot_email_password(formData, jqForm, options) 
+
+        function secondary_validate_forgot_email_password(formData, jqForm, options)
 	    {
 	        jQuery("#forgot_email_password_errors_secondary").hide();
 	    }
-	    
+
 	    function secondary_forgot_email_password_callback(responseText, statusText, xhr, $form)
 	    {
 	        if(responseText['success'] == false)
@@ -230,12 +230,12 @@
                 jQuery("#forgot_email_password_errors_secondary").show();
             }
 	    }
-	    
-        function secondary_validate_login(formData, jqForm, options) 
+
+        function secondary_validate_login(formData, jqForm, options)
 	    {
 	        jQuery("#secondary_login_errors").hide();
 	    }
-	    
+
 	    function secondary_login_callback(responseText, statusText, xhr, $form)
 	    {
 	        //alert(statusText);
@@ -257,20 +257,20 @@
                 }
             }
 	    }
-	    
-	    function secondary_validate_signup(formData, jqForm, options) 
+
+	    function secondary_validate_signup(formData, jqForm, options)
 	    {
 	        jQuery("#signup_errors_secondary").hide();
 	        jQuery("#signup_success_secondary").hide();
 	    }
-	    
+
 	    function reset_password_show_secondary()
         {
 	        jQuery("#forgot_email_password_form_secondary").show();
 	        jQuery("#login_rows_secondary").hide();
 	        jQuery("#forgot_password_title_secondary").hide();
         }
-	    
+
 	    function secondary_signup_callback(responseText, statusText, xhr, $form)
 	    {
 	        if(responseText['success'] == false)
@@ -285,28 +285,28 @@
                 jQuery("#signup_form_secondary").hide(1000);
             }
 	    }
-	    
+
         jQuery(document).ready(function()
 	    {
 	        jQuery(".secondary-login-area").show();
-	        var options = { 
-                beforeSubmit:  secondary_validate_login,  // pre-submit callback 
-                success:       secondary_login_callback  // post-submit callback 
+	        var options = {
+                beforeSubmit:  secondary_validate_login,  // pre-submit callback
+                success:       secondary_login_callback  // post-submit callback
             };
 	        jQuery('#login_form_secondary').ajaxForm(options);
-            
-            options = { 
-                beforeSubmit:  secondary_validate_forgot_email_password,  // pre-submit callback 
-                success:       secondary_forgot_email_password_callback  // post-submit callback 
+
+            options = {
+                beforeSubmit:  secondary_validate_forgot_email_password,  // pre-submit callback
+                success:       secondary_forgot_email_password_callback  // post-submit callback
             };
             jQuery('#forgot_email_password_form_secondary').ajaxForm(options);
-            
-            options = { 
-                beforeSubmit:  secondary_validate_signup,  // pre-submit callback 
-                success:       secondary_signup_callback  // post-submit callback 
+
+            options = {
+                beforeSubmit:  secondary_validate_signup,  // pre-submit callback
+                success:       secondary_signup_callback  // post-submit callback
             };
             jQuery('#signup_form_secondary').ajaxForm(options);
         });
     </script>
-    
+
 <?php get_footer(); ?>
