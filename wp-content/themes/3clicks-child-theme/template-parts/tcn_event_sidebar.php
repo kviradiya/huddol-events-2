@@ -4,13 +4,7 @@
 <?php $can_user_register = $event_registration->can_user_register($post->ID, $user->ID); ?>
 <?php $is_user_logged_in = is_user_logged_in(); ?>
 <?php $is_event_full = $event_registration->is_event_full($post->ID); ?>
-<?php $actual_link = 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-
-$actual_link = add_query_arg( array(
-    'event_id' => $post->ID,
-), $actual_link );
-
-?>
+<?php $actual_link = 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
 
 <!--[if IE]>
 <style>/* this style block is for IE */
@@ -168,7 +162,8 @@ if($event_is_over): ?>
                  <?php endif ?>
 			</div>
 
-            <!--<div class="italic-message no_more_italic">
+            <div class="italic-message no_more_italic">
+				<h5 class="steps"><?php _e('Step 1', 'tnc')?>:</h5>
                 <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
 					<a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>" class="orange_btn_en g1-button g1-button--small g1-button--solid g1-button--standard "><?php _e("Sign up", "tcn"); ?></a> 
 					<span class="spacer size14px"><?php _e("or", "tcn"); ?></span>
@@ -182,9 +177,11 @@ if($event_is_over): ?>
                     <a href="<?php echo site_url(); ?>/fr/login-fr/?redirect=<?php echo $actual_link; ?>" class="orange_btn_fr g1-button g1-button--small g1-button--solid g1-button--standard "><?php _e("Log in", "tcn" ); ?></a> 
                     
                 <?php endif ?>
+
+				<h5 class="steps"><?php _e('Step 2', 'tnc')?>:</h5>
 				<p class="size16px bold"><?php _e('Return to this page to register after logging in.')?></p>
 				
-            </div>-->
+            </div>
         <?php endif ?>
     </div>
     
