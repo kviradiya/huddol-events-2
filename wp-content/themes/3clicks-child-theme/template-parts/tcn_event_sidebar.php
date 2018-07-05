@@ -146,7 +146,7 @@ if($event_is_over): ?>
                 <?php endif ?>
             <?php endif ?>
         <?php else: ?>
-            <a class="register logged-out" href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>">
+            <button class="register logged-out">
                 <span class="price" style="display: block"><?php echo $event_registration->get_event_price_display($post->ID); ?></span>
 				<?php if(ICL_LANGUAGE_CODE == 'en'): ?>
 					<span class="sub"><?php _e('Want to ', 'tnc')?></span>
@@ -157,7 +157,7 @@ if($event_is_over): ?>
                 <?php endif ?>
                 <span class="sub" style="display: block"><?php _e("for this event?", "tcn"); ?></span>
 				
-            </a>
+            </button>
 			
 			<div class="warning bold">
 				<?php if(ICL_LANGUAGE_CODE == 'en'): ?>
