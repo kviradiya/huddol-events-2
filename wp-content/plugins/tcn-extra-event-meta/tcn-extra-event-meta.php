@@ -94,7 +94,7 @@ class ExtraEventMeta {
             if($_POST['event_meta_recording'] != '')
             {
                 update_post_meta($post->ID, 'event_meta_recording', $_POST['event_meta_recording']);
-                send_recording_ready_emails($post, 'en');
+                send_recording_ready_emails($post, ICL_LANGUAGE_CODE);
             }
         }
         
