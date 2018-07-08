@@ -129,6 +129,13 @@
                 <div class="row">
                     <input name="first_name" type="text" placeholder="<?php _e("First Name", "tcn"); ?>" />
                     <input name="last_name" type="text" placeholder="<?php _e("Last Name", "tcn"); ?>" />
+					<input name="user_redirect" class="user_redirect" type="hidden" value="
+					<?php
+						if(isset($_GET['redirect']) && $_GET['redirect'] != ""){
+							echo $_GET['redirect'];
+						}
+					?>
+					" />
                 </div>
                 
                 <div class="row">
@@ -196,7 +203,7 @@
 
             <div id="signup_success_secondary" style="display: none">
                 <h2><?php _e("Success!", "tcn"); ?></h2>
-                <?php _e("Please login using the form to the left.", "tcn"); ?>
+                <?php _e("Your account is successfully created.", "tcn"); ?>
                 <?php // _e("We have sent you an email to validate your account. If you did not receive an email to your inbox, check your spam or junk folders and add us to your safe senders list.", "tcn"); ?>
             </div>
         </div>
@@ -283,6 +290,12 @@
                 jQuery("#signup_form_secondary").clearForm();
                 jQuery("#signup_success_secondary").show(1000);
                 jQuery("#signup_form_secondary").hide(1000);
+				setTimeout(function(){
+					if(jQuery(".user_redirect").length){
+						location.href = jQuery(".user_redirect").val();
+					}
+				}, 1500);
+
             }
 	    }
 

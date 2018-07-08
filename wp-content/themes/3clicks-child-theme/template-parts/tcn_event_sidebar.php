@@ -4,7 +4,13 @@
 <?php $can_user_register = $event_registration->can_user_register($post->ID, $user->ID); ?>
 <?php $is_user_logged_in = is_user_logged_in(); ?>
 <?php $is_event_full = $event_registration->is_event_full($post->ID); ?>
-<?php $actual_link = 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>
+<?php $actual_link = 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+$actual_link = add_query_arg( array(
+    'event_id' => $post->ID,
+), $actual_link );
+
+?>
 
 <!--[if IE]>
 <style>/* this style block is for IE */
@@ -140,30 +146,27 @@ if($event_is_over): ?>
                 <?php endif ?>
             <?php endif ?>
         <?php else: ?>
-            <button class="register logged-out">
+            <a class="register logged-out" href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>">
                 <span class="price" style="display: block"><?php echo $event_registration->get_event_price_display($post->ID); ?></span>
 				<?php if(ICL_LANGUAGE_CODE == 'en'): ?>
-					<span class="sub"><?php _e('Want to ', 'tnc')?></span>
+					<span class="sub"><?php _e('Click to ', 'tnc')?></span>
                     <span class="hd"><?php _e("Register", "tcn"); ?></span>
                 <?php else : ?>
-                   <span class="sub"><?php _e('Want to ', 'tnc')?></span>
-                   <span class="hd">inscrire</span>
+                   <span class="sub"><?php _e('Cliquez pour vous ', 'tnc')?></span>
+                   <span class="hd">Inscrire</span>
                 <?php endif ?>
-                <span class="sub" style="display: block"><?php _e("for this event?", "tcn"); ?></span>
-				
-            </button>
+            </a>
 			
 			<div class="warning bold">
 				<?php if(ICL_LANGUAGE_CODE == 'en'): ?>
 				
-				<?php _e('To register, you must be a', 'tnc')?> <a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>" class="orange bold"><?php _e('subscriber to TCN', 'tnc') ?></a>.
+				<?php _e('To register, you must be a', 'tnc')?> <a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>" class="blue bold"><?php _e('subscriber to TCN', 'tnc') ?></a>.
                 <?php else : ?>
-                <?php _e('To register, you must be a', 'tnc')?> <a href="<?php echo site_url(); ?>/fr/login-fr/?redirect=<?php echo $actual_link; ?>" class="orange bold"><?php _e('subscriber to TCN', 'tnc') ?></a>.
+                <?php _e('To register, you must be a', 'tnc')?> <a href="<?php echo site_url(); ?>/fr/login-fr/?redirect=<?php echo $actual_link; ?>" class="blue bold"><?php _e('subscriber to TCN', 'tnc') ?></a>.
                  <?php endif ?>
 			</div>
 
-            <div class="italic-message no_more_italic">
-				<h5 class="steps"><?php _e('Step 1', 'tnc')?>:</h5>
+            <!--<div class="italic-message no_more_italic">
                 <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
 					<a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>" class="orange_btn_en g1-button g1-button--small g1-button--solid g1-button--standard "><?php _e("Sign up", "tcn"); ?></a> 
 					<span class="spacer size14px"><?php _e("or", "tcn"); ?></span>
@@ -177,11 +180,9 @@ if($event_is_over): ?>
                     <a href="<?php echo site_url(); ?>/fr/login-fr/?redirect=<?php echo $actual_link; ?>" class="orange_btn_fr g1-button g1-button--small g1-button--solid g1-button--standard "><?php _e("Log in", "tcn" ); ?></a> 
                     
                 <?php endif ?>
-
-				<h5 class="steps"><?php _e('Step 2', 'tnc')?>:</h5>
 				<p class="size16px bold"><?php _e('Return to this page to register after logging in.')?></p>
 				
-            </div>
+            </div>-->
         <?php endif ?>
     </div>
     
