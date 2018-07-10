@@ -1393,8 +1393,8 @@ a {
           top: 44px;
           font-size: 24px; }
       .event-details-sidebar .event-details-register a.logged-in, .event-details-sidebar .event-details-register button.logged-in {
-        background-color: #29abe2;
-        border: 3px solid #29abe2;
+        background-color: #3ac38f;
+        border: 3px solid #3ac38f;
         color: #fff; }
       .event-details-sidebar .event-details-register a.unregister, .event-details-sidebar .event-details-register button.unregister {
         height: 48px;
