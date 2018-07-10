@@ -105,7 +105,7 @@ if($event_is_over): ?>
                                 <form action="/fr/register_event_fr/" method="POST">
 
                             <?php endif ?>
-                                <a type="submit" class="register logged-in">
+                                <button type="submit" class="register logged-in">
                                     <span class="price" style="display: block"><?php echo $event_registration->get_event_price_display($post->ID); ?></span>
 	                                <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
                                         <span class="sub"><?php _e('Click to ', 'tnc')?></span>
@@ -114,14 +114,14 @@ if($event_is_over): ?>
                                         <span class="sub"><?php _e('Cliquez pour vous ', 'tnc')?></span>
                                         <span class="hd">Inscrire</span>
 	                                <?php endif ?>
-                                </a>
+                                </button>
                                 <input type="hidden" name="post_id" value="<?php echo $post->ID ?>" />
                                 <input type="hidden" name="redirect" value="<?php echo the_permalink(); ?>" />
                                 <input type="hidden" name="action" value="register" />
                             </form>
                         <?php endif ?>
                     <?php else: ?>
-                        <a type="submit" class="register no-access logged-in">
+                        <button type="submit" class="register no-access logged-in">
                             <span class="price" style="display: block"><?php echo $event_registration->get_event_price_display($post->ID); ?></span>
 	                        <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
                                 <span class="sub"><?php _e('Click to ', 'tnc')?></span>
@@ -130,7 +130,7 @@ if($event_is_over): ?>
                                 <span class="sub"><?php _e('Cliquez pour vous ', 'tnc')?></span>
                                 <span class="hd">Inscrire</span>
 	                        <?php endif ?>
-                        </a>
+                        </button>
 
                         <div id="access-errors" style="display: none">
                             <p>
