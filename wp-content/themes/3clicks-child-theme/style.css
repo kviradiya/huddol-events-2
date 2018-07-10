@@ -1355,7 +1355,7 @@ a {
         background-color: transparent; }
   .event-details-sidebar .event-details-register {
     padding-bottom: 25px; }
-    .event-details-sidebar .event-details-register a {
+    .event-details-sidebar .event-details-register a, .event-details-sidebar .event-details-register button {
       display: block;
       width: 100%;
       margin-bottom: 0;
@@ -1363,12 +1363,12 @@ a {
       font-weight: 500;
       color: white;
       position: relative; }
-      .event-details-sidebar .event-details-register a.blue {
+      .event-details-sidebar .event-details-register a.blue, .event-details-sidebar .event-details-register button.blue {
         color: #29abe2;
         display: inline; }
-      .event-details-sidebar .event-details-register a.bold {
+      .event-details-sidebar .event-details-register a.bold, .event-details-sidebar .event-details-register button.bold {
         font-weight: bold; }
-      .event-details-sidebar .event-details-register a.register {
+      .event-details-sidebar .event-details-register a.register, .event-details-sidebar .event-details-register button.register {
         min-height: 95px;
         padding: 10px 24px;
         background-color: #3ac38f;
@@ -1376,31 +1376,31 @@ a {
         text-align: left;
         border-radius: 12px;
         line-height: normal; }
-        .event-details-sidebar .event-details-register a.register .hd {
+        .event-details-sidebar .event-details-register a.register .hd, .event-details-sidebar .event-details-register button.register .hd {
           font-size: 40px;
           font-weight: bold;
           clear: both;
           display: block;
           margin-top: -18px; }
-        .event-details-sidebar .event-details-register a.register .sub {
+        .event-details-sidebar .event-details-register a.register .sub, .event-details-sidebar .event-details-register button.register .sub {
           clear: both;
           display: block;
           font-size: 24px;
           line-height: 54px; }
-        .event-details-sidebar .event-details-register a.register .price {
+        .event-details-sidebar .event-details-register a.register .price, .event-details-sidebar .event-details-register button.register .price {
           position: absolute;
           right: 24px;
           top: 44px;
           font-size: 24px; }
-      .event-details-sidebar .event-details-register a.logged-in {
+      .event-details-sidebar .event-details-register a.logged-in, .event-details-sidebar .event-details-register button.logged-in {
         background-color: #29abe2;
         border: 3px solid #29abe2;
         color: #fff; }
-      .event-details-sidebar .event-details-register a.unregister {
+      .event-details-sidebar .event-details-register a.unregister, .event-details-sidebar .event-details-register button.unregister {
         height: 48px;
         background-color: #636466;
         text-align: center; }
-        .event-details-sidebar .event-details-register a.unregister:hover {
+        .event-details-sidebar .event-details-register a.unregister:hover, .event-details-sidebar .event-details-register button.unregister:hover {
           background-color: #757678; }
     .event-details-sidebar .event-details-register .italic-message {
       margin-top: 26px; }

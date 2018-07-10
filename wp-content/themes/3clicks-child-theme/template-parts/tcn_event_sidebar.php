@@ -105,7 +105,7 @@ if($event_is_over): ?>
                                 <form action="/fr/register_event_fr/" method="POST">
 
                             <?php endif ?>
-                                <button type="submit" class="register logged-in">
+                                <a type="submit" class="register logged-in">
                                     <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
                                         <span class="hd" style="display: block"><?php _e("Register", "tcn"); ?></span>
                                     <?php else : ?>
@@ -113,14 +113,14 @@ if($event_is_over): ?>
                                     <?php endif ?>
                                     <span class="sub" style="display: block"><?php _e("for this event", "tcn"); ?></span>
                                     <span class="price" style="display: block"><?php echo $event_registration->get_event_price_display($post->ID); ?></span>
-                                </button>
+                                </a>
                                 <input type="hidden" name="post_id" value="<?php echo $post->ID ?>" />
                                 <input type="hidden" name="redirect" value="<?php echo the_permalink(); ?>" />
                                 <input type="hidden" name="action" value="register" />
                             </form>
                         <?php endif ?>
                     <?php else: ?>
-                        <button type="submit" class="register no-access logged-in">
+                        <a type="submit" class="register no-access logged-in">
                             <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
                                 
                                 <span class="hd" style="display: block"><?php _e("Register", "tcn"); ?></span>
@@ -129,7 +129,7 @@ if($event_is_over): ?>
                             <?php endif ?>
                             <span class="sub" style="display: block"><?php _e("for this event", "tcn"); ?></span>
                             <span class="price" style="display: block"><?php echo $event_registration->get_event_price_display($post->ID); ?></span>
-                        </button>
+                        </a>
 
                         <div id="access-errors" style="display: none">
                             <p>
