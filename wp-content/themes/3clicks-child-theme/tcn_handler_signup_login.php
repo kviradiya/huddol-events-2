@@ -213,10 +213,13 @@ function signup() {
 	$captcha          = $_POST['signup_form_is_human'];
 	$city             = $_POST['city'];
 	$phone            = $_POST['phone'];
-	$user_redirect            = $_POST['user_redirect'];
+	$user_redirect    = $_POST['user_redirect'];
+	$user_redirect    = str_replace(' ','',$user_redirect);
 	$parts = parse_url($user_redirect);
 	if(!empty($parts)){
+		if(!empty($parts['query'])){
 		parse_str($parts['query'], $query);
+	}
 	}
 	if ( empty( $first_name ) ) {
 		$data['success'] = FALSE;
@@ -396,9 +399,9 @@ function signup() {
 	];
 
 
-	if($user_redirect){
+	if($user_redirect && !empty($parts['query'])){
 		$event_registration =  new EventRegistration;
-		if(isset($query['event_id'])){
+		if(!empty($query['event_id'])){
 			$post_id = str_replace("_", "", $query['event_id']);
 		}
 		$event_registration->register_user($post_id, $user_id);
@@ -408,6 +411,7 @@ function signup() {
 	if($user_id){
 		wp_set_current_user($user_id);
 		wp_set_auth_cookie($user_id);
+		$data['success'] = TRUE;
 	}
 	return_with_data( $data );
 

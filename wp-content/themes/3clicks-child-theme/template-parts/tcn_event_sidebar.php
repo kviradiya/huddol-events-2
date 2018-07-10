@@ -160,9 +160,9 @@ if($event_is_over): ?>
 			<div class="warning bold">
 				<?php if(ICL_LANGUAGE_CODE == 'en'): ?>
 				
-				<?php _e('To register, you must be a', 'tnc')?> <a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>" class="blue bold"><?php _e('subscriber to TCN', 'tnc') ?></a>.
+				<?php _e('You will be redirected back to this page after logging in or', 'tnc')?> <a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>" class="blue bold"><?php _e('signing up as a member', 'tnc') ?></a>.
                 <?php else : ?>
-                <?php _e('To register, you must be a', 'tnc')?> <a href="<?php echo site_url(); ?>/fr/login-fr/?redirect=<?php echo $actual_link; ?>" class="blue bold"><?php _e('subscriber to TCN', 'tnc') ?></a>.
+                <?php _e('Vous serez redirigé vers cette page suite à votre connexion ou ', 'tnc')?> <a href="<?php echo site_url(); ?>/fr/login-fr/?redirect=<?php echo $actual_link; ?>" class="blue bold"><?php _e('inscription en tant que membre', 'tnc') ?></a>.
                  <?php endif ?>
 			</div>
 
