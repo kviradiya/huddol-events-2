@@ -734,12 +734,12 @@ ul.tcn-event-numbers {
 
 #g1-header {
   & > .g1-background {
-    border-bottom-width: 0px;
+    border-bottom-width: 0;
   }
   #g1-id .site-title a,
   #g1-id .site-title img {
     @media #{$media-query-mini} {
-      width: 230px;
+      width: auto;
     }
   }
   #g1-primary-nav {
@@ -748,7 +748,7 @@ ul.tcn-event-numbers {
     text-align: center;
 
     &.g1-nav--expanded {
-      margin-right: 0px;
+      margin-right: 0;
     }
     #g1-primary-nav-switch {
       margin-right: 35px;

@@ -628,19 +628,19 @@ ul.tcn-event-numbers {
   height: 130px !important; }
 
 #g1-header > .g1-background {
-  border-bottom-width: 0px; }
+  border-bottom-width: 0; }
 
 @media only screen and (max-width: 370px) {
   #g1-header #g1-id .site-title a,
   #g1-header #g1-id .site-title img {
-    width: 230px; } }
+    width: auto; } }
 
 #g1-header #g1-primary-nav {
   margin-top: 0;
   width: 100%;
   text-align: center; }
   #g1-header #g1-primary-nav.g1-nav--expanded {
-    margin-right: 0px; }
+    margin-right: 0; }
   #g1-header #g1-primary-nav #g1-primary-nav-switch {
     margin-right: 35px; }
   #g1-header #g1-primary-nav #g1-primary-nav-menu > .menu-item > a {
@@ -1083,6 +1083,8 @@ a {
 .tcn-home-channels {
   margin-left: -18px;
   margin-right: -18px; }
+  .tcn-home-channels h2 {
+    padding: 0px 18px; }
   .tcn-home-channels .g1-collection--grid > ul > li.g1-collection__item {
     max-width: none;
     margin-bottom: 0px; }
@@ -1357,7 +1359,7 @@ a {
     padding-bottom: 25px; }
     .event-details-sidebar .event-details-register a, .event-details-sidebar .event-details-register button {
       display: block;
-      width: 100%;
+      width: auto;
       margin-bottom: 0;
       font-size: 20px;
       font-weight: 500;
