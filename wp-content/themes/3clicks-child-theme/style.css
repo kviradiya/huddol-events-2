@@ -1397,11 +1397,13 @@ a {
       .event-details-sidebar .event-details-register a.logged-in, .event-details-sidebar .event-details-register button.logged-in {
         background-color: #3ac38f;
         border: 3px solid #3ac38f;
-        color: #fff; }
+        color: #fff;
+        width: 100%; }
       .event-details-sidebar .event-details-register a.unregister, .event-details-sidebar .event-details-register button.unregister {
         height: 48px;
         background-color: #636466;
-        text-align: center; }
+        text-align: center;
+        width: 100%; }
         .event-details-sidebar .event-details-register a.unregister:hover, .event-details-sidebar .event-details-register button.unregister:hover {
           background-color: #757678; }
     .event-details-sidebar .event-details-register .italic-message {

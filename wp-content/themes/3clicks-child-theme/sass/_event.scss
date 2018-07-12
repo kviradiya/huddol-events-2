@@ -127,11 +127,13 @@
         background-color: #3ac38f;
         border: 3px solid #3ac38f;
         color: #fff;
+        width:100%;
       }
       &.unregister {
         height: 48px;
         @include link-background($color-gray);
         text-align: center;
+        width:100%;
       }
     }
     .italic-message {
