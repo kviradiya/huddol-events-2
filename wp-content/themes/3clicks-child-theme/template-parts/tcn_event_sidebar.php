@@ -32,7 +32,7 @@ if($event_is_over): ?>
             <button class="register no-access" style="background: black; color:#fff; height: 140px;">
             <?php endif ?>
             <?php if(ICL_LANGUAGE_CODE == 'fr'): ?>
-                <span class="sub" style="display: block; margin-top: -25px; height: 40px;"><?php _e("Event recording being processed", "tcn"); ?></span>
+                <span class="sub"><?php _e("Event recording being processed", "tcn"); ?></span>
         <?php else: ?>
                 <span class="sub" style="display: block;"><?php _e("Event recording being processed", "tcn"); ?></span>
             <?php endif ?>

@@ -123,6 +123,14 @@
           font-size: 24px;
         }
       }
+      &.no-access {
+        .sub {
+          line-height:23px;
+        }
+        .hd {
+          margin-top: 0;
+        }
+      }
       &.logged-in {
         background-color: #3ac38f;
         border: 3px solid #3ac38f;

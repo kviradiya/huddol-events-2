@@ -1394,6 +1394,10 @@ a {
           right: 24px;
           top: 44px;
           font-size: 24px; }
+      .event-details-sidebar .event-details-register a.no-access .sub, .event-details-sidebar .event-details-register button.no-access .sub {
+        line-height: 23px; }
+      .event-details-sidebar .event-details-register a.no-access .hd, .event-details-sidebar .event-details-register button.no-access .hd {
+        margin-top: 0; }
       .event-details-sidebar .event-details-register a.logged-in, .event-details-sidebar .event-details-register button.logged-in {
         background-color: #3ac38f;
         border: 3px solid #3ac38f;
