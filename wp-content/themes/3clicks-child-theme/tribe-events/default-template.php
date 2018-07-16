@@ -26,6 +26,13 @@ $is_user_logged_in = is_user_logged_in();
 $event_is_over = is_event_over($post->ID);
 $is_user_registered = $event_registration->is_user_registered($post->ID, $user->ID);
 
+$actual_link = 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+$actual_link = add_query_arg( array(
+	'event_id' => $post->ID,
+), $actual_link );
+
+
 // Add call to action before the inner content is rendered so it can span the full
 // page width
 if(($is_user_logged_in && $is_user_registered) || $event_is_over) {
@@ -200,6 +207,133 @@ add_filter( 'body_class', array(G1_Theme(), 'secondary_after_body_class') );
                             <div class="event-details-date">
                                 <time datetime="<?php echo get_event_date_iso($post); ?>" itemprop="startDate"><?php echo get_event_date($post); ?></time>
                             </div>
+
+
+
+                            <div class="event-details-post mobile-only">
+                                <div class="event-details-register">
+		                        <?php if(is_user_logged_in()): ?>
+		                        <?php if($event_registration->is_user_registered($post_id, $user->ID)): ?>
+
+		                        <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
+                                <form action="/register_event/" method="POST">
+
+			                        <?php else: ?>
+                                    <form action="/fr/register_event_fr/" method="POST">
+
+				                        <?php endif ?>
+                                        <button type="submit" class="unregister"><?php _e("Unregister", "tcn"); ?></button>
+                                        <input type="hidden" name="post_id" value="<?php echo $post->ID ?>" />
+                                        <input type="hidden" name="redirect" value="<?php echo the_permalink(); ?>" />
+                                        <input type="hidden" name="action" value="unregister" />
+                                    </form>
+                                    <div class="signupMsg"><span class="title"><?php _e("You are registered!", "tcn"); ?></span><br>
+				                        <?php _e("A confirmation email has been sent. Please check your spam or junk folders as well. The connection details are also listed below.", "tcn"); ?></div>
+			                        <?php else: ?>
+			                        <?php if($is_event_full): ?>
+                                        <button class="register no-access" style="background: black; color:#fff;">
+                                            <span class="sub" style="display: block;"><?php _e("Registration closed. This event is", "tcn"); ?></span>
+                                            <span class="hd" style="display: block;"><?php _e("Fully Booked", "tcn"); ?></span>
+                                        </button>
+			                        <?php else: ?>
+			                        <?php if($can_user_register): ?>
+			                        <?php if($event_registration->is_payment_processing($post_id, $user->ID)): ?>
+                                        <p><?php _e("We are currenly processing your payment for this event. Please try refreshing the page momentarily.", "tcn"); ?>
+                                        </p>
+
+			                        <?php else: ?>
+			                        <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
+                                    <form action="/register_event/" method="POST">
+
+				                        <?php else: ?>
+                                        <form action="/fr/register_event_fr/" method="POST">
+
+					                        <?php endif ?>
+                                            <button type="submit" class="register logged-in">
+                                                <span class="price" style="display: block"><?php echo $event_registration->get_event_price_display($post->ID); ?></span>
+						                        <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
+                                                    <span class="sub"><?php _e('Click to ', 'tnc')?></span>
+                                                    <span class="hd"><?php _e("Register", "tcn"); ?></span>
+						                        <?php else : ?>
+                                                    <span class="sub"><?php _e('Cliquez pour vous ', 'tnc')?></span>
+                                                    <span class="hd">Inscrire</span>
+						                        <?php endif ?>
+                                            </button>
+                                            <input type="hidden" name="post_id" value="<?php echo $post->ID ?>" />
+                                            <input type="hidden" name="redirect" value="<?php echo the_permalink(); ?>" />
+                                            <input type="hidden" name="action" value="register" />
+                                        </form>
+				                        <?php endif ?>
+				                        <?php else: ?>
+                                            <button type="submit" class="register no-access logged-in">
+                                                <span class="price" style="display: block"><?php echo $event_registration->get_event_price_display($post->ID); ?></span>
+						                        <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
+                                                    <span class="sub"><?php _e('Click to ', 'tnc')?></span>
+                                                    <span class="hd"><?php _e("Register", "tcn"); ?></span>
+						                        <?php else : ?>
+                                                    <span class="sub"><?php _e('Cliquez pour vous ', 'tnc')?></span>
+                                                    <span class="hd">Inscrire</span>
+						                        <?php endif ?>
+                                            </button>
+
+                                            <div id="access-errors" style="display: none">
+                                                <p>
+							                        <?php _e("You can't register for this event.", "tcn"); ?>
+                                                </p>
+
+						                        <?php if(! $event_registration->can_user_province_register($post->ID, $user->ID)): ?>
+                                                    <p>
+								                        <?php _e("Access for residents of", "tcn"); ?> <?php echo $event_registration->get_location_restriction_string($post->ID); ?> <?php _e("only", "tcn"); ?>
+                                                    </p>
+						                        <?php endif ?>
+                                            </div>
+				                        <?php endif ?>
+				                        <?php endif ?>
+				                        <?php endif ?>
+				                        <?php else: ?>
+                                            <a class="register logged-out" href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>">
+                                                <span class="price" style="display: block"><?php echo $event_registration->get_event_price_display($post->ID); ?></span>
+						                        <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
+                                                    <span class="sub"><?php _e('Click to ', 'tnc')?></span>
+                                                    <span class="hd"><?php _e("Register", "tcn"); ?></span>
+						                        <?php else : ?>
+                                                    <span class="sub"><?php _e('Cliquez pour vous ', 'tnc')?></span>
+                                                    <span class="hd">Inscrire</span>
+						                        <?php endif ?>
+                                            </a>
+
+                                            <div class="warning bold">
+						                        <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
+
+							                        <?php _e('You will be redirected back to this page after logging in or', 'tnc')?> <a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>" class="blue bold"><?php _e('signing up as a member', 'tnc') ?></a>.
+						                        <?php else : ?>
+							                        <?php _e('Vous serez redirigé vers cette page suite à votre connexion ou ', 'tnc')?> <a href="<?php echo site_url(); ?>/fr/login-fr/?redirect=<?php echo $actual_link; ?>" class="blue bold"><?php _e('inscription en tant que membre', 'tnc') ?></a>.
+						                        <?php endif ?>
+                                            </div>
+
+                                            <!--<div class="italic-message no_more_italic">
+                <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
+					<a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>" class="orange_btn_en g1-button g1-button--small g1-button--solid g1-button--standard "><?php _e("Sign up", "tcn"); ?></a>
+					<span class="spacer size14px"><?php _e("or", "tcn"); ?></span>
+                    <a href="<?php echo site_url(); ?>/login/?redirect=<?php echo $actual_link; ?>" class="orange_btn_en g1-button g1-button--small g1-button--solid g1-button--standard "><?php _e("Log in", "tcn" ); ?></a>
+
+					<?php //_e("to register.", "tcn"); ?>
+
+                <?php else: ?>
+					<a href="<?php echo site_url(); ?>/fr/login-fr/?redirect=<?php echo $actual_link; ?>" class="orange_btn_fr g1-button g1-button--small g1-button--solid g1-button--standard ">S'inscrire</a>
+					<span class="spacer size14px"><?php _e("or", "tcn"); ?></span>
+                    <a href="<?php echo site_url(); ?>/fr/login-fr/?redirect=<?php echo $actual_link; ?>" class="orange_btn_fr g1-button g1-button--small g1-button--solid g1-button--standard "><?php _e("Log in", "tcn" ); ?></a>
+
+                <?php endif ?>
+				<p class="size16px bold"><?php _e('Return to this page to register after logging in.')?></p>
+
+            </div>-->
+				                        <?php endif ?>
+                            </div>
+                            </div>
+
+
+
                             
                             <?php if(!is_event_over($post->ID)): ?>
                             <div>

@@ -12,7 +12,6 @@ h2 {
     color: $color-red;
   }
 }
-
 .single-tribe_events a.tribe-events-ical,
 .single-tribe_events a.tribe-events-gcal,
 .single-tribe_events a.tribe-events-ical:hover,
@@ -24,7 +23,6 @@ h2 {
   border-radius: 4px;
   padding: 10px;
 }
-
 // Default category / tag description
 .tcn-term-description {
   color: $color-gray;
@@ -33,37 +31,30 @@ h2 {
 .tcn-page-title + .tcn-term-description {
   margin-top: -1em; // reduce vertical padding when title is followed by description
 }
-
 #g1-precontent > header.archive-header {
   margin-bottom: -10px;
   padding-top: 10px;
   padding-bottom: 0px;
 }
-
 .g1-font-regular-s {
   font-size: 14px;
   .g1-meta {
     font-size: 14px;
   }
 }
-
 .g1-content > .g1-layout-inner {
   padding-top: 0px;
 }
-
 .g1-content .g1-meta a {
   color: $color-red;
 }
-
 .g1-hgroup .entry-title {
   color: #5f8eca;
   font-size: 34px;
 }
-
 .g1-precontent .g1-meta {
-  color: #000000;
+  color: #000;
 }
-
 .g1-precontent,
 .g1-precontent .g1-regular,
 .g1-precontent h1 + h3,
@@ -95,7 +86,6 @@ h2 {
 .g1-precontent .g1-cartbox__switch {
   color: #5f8eca;
 }
-
 .g1-content input[type='button'],
 .g1-content input[type='submit'],
 .g1-content button,
@@ -109,25 +99,21 @@ h2 {
     @include link-background($color-gray);
   }
 }
-
 .g1-sidebar {
   @media #{$media-query-smaller} {
     padding-top: 30px;
   }
 }
-
 #secondary .widget {
   margin-bottom: 30px;
   & + .widget {
     padding-top: 30px;
   }
 }
-
 div.ssba img {
   width: 63px !important;
   padding: 2px !important;
 }
-
 a.button-big {
   $height: 58px;
   display: inline-block;
@@ -140,11 +126,9 @@ a.button-big {
   color: white;
   line-height: $height - 1px;
 }
-
 .tcn-image {
   @include background-cover;
 }
-
 .tcn-sep {
   height: 1px;
   margin: 30px 0px;
@@ -160,7 +144,6 @@ a.button-big {
     background: #5f8eca;
   }
 }
-
 .tcn-filter {
   margin-bottom: 20px;
   font-size: 15px;
@@ -280,7 +263,6 @@ a.button-big {
     }
   }
 }
-
 .tcn-partner-banner {
   $picture-size: 47%;
   $height-to-width-ratio: 0.56;
@@ -313,7 +295,6 @@ a.button-big {
     }
   }
 }
-
 .g1-social-icons {
   float: none !important;
   & > ul > li {
@@ -343,41 +324,33 @@ a.button-big {
     }
   }
 }
-
 div.errors {
   padding: 20px;
-  background-color: #990000;
-  color: #ffffff;
+  background-color: #900;
+  color: #fff;
 }
-
 section.widget {
   header.tcn-sidebar-title {
     font-size: 20px;
     margin-bottom: 20px;
   }
 }
-
 div.tcn-post-feed-thumbnail-holder {
   margin-bottom: 20px;
 }
-
 div.tcn-post-feed-entry-holder {
   margin-bottom: 0px;
 }
-
 span.h2-smaller {
-  color: #000000;
+  color: #000;
   font-size: 24px;
 }
-
 div.tcn-channel-switcher {
   margin-bottom: 40px;
 }
-
 nav.tcn-nav-single {
   border: 0px;
 }
-
 a.wpf-favorite-link {
   display: inline-block;
   width: 200px;
@@ -399,14 +372,12 @@ a.wpf-favorite-link {
     background-image: none;
   }
 }
-
 div.tcn-social-icons {
   margin-bottom: 10px;
   img {
     vertical-align: middle;
   }
 }
-
 ul.tcn-sidebar-posts {
   margin: 0px;
   li {
@@ -442,7 +413,6 @@ ul.tcn-sidebar-posts {
     }
   }
 }
-
 ul.tcn-event-numbers {
   margin: 0px;
   li {
@@ -473,7 +443,6 @@ ul.tcn-event-numbers {
     }
   }
 }
-
 /* PRE-HEADER */
 
 #g1-preheader {
@@ -500,6 +469,9 @@ ul.tcn-event-numbers {
     position: relative;
     @media #{$media-query-small} {
       height: $preheader-height + 50px;
+    }
+    @media #{$media-query-smallest} {
+      height: $preheader-height + 0;
     }
     .preheader-left {
       height: 100%;
@@ -614,36 +586,30 @@ ul.tcn-event-numbers {
     }
   }
 }
-
 /* HEADER */
 
 /* HEADER */
 #videoTutorial.use-sidebar #videoTutClosed {
   display: none;
 }
-
 #videoTutorial.use-sidebar #videoTutOpen {
   display: block;
 }
-
 #videoTutorial #videoTutOpen {
   display: none;
 }
-
 #videoTutClosed {
   background: #29abe2;
   border-radius: 6px;
   cursor: pointer;
   padding: 14px 4px 4px 0;
 }
-
 #ClosedTitle {
   font-family: 'Open Sans';
   font-size: 16px;
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 6px;
 }
-
 #videoTutorial {
   right: -6px;
   position: fixed;
@@ -653,11 +619,9 @@ ul.tcn-event-numbers {
   white-space: nowrap;
   min-width: 52px;
 }
-
 #videoTutorial.use-sidebar {
   width: 268px;
 }
-
 #videoTutorial h4 {
   display: inline-block;
   font-family: 'Open Sans';
@@ -666,32 +630,27 @@ ul.tcn-event-numbers {
   color: #5f8eca;
   margin: 0 0 6px 6px;
 }
-
 .tutTabWrap {
   background: #f2f2f2;
   border-radius: 2px;
   border: 2px solid #f2f2f2;
   padding: 2px;
 }
-
 .tutTabWrap .tutTab {
   background: white;
   border: 1px solid #e6e6e6;
   padding: 18px 4px;
 }
-
 .tutTabWrap .tutTab ul {
   margin: 0;
   width: 268px;
 }
-
 .tutTabWrap .tutTab ul li {
   list-style: none;
   text-align: center;
   line-height: 1.2;
   padding-right: 10%;
 }
-
 .tutTabWrap .tutTab ul li a {
   display: block;
   font-size: 15px;
@@ -700,38 +659,31 @@ ul.tcn-event-numbers {
   text-align: center;
   background: url(images/arrow-circle.png) right center no-repeat;
 }
-
 .tutTabWrap .tutTab ul li a.foobox:hover {
-  color: #000000;
+  color: #000;
 }
-
 .tutTabWrap .tutTab ul li a img {
   position: absolute;
   right: 15px;
   top: 59px;
 }
-
 #closeIt {
   cursor: pointer;
   width: 18px;
   margin-top: 4px;
   margin-right: 4px;
 }
-
 #g1-primary-nav-menu .g1-nav-item__desc {
   display: none;
 }
-
 @media #{$media-query-small} {
   #videoTutorial {
     display: none;
   }
 }
-
 #g1-header-waypoint {
   height: 130px !important;
 }
-
 #g1-header {
   & > .g1-background {
     border-bottom-width: 0;
@@ -742,6 +694,13 @@ ul.tcn-event-numbers {
       width: auto;
     }
   }
+  @media #{$media-query-smallest} {
+    #g1-primary-nav {
+      position: absolute;
+      width: 95% !important;
+    }
+  }
+
   #g1-primary-nav {
     margin-top: 0;
     width: 100%;
@@ -796,15 +755,15 @@ ul.tcn-event-numbers {
       }
 
       #g1-primary-nav-menu
-        > .g1-type-column
-        .g1-submenus
-        > ul
-        > .menu-item
-        &
-        > .g1-type-drops
-        .g1-submenus
-        > ul
-        a {
+      > .g1-type-column
+      .g1-submenus
+      > ul
+      > .menu-item
+      &
+      > .g1-type-drops
+      .g1-submenus
+      > ul
+      a {
         font-size: 15px;
         font-weight: bold;
       }
@@ -849,14 +808,12 @@ ul.tcn-event-numbers {
           max-width: none;
           margin: 0px;
           position: absolute;
-          left: -80vw;
-          left: calc(80px - 90vw);
+          left: 0;
         }
       }
     }
   }
 }
-
 /* #Interest note */
 
 #category_reminder {
@@ -875,13 +832,11 @@ ul.tcn-event-numbers {
 .box_holder {
   display: none;
 }
-
 /* HEADER SLIDERS */
 
 #g1-subscriber-email-1 {
   padding: 0px 32px;
 }
-
 .preheader-slider {
   display: none;
   width: 100%;
@@ -956,7 +911,6 @@ ul.tcn-event-numbers {
     }
   }
 }
-
 .g1-mailchimp .g1-error {
   background: #e74c39;
   width: 322px;
@@ -964,7 +918,6 @@ ul.tcn-event-numbers {
   color: white;
   margin-bottom: 10px;
 }
-
 .secondary-login-area {
   width: 100%;
   background: transparent;
@@ -1032,7 +985,6 @@ ul.tcn-event-numbers {
     }
   }
 }
-
 .secondary-login-area-callout {
   height: 380px;
   position: relative;
@@ -1161,12 +1113,10 @@ ul.tcn-event-numbers {
     }
   }
 }
-
 .secondary-login-area-callout-french {
   background: url('./images/callout_french.png') no-repeat;
   height: 420px;
 }
-
 #preheader-slider-account,
 .secondary-login-area {
   $login-width: 48%;
@@ -1206,15 +1156,13 @@ ul.tcn-event-numbers {
     }
   }
 }
-
 /* PRE-CONTENT */
 
 #g1-precontent {
   & > .g1-background {
-    background-color: #ffffff;
+    background-color: #fff;
   }
 }
-
 /* PRE-FOOTER */
 
 .tcn-footer-about {
@@ -1238,7 +1186,6 @@ ul.tcn-event-numbers {
     line-height: 1.5;
   }
 }
-
 /* FOOTER */
 
 #g1-footer {
@@ -1263,8 +1210,24 @@ ul.tcn-event-numbers {
     }
   }
 }
-
 #g1-primary-bar {
   display: flex;
   align-items: center;
+}
+@media #{$media-query-smallest} {
+  #g1-primary-bar {
+    display: block;
+    align-items: unset;
+  }
+  #g1-id {
+    margin-top: 16px;
+  }
+}
+.mobile-only {
+  display: none;
+}
+@media #{$media-query-smallest} {
+  .mobile-only {
+    display: block;
+  }
 }

@@ -114,6 +114,7 @@ div.tcn-partner-signup {
     .language_changer_container {
         position: relative;
         right: 0;
+        display:inline;
     }
 
     .language_changer_container .dropdown {
@@ -133,8 +134,7 @@ div.tcn-partner-signup {
     background: none !important;
     border: none;
     color: #4a4a4a !important;
-    display: flex;
-    justify-content: center;
+    display: inline;
     padding: 0;
     cursor: pointer;
 }

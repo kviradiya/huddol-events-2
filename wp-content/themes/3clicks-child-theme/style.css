@@ -61,7 +61,7 @@ h2.tcn-page-title {
   font-size: 34px; }
 
 .g1-precontent .g1-meta {
-  color: #000000; }
+  color: #000; }
 
 .g1-precontent,
 .g1-precontent .g1-regular,
@@ -305,8 +305,8 @@ a.button-big {
 
 div.errors {
   padding: 20px;
-  background-color: #990000;
-  color: #ffffff; }
+  background-color: #900;
+  color: #fff; }
 
 section.widget header.tcn-sidebar-title {
   font-size: 20px;
@@ -319,7 +319,7 @@ div.tcn-post-feed-entry-holder {
   margin-bottom: 0px; }
 
 span.h2-smaller {
-  color: #000000;
+  color: #000;
   font-size: 24px; }
 
 div.tcn-channel-switcher {
@@ -437,6 +437,9 @@ ul.tcn-event-numbers {
     @media only screen and (max-width: 1024px) {
       #g1-preheader #g1-preheader-bar {
         height: 87px; } }
+    @media only screen and (max-width: 600px) {
+      #g1-preheader #g1-preheader-bar {
+        height: 37px; } }
     #g1-preheader #g1-preheader-bar .preheader-left {
       height: 100%;
       position: absolute;
@@ -551,7 +554,7 @@ ul.tcn-event-numbers {
 #ClosedTitle {
   font-family: 'Open Sans';
   font-size: 16px;
-  color: #ffffff;
+  color: #fff;
   margin-bottom: 6px; }
 
 #videoTutorial {
@@ -604,7 +607,7 @@ ul.tcn-event-numbers {
   background: url(images/arrow-circle.png) right center no-repeat; }
 
 .tutTabWrap .tutTab ul li a.foobox:hover {
-  color: #000000; }
+  color: #000; }
 
 .tutTabWrap .tutTab ul li a img {
   position: absolute;
@@ -634,6 +637,11 @@ ul.tcn-event-numbers {
   #g1-header #g1-id .site-title a,
   #g1-header #g1-id .site-title img {
     width: auto; } }
+
+@media only screen and (max-width: 600px) {
+  #g1-header #g1-primary-nav {
+    position: absolute;
+    width: 95% !important; } }
 
 #g1-header #g1-primary-nav {
   margin-top: 0;
@@ -712,8 +720,7 @@ a {
       max-width: none;
       margin: 0px;
       position: absolute;
-      left: -80vw;
-      left: calc(80px - 90vw); } }
+      left: 0; } }
 
 /* #Interest note */
 #category_reminder {
@@ -995,7 +1002,7 @@ a {
 
 /* PRE-CONTENT */
 #g1-precontent > .g1-background {
-  background-color: #ffffff; }
+  background-color: #fff; }
 
 /* PRE-FOOTER */
 .tcn-footer-about {
@@ -1035,6 +1042,20 @@ a {
 #g1-primary-bar {
   display: flex;
   align-items: center; }
+
+@media only screen and (max-width: 600px) {
+  #g1-primary-bar {
+    display: block;
+    align-items: unset; }
+  #g1-id {
+    margin-top: 16px; } }
+
+.mobile-only {
+  display: none; }
+
+@media only screen and (max-width: 600px) {
+  .mobile-only {
+    display: block; } }
 
 /* HOME PAGE */
 .tcn-home-slider {
@@ -1334,6 +1355,121 @@ a {
 
 .access-meta {
   margin-top: 7px; }
+
+.event-details-post {
+  padding-top: 20px; }
+  .event-details-post header {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 300;
+    color: black; }
+  .event-details-post .italic-message {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: #636466; }
+    .event-details-post .italic-message.flash {
+      background-color: yellow; }
+      .event-details-post .italic-message.flash.fade-out {
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+        background-color: transparent; }
+  .event-details-post .event-details-register {
+    padding-bottom: 5px; }
+    .event-details-post .event-details-register .warning {
+      margin-top: 0; }
+    .event-details-post .event-details-register a, .event-details-post .event-details-register button {
+      display: block;
+      width: auto;
+      margin-bottom: 0;
+      font-size: 20px;
+      font-weight: 500;
+      color: white;
+      position: relative; }
+      .event-details-post .event-details-register a.blue, .event-details-post .event-details-register button.blue {
+        color: #29abe2;
+        display: inline; }
+      .event-details-post .event-details-register a.bold, .event-details-post .event-details-register button.bold {
+        font-weight: bold; }
+      .event-details-post .event-details-register a.register, .event-details-post .event-details-register button.register {
+        min-height: 80px;
+        padding: 0 24px;
+        background-color: #3ac38f;
+        color: #fff;
+        text-align: left;
+        border-radius: 12px;
+        line-height: normal; }
+        .event-details-post .event-details-register a.register .hd, .event-details-post .event-details-register button.register .hd {
+          font-size: 28px;
+          font-weight: bold;
+          clear: both;
+          display: block;
+          margin-top: -18px; }
+        .event-details-post .event-details-register a.register .sub, .event-details-post .event-details-register button.register .sub {
+          clear: both;
+          display: block;
+          font-size: 16px;
+          line-height: 54px; }
+        .event-details-post .event-details-register a.register .price, .event-details-post .event-details-register button.register .price {
+          position: absolute;
+          right: 24px;
+          top: 28px;
+          font-size: 24px; }
+      .event-details-post .event-details-register a.no-access .sub, .event-details-post .event-details-register button.no-access .sub {
+        line-height: 23px; }
+      .event-details-post .event-details-register a.no-access .hd, .event-details-post .event-details-register button.no-access .hd {
+        margin-top: 0; }
+      .event-details-post .event-details-register a.logged-in, .event-details-post .event-details-register button.logged-in {
+        background-color: #3ac38f;
+        border: 3px solid #3ac38f;
+        color: #fff;
+        width: 100%; }
+      .event-details-post .event-details-register a.unregister, .event-details-post .event-details-register button.unregister {
+        height: 48px;
+        background-color: #636466;
+        text-align: center;
+        width: 100%; }
+        .event-details-post .event-details-register a.unregister:hover, .event-details-post .event-details-register button.unregister:hover {
+          background-color: #757678; }
+    .event-details-post .event-details-register .italic-message {
+      margin-top: 26px; }
+  .event-details-post .signupMsg {
+    background-color: #02b875;
+    color: #fff;
+    border-radius: 6px;
+    padding: 18px 21px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 12px;
+    font-weight: 500; }
+  .event-details-post .signupMsg .title {
+    font-weight: bold;
+    font-size: 22px; }
+  .event-details-post .event-details-share {
+    margin-bottom: -10px; }
+  .event-details-post .event-details-how-to-access {
+    margin-bottom: 15px;
+    padding-top: 20px; }
+    .event-details-post .event-details-how-to-access ul.tcn-event-numbers {
+      margin-bottom: 14px; }
+    .event-details-post .event-details-how-to-access .content p {
+      line-height: 1.5; }
+  .event-details-post .add-to-favorites {
+    margin-top: 34px; }
+  .event-details-post .event-details-rate {
+    margin-top: 35px; }
+  .event-details-post .event-details-author .author-name {
+    margin-top: -10px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 300; }
+  .event-details-post .event-details-partnership .partnership-name {
+    margin-top: -10px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 300; }
 
 .event-details-sidebar {
   padding-top: 60px; }
@@ -1893,7 +2029,8 @@ div.tcn-partner-signup .tcn-partner-signup-grid {
 @media only screen and (max-width: 600px) {
   .language_changer_container {
     position: relative;
-    right: 0; }
+    right: 0;
+    display: inline; }
   .language_changer_container .dropdown {
     left: -30px;
     right: auto; } }
@@ -1908,8 +2045,7 @@ div.tcn-partner-signup .tcn-partner-signup-grid {
   background: none !important;
   border: none;
   color: #4a4a4a !important;
-  display: flex;
-  justify-content: center;
+  display: inline;
   padding: 0;
   cursor: pointer; }
 
