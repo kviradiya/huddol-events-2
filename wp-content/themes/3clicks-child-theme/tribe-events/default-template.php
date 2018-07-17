@@ -14,6 +14,10 @@
 if ( !defined('ABSPATH') )
     die ( 'No direct script access allowed' );
 ?>
+<?php $user_registered = $event_registration->is_user_registered($post->ID, $user->ID); ?>
+<?php $can_user_register = $event_registration->can_user_register($post->ID, $user->ID); ?>
+<?php $is_event_full = $event_registration->is_event_full($post->ID); ?>
+
 <?php
 
 $image_path = get_stylesheet_directory_uri() .'/images/';
@@ -25,6 +29,8 @@ $user = wp_get_current_user();
 $is_user_logged_in = is_user_logged_in();
 $event_is_over = is_event_over($post->ID);
 $is_user_registered = $event_registration->is_user_registered($post->ID, $user->ID);
+
+
 
 $actual_link = 'https://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
