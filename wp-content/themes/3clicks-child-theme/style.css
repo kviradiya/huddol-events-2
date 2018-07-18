@@ -1514,22 +1514,35 @@ a {
         text-align: left;
         border-radius: 12px;
         line-height: normal; }
+        @media only screen and (max-width: 600px) {
+          .event-details-sidebar .event-details-register a.register, .event-details-sidebar .event-details-register button.register {
+            min-height: 80px;
+            padding: 0 24px; } }
         .event-details-sidebar .event-details-register a.register .hd, .event-details-sidebar .event-details-register button.register .hd {
           font-size: 40px;
           font-weight: bold;
           clear: both;
           display: block;
           margin-top: -18px; }
+          @media only screen and (max-width: 600px) {
+            .event-details-sidebar .event-details-register a.register .hd, .event-details-sidebar .event-details-register button.register .hd {
+              font-size: 28px; } }
         .event-details-sidebar .event-details-register a.register .sub, .event-details-sidebar .event-details-register button.register .sub {
           clear: both;
           display: block;
           font-size: 24px;
           line-height: 54px; }
+          @media only screen and (max-width: 600px) {
+            .event-details-sidebar .event-details-register a.register .sub, .event-details-sidebar .event-details-register button.register .sub {
+              font-size: 16px; } }
         .event-details-sidebar .event-details-register a.register .price, .event-details-sidebar .event-details-register button.register .price {
           position: absolute;
           right: 24px;
           top: 44px;
           font-size: 24px; }
+          @media only screen and (max-width: 600px) {
+            .event-details-sidebar .event-details-register a.register .price, .event-details-sidebar .event-details-register button.register .price {
+              top: 28px; } }
       .event-details-sidebar .event-details-register a.no-access .sub, .event-details-sidebar .event-details-register button.no-access .sub {
         line-height: 23px; }
       .event-details-sidebar .event-details-register a.no-access .hd, .event-details-sidebar .event-details-register button.no-access .hd {
