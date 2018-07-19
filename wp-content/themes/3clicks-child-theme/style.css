@@ -1459,8 +1459,15 @@ a {
   .event-details-post .event-details-how-to-access {
     margin-bottom: 15px;
     padding-top: 20px; }
+    .event-details-post .event-details-how-to-access .italic-message a {
+      font-size: 15px;
+      display: inline; }
     .event-details-post .event-details-how-to-access ul.tcn-event-numbers {
       margin-bottom: 14px; }
+    .event-details-post .event-details-how-to-access li .content a {
+      font-weight: bold;
+      display: inline;
+      font-size: 15px; }
     .event-details-post .event-details-how-to-access .content p {
       line-height: 1.5; }
   .event-details-post .add-to-favorites {

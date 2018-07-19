@@ -4,12 +4,10 @@
   width: 636px;
   width: calc(100% - 332px);
 }
-
 .g1-secondary-wide #secondary {
   width: 304px;
   margin-left: 28px;
 }
-
 .event-details-main {
   .event-details-category {
     font-size: 33px;
@@ -42,7 +40,6 @@
     font-weight: 300;
   }
 }
-
 #access-errors {
   margin-top: 10px;
   padding: 10px;
@@ -51,166 +48,176 @@
   border: medium none;
   border-radius: 4px;
 }
-
 .access-meta {
   margin-top: 7px;
 }
-
 .event-details-post {
-    padding-top: 20px;
-    header {
-      margin-bottom: 12px;
-      font-size: 20px;
-      font-weight: 300;
-      color: black;
-    }
-    .italic-message {
-      font-size: 14px;
-      font-weight: 300;
-      font-style: italic;
-      color: $color-gray;
-      &.flash {
-        background-color: yellow;
-        &.fade-out {
-          @include transition(1s);
-          background-color: transparent;
-        }
-      }
-    }
-    .event-details-register {
-      padding-bottom: 5px;
-      .warning {
-        margin-top: 0;
-      }
-      a, button {
-        display: block;
-        width: auto;
-        margin-bottom: 0;
-        font-size: 20px;
-        font-weight: 500;
-        position: relative;
-        &.blue {
-          color: #29abe2;
-          display: inline;
-        }
-        &.bold{
-          font-weight: bold;
-        }
-        &.register {
-          $padding: 24px;
-          min-height: 80px;
-          padding: 0 $padding;
-          background-color: #3ac38f;
-          color: #fff;
-          text-align: left;
-          border-radius: 12px;
-          line-height: normal;
-          .hd {
-            font-size: 28px;
-            font-weight: bold;
-            clear: both;
-            display: block;
-            margin-top: -18px;
-          }
-          .sub {
-            clear: both;
-            display: block;
-            font-size: 16px;
-            line-height: 54px;
-          }
-          .price {
-            position: absolute;
-            right: $padding;
-            top: 28px;
-            font-size: 24px;
-          }
-        }
-        &.no-access {
-          .sub {
-            line-height:23px;
-          }
-          .hd {
-            margin-top: 0;
-          }
-        }
-        &.logged-in {
-          background-color: #3ac38f;
-          border: 3px solid #3ac38f;
-          color: #fff;
-          width:100%;
-          @media #{$media-query-smallest} {
-            .hd {
-              margin-top: -13px;
-            }
-            .sub {
-              line-height: 32px;
-            }
-          }
-        }
-        &.unregister {
-          height: 48px;
-          @include link-background($color-gray);
-          text-align: center;
-          width:100%;
-        }
-      }
-      .italic-message {
-        margin-top: 26px;
-      }
-    }
-    .signupMsg {
-      background-color: #02b875;
-      color: #fff;
-      border-radius: 6px;
-      padding: 18px 21px;
-      font-size: 18px;
-      line-height: 24px;
-      margin-top: 12px;
-      font-weight: 500;
-    }
-    .signupMsg .title {
-      font-weight: bold;
-      font-size: 22px;
-    }
-    .event-details-share {
-      margin-bottom: -10px;
-    }
-    .event-details-how-to-access {
-      margin-bottom: 15px;
-      padding-top: 20px;
-      ul.tcn-event-numbers {
-        margin-bottom: 14px;
-      }
-      .content {
-        p {
-          line-height: 1.5;
-        }
-      }
-    }
-    .add-to-favorites {
-      margin-top: 34px;
-    }
-    .event-details-rate {
-      margin-top: 35px;
-    }
-    .event-details-author {
-      .author-name {
-        margin-top: -10px;
-        margin-bottom: 24px;
-        font-size: 16px;
-        font-weight: 300;
-      }
-    }
-    .event-details-partnership {
-      .partnership-name {
-        margin-top: -10px;
-        margin-bottom: 24px;
-        font-size: 16px;
-        font-weight: 300;
+  padding-top: 20px;
+  header {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+  }
+  .italic-message {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: $color-gray;
+    &.flash {
+      background-color: yellow;
+      &.fade-out {
+        @include transition(1s);
+        background-color: transparent;
       }
     }
   }
+  .event-details-register {
+    padding-bottom: 5px;
+    .warning {
+      margin-top: 0;
+    }
+    a, button {
+      display: block;
+      width: auto;
+      margin-bottom: 0;
+      font-size: 20px;
+      font-weight: 500;
+      position: relative;
+      &.blue {
+        color: #29abe2;
+        display: inline;
+      }
+      &.bold {
+        font-weight: bold;
+      }
+      &.register {
+        $padding: 24px;
+        min-height: 80px;
+        padding: 0 $padding;
+        background-color: #3ac38f;
+        color: #fff;
+        text-align: left;
+        border-radius: 12px;
+        line-height: normal;
+        .hd {
+          font-size: 28px;
+          font-weight: bold;
+          clear: both;
+          display: block;
+          margin-top: -18px;
+        }
+        .sub {
+          clear: both;
+          display: block;
+          font-size: 16px;
+          line-height: 54px;
+        }
+        .price {
+          position: absolute;
+          right: $padding;
+          top: 28px;
+          font-size: 24px;
+        }
+      }
+      &.no-access {
+        .sub {
+          line-height: 23px;
+        }
+        .hd {
+          margin-top: 0;
+        }
+      }
+      &.logged-in {
+        background-color: #3ac38f;
+        border: 3px solid #3ac38f;
+        color: #fff;
+        width: 100%;
+        @media #{$media-query-smallest} {
+          .hd {
+            margin-top: -13px;
+          }
+          .sub {
+            line-height: 32px;
+          }
+        }
+      }
+      &.unregister {
+        height: 48px;
+        @include link-background($color-gray);
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .italic-message {
+      margin-top: 26px;
+    }
+  }
+  .signupMsg {
+    background-color: #02b875;
+    color: #fff;
+    border-radius: 6px;
+    padding: 18px 21px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 12px;
+    font-weight: 500;
+  }
+  .signupMsg .title {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .event-details-share {
+    margin-bottom: -10px;
+  }
+  .event-details-how-to-access {
+    margin-bottom: 15px;
+    padding-top: 20px;
+    .italic-message a {
+      font-size: 15px;
+      display: inline;
+    }
+    ul.tcn-event-numbers {
+      margin-bottom: 14px;
+    }
+    
+    li .content {
+        a {
+          font-weight: bold;
+          display: inline;
+          font-size: 15px;
+        }
+      }
 
+    .content {
+      p {
+        line-height: 1.5;
+      }
+    }
+  }
+  .add-to-favorites {
+    margin-top: 34px;
+  }
+  .event-details-rate {
+    margin-top: 35px;
+  }
+  .event-details-author {
+    .author-name {
+      margin-top: -10px;
+      margin-bottom: 24px;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+  .event-details-partnership {
+    .partnership-name {
+      margin-top: -10px;
+      margin-bottom: 24px;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+}
 .event-details-sidebar {
   padding-top: 60px;
   header {
@@ -246,7 +253,7 @@
         color: #29abe2;
         display: inline;
       }
-      &.bold{
+      &.bold {
         font-weight: bold;
       }
       &.register {
@@ -293,7 +300,7 @@
       }
       &.no-access {
         .sub {
-          line-height:23px;
+          line-height: 23px;
         }
         .hd {
           margin-top: 0;
@@ -303,7 +310,7 @@
         background-color: #3ac38f;
         border: 3px solid #3ac38f;
         color: #fff;
-        width:100%;
+        width: 100%;
         @media #{$media-query-smallest} {
           .hd {
             margin-top: -13px;
@@ -317,7 +324,7 @@
         height: 48px;
         @include link-background($color-gray);
         text-align: center;
-        width:100%;
+        width: 100%;
       }
     }
     .italic-message {
@@ -376,7 +383,6 @@
     }
   }
 }
-
 /* Register button */
 .google_captcha {
   margin-bottom: 20px;
@@ -414,7 +420,6 @@ h5.steps {
 .orange_btn_fr:hover {
   filter: brightness(120%);
 }
-
 .orange {
   color: #ee3a29;
 }
