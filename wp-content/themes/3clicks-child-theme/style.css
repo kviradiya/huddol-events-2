@@ -697,6 +697,9 @@ a {
     top: 25px;
     color: #4a4a4a;
     transition: opacity 0.525s; }
+    @media only screen and (max-width: 600px) {
+      #g1-header #g1-primary-nav #g1-primary-nav-menu::after {
+        display: none; } }
   #g1-header #g1-primary-nav #g1-primary-nav-menu:hover::after {
     opacity: 0; }
   #g1-header #g1-primary-nav .g1-searchbox a {
@@ -1425,6 +1428,11 @@ a {
         border: 3px solid #3ac38f;
         color: #fff;
         width: 100%; }
+        @media only screen and (max-width: 600px) {
+          .event-details-post .event-details-register a.logged-in .hd, .event-details-post .event-details-register button.logged-in .hd {
+            margin-top: -13px; }
+          .event-details-post .event-details-register a.logged-in .sub, .event-details-post .event-details-register button.logged-in .sub {
+            line-height: 32px; } }
       .event-details-post .event-details-register a.unregister, .event-details-post .event-details-register button.unregister {
         height: 48px;
         background-color: #636466;
@@ -1551,6 +1559,11 @@ a {
         border: 3px solid #3ac38f;
         color: #fff;
         width: 100%; }
+        @media only screen and (max-width: 600px) {
+          .event-details-sidebar .event-details-register a.logged-in .hd, .event-details-sidebar .event-details-register button.logged-in .hd {
+            margin-top: -13px; }
+          .event-details-sidebar .event-details-register a.logged-in .sub, .event-details-sidebar .event-details-register button.logged-in .sub {
+            line-height: 32px; } }
       .event-details-sidebar .event-details-register a.unregister, .event-details-sidebar .event-details-register button.unregister {
         height: 48px;
         background-color: #636466;

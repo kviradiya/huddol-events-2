@@ -138,6 +138,14 @@
           border: 3px solid #3ac38f;
           color: #fff;
           width:100%;
+          @media #{$media-query-smallest} {
+            .hd {
+              margin-top: -13px;
+            }
+            .sub {
+              line-height: 32px;
+            }
+          }
         }
         &.unregister {
           height: 48px;
@@ -296,6 +304,14 @@
         border: 3px solid #3ac38f;
         color: #fff;
         width:100%;
+        @media #{$media-query-smallest} {
+          .hd {
+            margin-top: -13px;
+          }
+          .sub {
+            line-height: 32px;
+          }
+        }
       }
       &.unregister {
         height: 48px;

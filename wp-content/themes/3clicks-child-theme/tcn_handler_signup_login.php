@@ -74,22 +74,22 @@ function login( $credentials = [] ) {
 	if ( ! $creds ) {
 		if ( strpos( $user_login, '@' ) ) {
 			$user_data         = get_user_by( 'email', trim( $user_login ) );
-		$data['user_data'] = $user_data;
+			$data['user_data'] = $user_data;
 			if ( ! empty( $user_data ) ) {
-			$creds['user_login'] = $user_data->user_login;
+				$creds['user_login'] = $user_data->user_login;
 			} else {
-			$creds['user_login'] = '';
-		}
+				$creds['user_login'] = '';
+			}
 		} else {
-		$creds['user_login'] = $_POST['username_email'];
-	}
+			$creds['user_login'] = $_POST['username_email'];
+		}
 
 		if ( $creds['user_login'] === '' ) {
 			$data['error']   = __( "No user by that name found.", 'tcn' );
 			$data['success'] = FALSE;
 		} else {
 
-		$creds['user_password'] = $_POST['password'];
+			$creds['user_password'] = $_POST['password'];
 			$creds['remember']      = isset( $_POST['remember_me'] );
 
 			$user = wp_signon( $creds, TRUE );
@@ -98,7 +98,7 @@ function login( $credentials = [] ) {
 				$data['success'] = FALSE;
 			} else {
 				$data['success'] = TRUE;
-		}
+			}
 		}
 		return_with_data( $data );
 
@@ -114,7 +114,7 @@ function login( $credentials = [] ) {
 			$data['success'] = FALSE;
 		} else {
 			$data['success'] = TRUE;
-}
+		}
 	}
 }
 
@@ -207,35 +207,21 @@ function signup() {
 	$email            = $_POST['email'];
 	$password         = $_POST['password'];
 	$confirm_password = $_POST['confirm_password'];
-	$first_name       = $_POST['first_name'];
-	$last_name        = $_POST['last_name'];
-	$province         = $_POST['tcn_user_meta_province'];
-	$captcha          = $_POST['signup_form_is_human'];
-	$city             = $_POST['city'];
-	$phone            = $_POST['phone'];
-	$user_redirect    = $_POST['user_redirect'];
-	$user_redirect    = str_replace(' ','',$user_redirect);
-	$parts = parse_url($user_redirect);
-	if(!empty($parts)){
-		if(!empty($parts['query'])){
-		parse_str($parts['query'], $query);
-	}
-	}
-	if ( empty( $first_name ) ) {
-		$data['success'] = FALSE;
-		$data['error']   = __( "You must provide a name.", 'tcn' );
-		return_with_data( $data );
-
-		return;
+	//	$first_name       = $_POST['first_name'];
+	//	$last_name        = $_POST['last_name'];
+	$province = $_POST['tcn_user_meta_province'];
+	$captcha  = $_POST['signup_form_is_human'];
+	//	$city             = $_POST['city'];
+	//	$phone            = $_POST['phone'];
+	$user_redirect = $_POST['user_redirect'];
+	$user_redirect = str_replace( ' ', '', $user_redirect );
+	$parts         = parse_url( $user_redirect );
+	if ( ! empty( $parts ) ) {
+		if ( ! empty( $parts['query'] ) ) {
+			parse_str( $parts['query'], $query );
+		}
 	}
 
-	if ( empty( $last_name ) ) {
-		$data['success'] = FALSE;
-		$data['error']   = __( "You must provide a family name.", 'tcn' );
-		return_with_data( $data );
-
-		return;
-	}
 
 	if ( empty( $email ) ) {
 		$data['success'] = FALSE;
@@ -303,26 +289,11 @@ function signup() {
 		return;
 	}
 
-	if ( $city == '' ) {
+	if ( empty( $captcha ) || $captcha == NULL || $captcha === FALSE ) {
 		$data['success'] = FALSE;
-		$data['error']   = __( "You must indicate what city you live in.", 'tcn' );
+		$data['error']   = __( "You must prove you are human.", 'tcn' );
 		return_with_data( $data );
 
-		return;
-	}
-
-	if ( $phone == '' || ! valid_number( $phone ) ) {
-		$data['success'] = FALSE;
-		$data['error']   = __( "You must provide your phone number.", 'tcn' );
-		return_with_data( $data );
-
-		return;
-	}
-
-	if(empty($captcha) || $captcha == NULL || $captcha === false){
-		$data['success'] = false;
-		$data['error'] = __("You must prove you are human.", 'tcn');
-		return_with_data($data);
 		return;
 	}
 
@@ -373,15 +344,17 @@ function signup() {
 	}
 
 	$user_id = wp_create_user( $username, $password, $email );
-	$user_id = wp_update_user( [ 'ID'         => $user_id,
-	                             'first_name' => $first_name,
+	$user_id = wp_update_user( [
+		'ID'         => $user_id,
+//		'first_name' => $first_name,
 	] );
-	$user_id = wp_update_user( [ 'ID'        => $user_id,
-	                             'last_name' => $last_name,
+	$user_id = wp_update_user( [
+		'ID'        => $user_id,
+//		'last_name' => $last_name,
 	] );
 	update_user_meta( $user_id, 'tcn_user_meta_province', $province );
-	update_user_meta( $user_id, 'tcn_user_meta_city', $city );
-	update_user_meta( $user_id, 'tcn_user_meta_phone', $phone );
+//	update_user_meta( $user_id, 'tcn_user_meta_city', $city );
+//	update_user_meta( $user_id, 'tcn_user_meta_phone', $phone );
 
 	$data['success'] = TRUE;
 	send_validation_email( $email, $_POST['lang'] );
@@ -399,18 +372,18 @@ function signup() {
 	];
 
 
-	if($user_redirect && !empty($parts['query'])){
-		$event_registration =  new EventRegistration;
-		if(!empty($query['event_id'])){
-			$post_id = str_replace("_", "", $query['event_id']);
+	if ( $user_redirect && ! empty( $parts['query'] ) ) {
+		$event_registration = new EventRegistration;
+		if ( ! empty( $query['event_id'] ) ) {
+			$post_id = str_replace( "_", "", $query['event_id'] );
 		}
-		$event_registration->register_user($post_id, $user_id);
-		send_event_confirmation_email($email, get_post($post_id), ICL_LANGUAGE_CODE);
+		$event_registration->register_user( $post_id, $user_id );
+		send_event_confirmation_email( $email, get_post( $post_id ), ICL_LANGUAGE_CODE );
 	}
 
-	if($user_id){
-		wp_set_current_user($user_id);
-		wp_set_auth_cookie($user_id);
+	if ( $user_id ) {
+		wp_set_current_user( $user_id );
+		wp_set_auth_cookie( $user_id );
 		$data['success'] = TRUE;
 	}
 	return_with_data( $data );

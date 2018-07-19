@@ -777,6 +777,9 @@ ul.tcn-event-numbers {
       top: 25px;
       color: #4a4a4a;
       transition: opacity 0.525s;
+      @media #{$media-query-smallest} {
+        display:none;
+      }
     }
     #g1-primary-nav-menu:hover::after {
       opacity: 0;
