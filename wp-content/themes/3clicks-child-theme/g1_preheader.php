@@ -266,7 +266,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<?php if ( is_user_logged_in() ): ?>
 				<div class="g1-links tcn-">
 					<ul>
-						<li class="tcn-logged-in"><?php _e( "You are logged in as", "tcn" ); ?><?php echo $current_user->user_email; ?></li>
+						<li class="tcn-logged-in"><?php _e( "You are logged in as", "tcn" ); ?> <?php echo $current_user->user_email; ?></li>
 						<li>
 							<a href="<?php echo wp_logout_url( site_url() ); ?>"
 							   tw><?php _e( "Logout", "tcn" ); ?></a></li>
