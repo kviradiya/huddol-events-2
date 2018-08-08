@@ -413,7 +413,7 @@ class EventRegistration {
 	{
 	    if($this->get_event_price($post_id) == '' || $this->get_event_price($post_id) === 'Free' || $this->get_event_price($post_id) === 'Gratuit')
 	    {
-	        return __("Free", "tcn");
+	        return __("", "tcn");
 	    }
 	    else
 	    {
