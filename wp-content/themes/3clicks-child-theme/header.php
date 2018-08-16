@@ -53,7 +53,7 @@ if ( !defined('ABSPATH') )
 <script src="https://cdn.optimizely.com/js/5639380899.js"></script>
 	<?php wp_head(); ?>
 	<?php include_once('analytics.php'); ?>
-    <script type="text/javascript" src="/wp-content/themes/3clicks-child-theme/scripts/jquery.cookie.js"></script>
+    <script type="text/javascript" src="<?php echo get_home_url(); ?>/wp-content/themes/3clicks-child-theme/scripts/jquery.cookie.js"></script>
     
   <!-- Add recaptch -->
   <?php if(ICL_LANGUAGE_CODE=='en'): ?>

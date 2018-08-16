@@ -93,9 +93,9 @@
 
     <div class="right-content">
         <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
-            <form action="/register_event/" method="POST">
+            <form action="<?php echo site_url(); ?>/register_event/" method="POST">
         <?php else: ?>
-             <form action="/fr/register_event_fr/" method="POST">
+             <form action="<?php echo site_url(); ?>/fr/register_event_fr/" method="POST">
         <?php endif ?>
         
             <input type="submit" value="<?php _e("Unregister", "tcn"); ?>" class="gray" />

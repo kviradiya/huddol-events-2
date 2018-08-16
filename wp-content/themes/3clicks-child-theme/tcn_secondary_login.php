@@ -43,10 +43,10 @@
     <div class="account-login">
         <div class="sep"></div>
 		<?php if ( ICL_LANGUAGE_CODE == 'en' ): ?>
-        <form id="login_form_secondary" action="/signup_login/" method="POST"
+        <form id="login_form_secondary" action="<?php echo site_url(); ?>/signup_login/" method="POST"
               style="width: 230px;">
 			<?php else: ?>
-            <form id="login_form_secondary" action="/fr/signup_login_fr/"
+            <form id="login_form_secondary" action="<?php echo site_url(); ?>/fr/signup_login_fr/"
                   method="POST" style="width: 230px;">
 				<?php endif ?>
                 <input type="hidden" name="action" value="login"/>
@@ -139,10 +139,10 @@
 
     <div class="account-signup">
 		<?php if ( ICL_LANGUAGE_CODE == 'en' ): ?>
-        <form id="signup_form_secondary" action="/signup_login/" method="POST">
+        <form id="signup_form_secondary" action="<?php echo site_url(); ?>/signup_login/" method="POST">
 
 			<?php else: ?>
-            <form id="signup_form_secondary" action="/fr/signup_login_fr/"
+            <form id="signup_form_secondary" action="<?php echo site_url(); ?>/fr/signup_login_fr/"
                   method="POST">
 
 				<?php endif ?>

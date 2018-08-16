@@ -277,7 +277,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div class="account-login">
 						<div class="sep"></div>
 						<?php if ( ICL_LANGUAGE_CODE == 'en' ): ?>
-						<form id="login_form" action="/signup_login/"
+						<form id="login_form" action="<?php echo site_url(); ?>/signup_login/"
 						      method="POST" style="width: 250px">
 							<?php else: ?>
 							<form id="login_form"
@@ -342,7 +342,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 							</div>
 							<?php if ( ICL_LANGUAGE_CODE == 'en' ): ?>
 							<form id="forgot_email_password_form"
-							      action="/signup_login/" method="POST"
+							      action="<?php echo site_url(); ?>/signup_login/" method="POST"
 							      style="display: none; width:240px;">
 								<?php else: ?>
 								<form id="forgot_email_password_form"

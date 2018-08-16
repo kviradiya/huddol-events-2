@@ -244,10 +244,10 @@ add_filter( 'body_class', array(G1_Theme(), 'secondary_after_body_class') );
 			                                <?php if($event_registration->is_user_registered($post_id, $user->ID)): ?>
 
 			                                <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
-                                            <form action="/register_event/" method="POST">
+                                            <form action="<?php echo site_url(); ?>/register_event/" method="POST">
 
 				                                <?php else: ?>
-                                                <form action="/fr/register_event_fr/" method="POST">
+                                                <form action="<?php echo site_url(); ?>/fr/register_event_fr/" method="POST">
 
 					                                <?php endif ?>
                                                     <button type="submit" class="unregister"><?php _e("Unregister", "tcn"); ?></button>
@@ -271,10 +271,10 @@ add_filter( 'body_class', array(G1_Theme(), 'secondary_after_body_class') );
 
 				                                <?php else: ?>
 				                                <?php if(ICL_LANGUAGE_CODE == 'en' ): ?>
-                                                <form action="/register_event/" method="POST">
+                                                <form action="<?php echo site_url(); ?>/register_event/" method="POST">
 
 					                                <?php else: ?>
-                                                    <form action="/fr/register_event_fr/" method="POST">
+                                                    <form action="<?php echo site_url(); ?>/fr/register_event_fr/" method="POST">
 
 						                                <?php endif ?>
                                                         <button type="submit" class="register logged-in">
