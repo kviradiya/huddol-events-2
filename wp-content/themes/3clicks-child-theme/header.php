@@ -257,39 +257,6 @@ if ( !defined('ABSPATH') )
 		</div>
 	</div>
 
-<?php  /* Add new banner */
-
-if( is_front_page() ) { ?>    
-    <?php
-    if(is_user_logged_in())
-    {
-        $mode = "my_network";
-    }
-    else
-    {
-        $mode = "upcoming";
-    }
-    
-    if(isset($_GET["mode"]))
-    {
-        $mode = $_GET["mode"];
-    }
-?>
-
-<?php
-    $network = new TCNNetwork;
-    $network_events = $network->get_upcoming_network_events(wp_get_current_user());
-    if(count($network_events) == 0 && $mode === "my_network")
-    {
-        $mode = "upcoming";
-    }
-    
-    $upcoming_events = array_slice(get_upcoming_events(), 0, 12);
-    if(count($upcoming_events) == 0)
-    {
-        $mode = "most_viewed";
-    }
-?>
 <div id="banner-container">
 <div id="banner-space">
 <span class="top-title"><?php _e("Benefit from our online learning experiences.", "tcn"); ?></span><br>
@@ -298,28 +265,9 @@ if( is_front_page() ) { ?>
 </div>
  <div id="g1-content-home" class="g1-content">
  <div class="g1-layout-inner">
-    <div class="tcn-filter">
-                    <span class="tcn-filter-title">
-                         <?php _e("Filter events by:", "tcn"); ?>
-                    </span>
-
-                    <?php if(count($upcoming_events) > 0): ?>
-                    <span <?php if($mode === "upcoming") echo 'class="tcn-filter-selected"'; ?> >
-                        <a href="?mode=upcoming">
-                            <?php _e("Upcoming", "tcn"); ?>
-                        </a>
-                    </span>
-                    <?php endif ?>
-
-                    <span <?php if($mode === "most_viewed") echo 'class="tcn-filter-selected"'; ?> >
-                        <a href="?mode=most_viewed">
-                            <?php _e("Most Viewed", "tcn"); ?>
-                        </a>
-                    </span>                    
-                </div>
+     <h2><?php _e("Upcoming Events", "tcn"); ?></h2>
     </div>   
     </div>
-    <?php } ?>         
 
 	<!-- BEGIN #g1-content -->
 	<div id="g1-content" class="g1-content">
