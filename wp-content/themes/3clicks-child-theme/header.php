@@ -257,6 +257,9 @@ if ( !defined('ABSPATH') )
 		</div>
 	</div>
 
+<?php  /* Add new banner */
+
+if( is_front_page() ) { ?>
 <div id="banner-container">
 <div id="banner-space">
 <span class="top-title"><?php _e("Benefit from our online learning experiences.", "tcn"); ?></span><br>
@@ -268,6 +271,7 @@ if ( !defined('ABSPATH') )
      <h2><?php _e("Upcoming Events", "tcn"); ?></h2>
     </div>   
     </div>
+    <?php } ?>
 
 	<!-- BEGIN #g1-content -->
 	<div id="g1-content" class="g1-content">
