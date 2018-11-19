@@ -1112,6 +1112,10 @@ a {
   .tcn-home-channels h2 {
     display: inline;
     padding-right: 12px; }
+    @media only screen and (max-width: 600px) {
+      .tcn-home-channels h2 {
+        display: block;
+        margin-bottom: 0; } }
   .tcn-home-channels .g1-collection--grid > ul > li.g1-collection__item {
     max-width: none;
     margin-bottom: 0px; }
