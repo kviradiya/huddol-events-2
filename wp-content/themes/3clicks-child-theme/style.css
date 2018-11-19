@@ -1107,8 +1107,11 @@ a {
 .tcn-home-channels {
   margin-left: -18px;
   margin-right: -18px; }
+  .tcn-home-channels .header {
+    padding: 18px; }
   .tcn-home-channels h2 {
-    padding: 0px 18px; }
+    display: inline;
+    padding-right: 12px; }
   .tcn-home-channels .g1-collection--grid > ul > li.g1-collection__item {
     max-width: none;
     margin-bottom: 0px; }

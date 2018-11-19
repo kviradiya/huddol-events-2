@@ -57,8 +57,12 @@
   $spacing: 35px;
   margin-left: 0px - round($spacing / 2);
   margin-right: 0px - round($spacing / 2);
+  .header {
+    padding: 18px;
+  }
   h2 {
-    padding: 0px 18px;
+    display: inline;
+    padding-right: 12px;
   }
   .g1-collection--grid > ul > li.g1-collection__item {
     max-width: none;

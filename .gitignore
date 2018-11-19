@@ -11,6 +11,14 @@ docs/bugs.md
 docs/~work.xlsx
 .idea/
 .htaccess
+wp-content/w3tc-config/
 
 # sass cache
 *.scssc
+node_modules/
+wp-content/debug.log
+wp-content/ewww/
+wp-content/themes/3clicks-child-theme/node_modules/
+error_log
+wp-admin/error_log
+wp-content/themes/3clicks-child-theme/gulpfile.js
