@@ -48,7 +48,7 @@ function print_home_categories_and_posts() {
                         $category_link = get_category_link( $category_id );
                         echo esc_url( $category_link ); ?>"
                            title="<?php echo get_the_category_by_ID( $category_id ); ?>">
-                            <?php _e( "View category", "tcn" ); ?>
+                            <?php _e( "See all", "tcn" ); ?>
                         </a>
                 </div>
                 <div class="g1-collection g1-collection--grid g1-collection--one-fourth g1-collection--filterable g1-effect-none">
